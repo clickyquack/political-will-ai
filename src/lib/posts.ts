@@ -106,14 +106,26 @@ function metaContent(html: string, property: string) {
   return content?.[1] ? plainText(content[1]) : "";
 }
 
+function fallbackFromUrl(url: string): FeedPost {
+  const slug = new URL(url).pathname.split("/").filter(Boolean).pop() ?? "post";
+  const title = slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return { title, preview: "", date: new Date(0) };
+}
+
 async function fetchPostPage(url: string): Promise<FeedPost | undefined> {
-  const html = await fetchText(url);
-  const title = metaContent(html, "og:title");
-  const preview = metaContent(html, "og:description");
-  const published = html.match(/"datePublished":"([^"]+)"/);
-  const date = published?.[1] ? new Date(published[1]) : new Date(Number.NaN);
-  if (!title || Number.isNaN(date.valueOf())) return undefined;
-  return { title, preview, date };
+  try {
+    const html = await fetchText(url);
+    const title = metaContent(html, "og:title");
+    const preview = metaContent(html, "og:description");
+    const published = html.match(/"datePublished":"([^"]+)"/);
+    const date = published?.[1] ? new Date(published[1]) : new Date(Number.NaN);
+    if (!title || Number.isNaN(date.valueOf())) return undefined;
+    return { title, preview, date };
+  } catch {
+    return undefined;
+  }
 }
 
 export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
@@ -129,8 +141,7 @@ export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
   const posts = await Promise.all(
     urls.map(async (url, index) => {
       const feed = feeds.get(new URL(url).origin);
-      const post = feed?.get(canonical(url)) ?? (await fetchPostPage(url));
-      if (!post) throw new Error(`Could not find a Substack post for ${url}`);
+      const post = feed?.get(canonical(url)) ?? (await fetchPostPage(url)) ?? fallbackFromUrl(url);
       return { ...post, url, index };
     }),
   );
