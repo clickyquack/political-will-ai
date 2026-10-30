@@ -1,0 +1,33 @@
+---
+import urls from "../../data/blog.json";
+import PageHeader from "../../components/PageHeader.astro";
+import { formatDate } from "../../format";
+import Base from "../../layouts/Base.astro";
+import { loadBlogPosts } from "../../lib/posts";
+import { getNavItem } from "../../site";
+
+const page = getNavItem("blog");
+const posts = await loadBlogPosts(urls);
+---
+
+<Base title={page.label}>
+  <PageHeader title={page.label} />
+  <ul class="entries posts">
+    {
+      posts.map((post) => (
+        <li>
+          <div class="post-line">
+            <a class="entry-title" href={post.url} target="_blank" rel="noopener noreferrer">
+              {post.title}
+              <span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <time class="entry-meta" datetime={post.date.toISOString()}>
+              {formatDate(post.date)}
+            </time>
+          </div>
+          {post.preview && <p class="entry-summary">{post.preview}</p>}
+        </li>
+      ))
+    }
+  </ul>
+</Base>

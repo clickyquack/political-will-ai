@@ -1,0 +1,20 @@
+{
+  "name": "political-will-ai",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@fontsource-variable/source-sans-3": "^5.3.1",
+    "astro": "^7.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

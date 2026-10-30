@@ -1,0 +1,24 @@
+[
+  {
+    "title": "AI on the Ballot",
+    "url": "https://ontheballot.ai/",
+    "description": "Tracks positions on AI policy of U.S. Congressional candidates in the 2026 midterm elections with sources.",
+    "authors": [
+      {
+        "name": "Evitable",
+        "url": "https://evitable.com/"
+      }
+    ]
+  },
+  {
+    "title": "AI Risk in Congress",
+    "url": "https://clickyquack.github.io/Congress-AI-Map/",
+    "description": "Visual map of current Congress members' positions on AI policy with sources, color-coded by position.",
+    "authors": [
+      {
+        "name": "Kai Steel",
+        "url": "https://clickyquack.github.io/"
+      }
+    ]
+  }
+]

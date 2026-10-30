@@ -1,0 +1,7 @@
+---
+title: About
+---
+
+Political Will AI is a project with the goal of finding and executing the highest leverage ways to build the political will needed to mitigate [long-term risks from AI](https://80000hours.org/ai/). Broadly, this means trying to answer questions like "Currently, where are we politically?", “What’s helped most thus far, and why was it effective?”, “What’s blocking further progress?”, “How have political goals which were challenging to achieve for similar reasons succeeded in the past?”, and “Based on insights from these, what ought we do next?”
+
+This project is managed by [Kai Steel](https://clickyquack.github.io/) and is open to corrections, contributors, or suggestions. Reach out at [kaisteel06@gmail.com](mailto:kaisteel06@gmail.com)

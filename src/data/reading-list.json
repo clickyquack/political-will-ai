@@ -1,0 +1,74 @@
+[
+  {
+    "title": "The current bottleneck is political will, not research",
+    "url": "https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research",
+    "description": "Concise case for this being the most important area to work on",
+    "priority": true,
+    "continuous": false
+  },
+  {
+    "title": "An Activist View of AI Governance",
+    "url": "https://www.lesswrong.com/s/4PLuwEyMZhT89Dxpo",
+    "description": "Very useful series on US focused AI political advocacy",
+    "continuous": false
+  },
+  {
+    "title": "The Invisible Side of AI Governance",
+    "url": "https://www.lesswrong.com/posts/AWKkDLDnShemNCSzZ/the-invisible-side-of-ai-governance",
+    "description": "Overview of “insider” vs “outsider” political advocacy work",
+    "continuous": false
+  },
+  {
+    "title": "What We Learned from Briefing 140+ Lawmakers on the Threat from AI",
+    "url": "https://www.lesswrong.com/posts/A7BtBD9BAfK2kKSEr/what-we-learned-from-briefing-140-lawmakers-on-the-threat",
+    "authors": [
+      {
+        "name": "ControlAI",
+        "url": "https://controlai.com/"
+      }
+    ],
+    "continuous": false
+  },
+  {
+    "title": "Global Call for AI Red Lines",
+    "url": "https://red-lines.ai/",
+    "description": "Campaign for promoting international AI governance. The FAQ is useful for info on progress that's been made thus far and what still needs to happen in AI international governance.",
+    "continuous": false
+  },
+  {
+    "title": "AI 2040",
+    "url": "https://ai-2040.com/",
+    "description": "Useful for thinking about how policy decisions fit into long-term future of AI development, although many of the proposals are likely too politically infeasible to aim for in practice.",
+    "continuous": false
+  },
+  {
+    "title": "IFP’s AI safety low-regret policy recommendations",
+    "url": "https://ifp.org/preparing-for-ai-research-automation/",
+    "description": "AI policy proposals more feasible in the near-term.",
+    "authors": [
+      {
+        "name": "IFP",
+        "url": "https://ifp.org/"
+      }
+    ],
+    "continuous": false
+  },
+  {
+    "title": "Stop Donating to AI Safety Research*",
+    "url": "https://forum.effectivealtruism.org/posts/HuyZE6xFfebv7ByXC/stop-donating-to-ai-safety-research",
+    "description": "Strong case for donating to political advocacy groups, has detailed information about several.",
+    "continuous": false
+  },
+  {
+    "title": "Speaking to Congressional staffers about AI risk",
+    "url": "https://www.lesswrong.com/posts/2sLwt2cSAag74nsdN/speaking-to-congressional-staffers-about-ai-risk",
+    "description": "Title is self-explanatory. This is from 2023 but still largely useful.",
+    "continuous": false
+  },
+  {
+    "title": "Which AI harms & risks will mobilise the public to act?",
+    "url": "https://www.socialchangelab.org/research/which-ai-harms-and-risks.html",
+    "description": "Many harms from AI have varying degrees of salience among the public and degree to which they are helpful for policy solutions that mitigate existential risk; this paper suggests autonomous warfare strikes the best balance and explores several others.",
+    "continuous": false
+  }
+]

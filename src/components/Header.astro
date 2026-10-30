@@ -1,0 +1,61 @@
+---
+import { sitePath } from "../path";
+import { isCurrent, isGroup, nav, site } from "../site";
+
+const pathname = Astro.url.pathname;
+const isHome = pathname === "/";
+---
+
+<header class:list={["site-header", { "is-home": isHome }]}>
+  <div class="shell">
+    {
+      isHome ? (
+        <h1 class="wordmark">
+          <a href={sitePath("/")}>{site.name}</a>
+        </h1>
+      ) : (
+        <a class="wordmark" href={sitePath("/")}>
+          {site.name}
+        </a>
+      )
+    }
+    <nav aria-label="Primary">
+      <ul>
+        {
+          nav.map((item) =>
+            isGroup(item) ? (
+              <li>
+                <details
+                  class:list={[
+                    "nav-details",
+                    { "is-current": item.children.some((child) => isCurrent(pathname, child.href)) },
+                  ]}
+                >
+                  <summary>{item.label}</summary>
+                  <ul>
+                    {item.children.map((child) => (
+                      <li>
+                        <a
+                          href={child.href}
+                          aria-current={isCurrent(pathname, child.href) ? "page" : undefined}
+                        >
+                          {child.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            ) : (
+              <li>
+                <a href={item.href} aria-current={isCurrent(pathname, item.href) ? "page" : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ),
+          )
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

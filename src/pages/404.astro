@@ -1,0 +1,10 @@
+---
+import PageHeader from "../components/PageHeader.astro";
+import { sitePath } from "../path";
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Page not found">
+  <PageHeader title="Page not found" />
+  <p class="follow"><a href={sitePath("/")}>Back home</a></p>
+</Base>

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Congress on Superintelligence",
+    "url": "https://theaipn.org/issue/quotes/",
+    "description": "Graph and timeline of Congress members who have expressed concerns relating to Superintelligence, with sourced quotes and color-coding by party.",
+    "authors": [
+      {
+        "name": "The AI Policy Network",
+        "url": "https://theaipn.org/"
+      }
+    ]
+  },
+  {
+    "title": "Blue Rose Research Polls",
+    "url": "https://x.com/davidshor/status/2100300687003259292",
+    "description": "Public polling on AI existential risk concern, including how it ranks among other political issues.",
+    "authors": [
+      {
+        "name": "Blue Rose Research",
+        "url": "https://blueroseresearch.org/"
+      }
+    ],
+    "date": "2026-09-16"
+  },
+  {
+    "title": "Existential risk awareness among US public over time",
+    "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk",
+    "description": "Public polling on concern for existential risk from AI.",
+    "authors": [
+      {
+        "name": "Existential Risk Observatory",
+        "url": "https://www.existentialriskobservatory.org/"
+      }
+    ],
+    "date": "2026-09-16"
+  }
+]

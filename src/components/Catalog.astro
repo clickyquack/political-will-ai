@@ -1,0 +1,212 @@
+---
+import { formatDate } from "../format";
+import { sitePath } from "../path";
+
+interface Author {
+  name: string;
+  url?: string;
+}
+
+interface Item {
+  title: string;
+  url: string;
+  description?: string;
+  authors: Author[];
+  date?: string;
+  image?: string;
+  index: number;
+  continuous: boolean;
+  priority: boolean;
+}
+
+interface Props {
+  items: Item[];
+  pinPriority?: boolean;
+}
+
+const { items, pinPriority = false } = Astro.props;
+const showPreviews = items.some((item) => item.image);
+
+function dateLabel(date?: string) {
+  if (!date) return "Continuously Updated";
+  return formatDate(new Date(`${date}T00:00:00Z`));
+}
+---
+
+<div class="catalog" data-catalog data-pin-priority={pinPriority ? "true" : undefined}>
+  <div class="catalog-toolbar">
+    <label class="catalog-search-label">
+      Search by title
+      <input type="search" data-catalog-search autocomplete="off" />
+    </label>
+    <button
+      type="button"
+      class="catalog-sort"
+      data-catalog-sort
+      aria-label={pinPriority
+        ? "Priority items first. Sort newest first instead."
+        : "Sorted newest first. Sort oldest first instead."}
+    >
+      <span data-sort-text>{pinPriority ? "Priority" : "Newest first"}</span>
+    </button>
+  </div>
+  <div class="catalog-scroll">
+    <table class:list={["catalog-table", { "has-previews": showPreviews }]}>
+      <thead>
+        <tr>
+          {
+            showPreviews && (
+              <th class="preview-col" scope="col">
+                <span class="visually-hidden">Preview</span>
+              </th>
+            )
+          }
+          <th scope="col">Title</th>
+          <th class="author-col" scope="col">Author</th>
+          <th class="date-col" scope="col" data-date-heading aria-sort={pinPriority ? "none" : "descending"}>
+            Date
+          </th>
+        </tr>
+      </thead>
+      <tbody data-catalog-list>
+        {
+          items.map((item) => (
+            <tr
+              class:list={{ "is-priority": item.priority }}
+              data-title={item.title}
+              data-date={item.date ?? ""}
+              data-continuous={item.continuous ? "true" : "false"}
+              data-priority={item.priority ? "true" : "false"}
+              data-index={item.index}
+            >
+              {showPreviews && (
+                <td class="preview-cell">
+                  {item.image && (
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      <img class="catalog-shot" src={sitePath(item.image)} alt="" />
+                      <span class="visually-hidden">{item.title}</span>
+                    </a>
+                  )}
+                </td>
+              )}
+              <td>
+                {item.priority && <span class="priority-mark">Priority</span>}
+                <a class="catalog-title" href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                  <span class="visually-hidden"> (opens in a new tab)</span>
+                </a>
+                {item.description && <p class="catalog-description">{item.description}</p>}
+              </td>
+              <td>
+                {item.authors.length > 0 && <span class="field-label">Author</span>}
+                {item.authors.map((author, i) => (
+                  <span>
+                    {i > 0 && ", "}
+                    {author.url ? (
+                      <a class="author-link" href={author.url} target="_blank" rel="noopener noreferrer">
+                        {author.name}
+                      </a>
+                    ) : (
+                      author.name
+                    )}
+                  </span>
+                ))}
+              </td>
+              <td>
+                {(item.date || item.continuous) && <span class="field-label">Date</span>}
+                {item.date ? (
+                  <time class="catalog-date" datetime={item.date}>
+                    {dateLabel(item.date)}
+                  </time>
+                ) : (
+                  item.continuous && <span class="catalog-date">Continuously Updated</span>
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="catalog-empty" data-catalog-empty hidden>No matching titles.</p>
+</div>
+
+<script>
+  import { compareCatalog, type SortMode } from "../lib/sort-date";
+
+  function rowData(row: HTMLElement) {
+    return {
+      continuous: row.dataset.continuous === "true",
+      date: row.dataset.date || undefined,
+      index: Number(row.dataset.index ?? 0),
+      priority: row.dataset.priority === "true",
+    };
+  }
+
+  function nextMode(mode: SortMode, pinPriority: boolean): SortMode {
+    if (!pinPriority) return mode === "desc" ? "asc" : "desc";
+    if (mode === "priority") return "desc";
+    if (mode === "desc") return "asc";
+    return "priority";
+  }
+
+  function sortLabel(mode: SortMode) {
+    if (mode === "priority") return "Priority";
+    if (mode === "desc") return "Newest first";
+    return "Oldest first";
+  }
+
+  function sortDescription(mode: SortMode, pinPriority: boolean) {
+    if (mode === "priority") return "Priority items first. Sort newest first instead.";
+    if (mode === "desc") return "Sorted newest first. Sort oldest first instead.";
+    return pinPriority
+      ? "Sorted oldest first. Sort by priority instead."
+      : "Sorted oldest first. Sort newest first instead.";
+  }
+
+  function setup(root: HTMLElement) {
+    if (root.dataset.ready === "true") return;
+    root.dataset.ready = "true";
+
+    const search = root.querySelector<HTMLInputElement>("[data-catalog-search]");
+    const button = root.querySelector<HTMLButtonElement>("[data-catalog-sort]");
+    const list = root.querySelector<HTMLElement>("[data-catalog-list]");
+    const empty = root.querySelector<HTMLElement>("[data-catalog-empty]");
+    const heading = root.querySelector<HTMLElement>("[data-date-heading]");
+    if (!search || !button || !list || !empty || !heading) return;
+
+    const pinPriority = root.dataset.pinPriority === "true";
+    let mode: SortMode = pinPriority ? "priority" : "desc";
+    const sortText = button.querySelector("[data-sort-text]");
+
+    const apply = () => {
+      const query = search.value.trim().toLowerCase();
+      const rows = [...list.querySelectorAll<HTMLElement>(":scope > tr")];
+      rows.sort((a, b) => compareCatalog(rowData(a), rowData(b), mode));
+      for (const row of rows) list.append(row);
+
+      let visible = 0;
+      for (const row of rows) {
+        const match = (row.dataset.title ?? "").toLowerCase().includes(query);
+        row.classList.toggle("is-hidden", !match);
+        if (match) visible += 1;
+      }
+
+      empty.hidden = visible !== 0;
+      heading.setAttribute(
+        "aria-sort",
+        mode === "desc" ? "descending" : mode === "asc" ? "ascending" : "none",
+      );
+      if (sortText) sortText.textContent = sortLabel(mode);
+      button.setAttribute("aria-label", sortDescription(mode, pinPriority));
+    };
+
+    search.addEventListener("input", apply);
+    button.addEventListener("click", () => {
+      mode = nextMode(mode, pinPriority);
+      apply();
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-catalog]").forEach(setup);
+</script>

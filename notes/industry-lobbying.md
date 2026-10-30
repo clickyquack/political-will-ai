@@ -1,0 +1,2 @@
+  * [AI Campaign Finance Tracker](https://elections.transformernews.ai/)
+    * Tracks AI-focused super PAC donations and spending targeting U.S. political campaigns. Tool by [Transformer](https://www.transformernews.ai/).

@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import { flattenNav, site } from "../site";
+---
+
+<Base title={site.name} description={site.description}>
+  <ul class="index">
+    {
+      flattenNav().map((item) => (
+        <li>
+          <a href={item.href}>
+            <span class="index-title">{item.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

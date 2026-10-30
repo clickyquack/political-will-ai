@@ -1,0 +1,16 @@
+---
+import data from "../data/proxy-measures.json";
+import Catalog from "../components/Catalog.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { parseCatalog } from "../lib/catalog";
+import Base from "../layouts/Base.astro";
+import { getNavItem } from "../site";
+
+const page = getNavItem("proxy-measures");
+const items = parseCatalog(data);
+---
+
+<Base title={page.label} wide>
+  <PageHeader title={page.label} />
+  <Catalog items={items} />
+</Base>
