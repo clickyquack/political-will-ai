@@ -72,18 +72,32 @@ function parseFeed(xml: string) {
   return posts;
 }
 
+function browserHeaders(accept: string) {
+  return {
+    accept,
+    "accept-language": "en-US,en;q=0.9",
+    "user-agent":
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  };
+}
+
 async function fetchText(url: string) {
   const response = await fetch(url, {
-    headers: {
-      accept: "text/html, application/xml, text/xml, */*",
-      "user-agent": "Mozilla/5.0",
-    },
+    headers: browserHeaders("text/html, application/xhtml+xml, application/xml, text/xml, */*"),
     signal: AbortSignal.timeout(20_000),
   });
   if (!response.ok) {
     throw new Error(`${url} returned ${response.status}`);
   }
   return response.text();
+}
+
+async function loadFeed(origin: string) {
+  try {
+    return parseFeed(await fetchText(`${origin}/feed`));
+  } catch {
+    return new Map<string, FeedPost>();
+  }
 }
 
 function metaContent(html: string, property: string) {
@@ -108,7 +122,7 @@ export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
   const feeds = new Map<string, Map<string, FeedPost>>();
   await Promise.all(
     origins.map(async (origin) => {
-      feeds.set(origin, parseFeed(await fetchText(`${origin}/feed`)));
+      feeds.set(origin, await loadFeed(origin));
     }),
   );
 
