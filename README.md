@@ -22,16 +22,18 @@ npm run preview
 
 ## GitHub Pages
 
-The site deploys with [GitHub Actions](.github/workflows/deploy.yml) on pushes to `main`. The live URL for a project repo is:
+The site deploys with [GitHub Actions](.github/workflows/deploy.yml) on pushes to `main`. Production builds use the custom domain:
 
-`https://<your-github-username>.github.io/political-will-ai/`
+https://www.politicalwillai.org
 
-After the first push, open the repo on GitHub → **Settings** → **Pages** → **Build and deployment** → set **Source** to **GitHub Actions**.
+In the repo on GitHub → **Settings** → **Pages**, set **Custom domain** to `www.politicalwillai.org` and enable **Enforce HTTPS** once DNS is valid.
 
-Local dev still uses `/` as the base path. To preview the Pages build locally:
+After the first push, set **Build and deployment** → **Source** to **GitHub Actions**.
+
+To preview a production-like build locally:
 
 ```bash
-GITHUB_PAGES=true ASTRO_SITE=https://YOUR_USERNAME.github.io npm run build
+ASTRO_SITE=https://www.politicalwillai.org npm run build
 npm run preview
 ```
 

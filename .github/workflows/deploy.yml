@@ -26,8 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          GITHUB_PAGES: "true"
-          ASTRO_SITE: https://${{ github.repository_owner }}.github.io
+          ASTRO_SITE: https://www.politicalwillai.org
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
