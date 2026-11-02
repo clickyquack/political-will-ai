@@ -32,6 +32,7 @@ export const nav: NavEntry[] = [
     children: [
       { id: "reading-list", href: sitePath("/reading-list"), label: "Reading list" },
       { id: "politician-positions", href: sitePath("/politician-positions"), label: "Politician positions" },
+      { id: "congress-map", href: "/congress-map/", label: "Congress AI map" },
       { id: "industry-lobbying", href: sitePath("/industry-lobbying"), label: "Industry lobbying" },
       { id: "proxy-measures", href: sitePath("/proxy-measures"), label: "Proxy measures" },
     ],
