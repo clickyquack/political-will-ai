@@ -31,7 +31,6 @@ jobs:
       - run: npm run build
         env:
           CONGRESS_MAP_DIR: congress-ai-map
-        env:
           ASTRO_SITE: https://www.politicalwillai.org
       - uses: actions/upload-pages-artifact@v3
         with:

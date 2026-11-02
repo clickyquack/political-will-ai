@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-The blog reads titles, previews, and dates from Substack while the site builds, so that command needs a network connection.
+The blog uses Substack RSS at build time when requests succeed; otherwise it falls back to the title, date, and preview stored in `src/data/blog.json`.
 
 Production build:
 
@@ -65,15 +65,18 @@ Files in `notes/` are working material. They are not published.
 
 ## Add a blog post
 
-Add the Substack URL to `src/data/blog.json`:
+Add an entry to `src/data/blog.json`:
 
 ```json
-[
-  "https://quintic.substack.com/p/your-post-slug"
-]
+{
+  "url": "https://quintic.substack.com/p/your-post-slug",
+  "title": "Post title",
+  "date": "2026-11-02",
+  "preview": "Optional one-line summary."
+}
 ```
 
-The blog page loads the title, preview, and date from that publication's feed and lists posts newest first.
+At build time the site refreshes title, preview, and date from the publication's RSS feed when the network request succeeds. The JSON fields are used when it does not (for example in CI), so keep them in sync when you add a post. Posts are listed newest first.
 
 ## Add a catalog entry
 

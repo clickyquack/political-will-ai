@@ -1,5 +1,20 @@
 [
-  "https://quintic.substack.com/p/why-arent-we-mandating-nucleic-acid",
-  "https://quintic.substack.com/p/on-using-crises-to-shift-political",
-  "https://quintic.substack.com/p/the-advocacy-gap-in-international"
+  {
+    "url": "https://quintic.substack.com/p/why-arent-we-mandating-nucleic-acid",
+    "title": "Why aren't we mandating nucleic acid screening yet?",
+    "date": "2026-08-04",
+    "preview": "In trying to investigate what could shift political will for AI governance as someone without much of a policy background, I decided to start with investigating the much less controversial proposal of mandating nucleic acid screening."
+  },
+  {
+    "url": "https://quintic.substack.com/p/on-using-crises-to-shift-political",
+    "title": "On using crises to shift political will for AI",
+    "date": "2026-08-11",
+    "preview": "TL;DR: We'll probably be getting more AI safety incidents, so amplify the ones that would justify or highlight the urgency of your preferred policy solutions even from a non-technical skeptic concerned with national security's perspective, as these will be far more effective than anything else."
+  },
+  {
+    "url": "https://quintic.substack.com/p/the-advocacy-gap-in-international",
+    "title": "The Advocacy Gap in International AI Verification",
+    "date": "2026-10-10",
+    "preview": "TL;DR: There seems to be a general lack of awareness of how tractable/feasible verification mechanisms for international AI governance agreements are, and correcting this would probably make pacing proposals more politically feasible."
+  }
 ]

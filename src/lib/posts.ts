@@ -1,6 +1,15 @@
 import { z } from "astro/zod";
 
-const urlsSchema = z.array(z.string().url());
+const storedPostSchema = z.object({
+  url: z.string().url(),
+  title: z.string().min(1),
+  preview: z.string().optional().default(""),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+});
+
+const blogEntrySchema = z.union([z.string().url(), storedPostSchema]);
+
+const blogSchema = z.array(blogEntrySchema);
 
 export type BlogPost = {
   url: string;
@@ -94,10 +103,25 @@ async function fetchText(url: string) {
 
 async function loadFeed(origin: string) {
   try {
-    return parseFeed(await fetchText(`${origin}/feed`));
+    const response = await fetch(`${origin}/feed`, {
+      headers: browserHeaders("application/rss+xml, application/xml, text/xml, */*"),
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (!response.ok) {
+      throw new Error(`${origin}/feed returned ${response.status}`);
+    }
+    return parseFeed(await response.text());
   } catch {
     return new Map<string, FeedPost>();
   }
+}
+
+function storedPost(entry: z.infer<typeof storedPostSchema>): FeedPost {
+  return {
+    title: entry.title,
+    preview: entry.preview ?? "",
+    date: new Date(`${entry.date}T12:00:00Z`),
+  };
 }
 
 function metaContent(html: string, property: string) {
@@ -129,8 +153,8 @@ async function fetchPostPage(url: string): Promise<FeedPost | undefined> {
 }
 
 export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
-  const urls = urlsSchema.parse(input);
-  const origins = [...new Set(urls.map((url) => new URL(url).origin))];
+  const entries = blogSchema.parse(input);
+  const origins = [...new Set(entries.map((entry) => new URL(typeof entry === "string" ? entry : entry.url).origin))];
   const feeds = new Map<string, Map<string, FeedPost>>();
   await Promise.all(
     origins.map(async (origin) => {
@@ -139,9 +163,15 @@ export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
   );
 
   const posts = await Promise.all(
-    urls.map(async (url, index) => {
+    entries.map(async (entry, index) => {
+      const url = typeof entry === "string" ? entry : entry.url;
+      const saved = typeof entry === "string" ? undefined : storedPost(entry);
       const feed = feeds.get(new URL(url).origin);
-      const post = feed?.get(canonical(url)) ?? (await fetchPostPage(url)) ?? fallbackFromUrl(url);
+      const post =
+        feed?.get(canonical(url)) ?? (await fetchPostPage(url)) ?? saved ?? fallbackFromUrl(url);
+      if (post.date.getTime() === 0) {
+        console.warn(`Blog post metadata missing for ${url}; add title and date to src/data/blog.json.`);
+      }
       return { ...post, url, index };
     }),
   );
