@@ -26,13 +26,13 @@ export function isGroup(entry: NavEntry): entry is NavGroup {
 
 export const nav: NavEntry[] = [
   { id: "about", href: sitePath("/about"), label: "About" },
+  { id: "congress-map", href: sitePath("/congress-map/"), label: "Map" },
   {
     id: "resources",
     label: "Resources",
     children: [
       { id: "reading-list", href: sitePath("/reading-list"), label: "Reading list" },
       { id: "politician-positions", href: sitePath("/politician-positions"), label: "Politician positions" },
-      { id: "congress-map", href: "/congress-map/", label: "Congress AI map" },
       { id: "industry-lobbying", href: sitePath("/industry-lobbying"), label: "Industry lobbying" },
       { id: "proxy-measures", href: sitePath("/proxy-measures"), label: "Proxy measures" },
     ],

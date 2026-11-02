@@ -122,9 +122,15 @@ body {
 .site-header nav > ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem 1.1rem;
   list-style: none;
   padding: 0;
+}
+
+.site-header nav > ul > li {
+  display: flex;
+  align-items: center;
 }
 
 .site-header nav a,
@@ -156,6 +162,8 @@ body {
 }
 
 .nav-details summary {
+  display: inline-flex;
+  align-items: center;
   list-style: none;
 }
 
