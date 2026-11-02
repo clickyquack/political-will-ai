@@ -20,6 +20,16 @@ npm run build
 npm run preview
 ```
 
+### Congress AI map (`/congress-map/`)
+
+The interactive map is built from the sibling [Congress AI Map](https://github.com/clickyquack/Congress-AI-Map) repo into `public/congress-map/` (gitignored). With both repos checked out side by side:
+
+```bash
+npm run build:congress-map
+```
+
+Or `CONGRESS_MAP_DIR=/path/to/Congress-AI-Map npm run build:congress-map`. Full site deploy runs this automatically before `astro build`. Live URL: https://www.politicalwillai.org/congress-map/
+
 ## GitHub Pages
 
 The site deploys with [GitHub Actions](.github/workflows/deploy.yml) on pushes to `main`. Production builds use the custom domain:
