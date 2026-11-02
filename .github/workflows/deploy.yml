@@ -19,10 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-        with:
-          repository: clickyquack/Congress-AI-Map
-          path: congress-ai-map
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -30,7 +26,6 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          CONGRESS_MAP_DIR: congress-ai-map
           ASTRO_SITE: https://www.politicalwillai.org
       - uses: actions/upload-pages-artifact@v3
         with:

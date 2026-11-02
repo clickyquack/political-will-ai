@@ -1,0 +1,17 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import CongressMap from "../../congress/CongressMap";
+import Base from "../../layouts/Base.astro";
+import { sitePath } from "../../path";
+---
+
+<Base title="AI risk in Congress" wide>
+  <PageHeader title="AI risk in Congress" />
+  <p class="byline">
+    Where members of the 119th Congress stand on AI risk and regulation. Select a seat or row for
+    sourced quotes and bill actions. Chip and compute security bills, and international governance
+    bills, are tracked in the list and do not change a member's stance.
+    <a href={sitePath("/congress-map/about")}>About this map</a>
+  </p>
+  <CongressMap client:load />
+</Base>

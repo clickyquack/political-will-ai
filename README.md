@@ -20,15 +20,9 @@ npm run build
 npm run preview
 ```
 
-### Congress AI map (`/congress-map/`)
+### Congress map (`/congress-map/`)
 
-The interactive map is built from the sibling [Congress AI Map](https://github.com/clickyquack/Congress-AI-Map) repo into `public/congress-map/` (gitignored). With both repos checked out side by side:
-
-```bash
-npm run build:congress-map
-```
-
-Or `CONGRESS_MAP_DIR=/path/to/Congress-AI-Map npm run build:congress-map`. Full site deploy runs this automatically before `astro build`. Live URL: https://www.politicalwillai.org/congress-map/
+The map is part of this site. Member records, quotes, bills, and actions are JSON in `src/data/congress/`. District and state shapes are in `public/geo/`. The interactive view is a React component rendered on the map page; the about page is a normal Astro page at `/congress-map/about`.
 
 ## GitHub Pages
 

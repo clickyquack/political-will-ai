@@ -1,5 +1,4 @@
 dist/
-public/congress-map/
 .astro/
 node_modules/
 npm-debug.log*
