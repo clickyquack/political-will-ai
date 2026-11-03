@@ -1,18 +1,71 @@
 ---
+import urls from "../data/blog.json";
+import { formatDate } from "../format";
 import Base from "../layouts/Base.astro";
-import { flattenNav, site } from "../site";
+import { senateMapPreview } from "../lib/map-preview";
+import { loadBlogPosts } from "../lib/posts";
+import { sitePath } from "../path";
+import { isGroup, nav, site } from "../site";
+
+const resources = nav.find(isGroup);
+const blogPosts = (await loadBlogPosts(urls)).slice(0, 3);
+const mapPreview = senateMapPreview();
 ---
 
-<Base title={site.name} description={site.description}>
-  <ul class="index">
-    {
-      flattenNav().map((item) => (
-        <li>
-          <a href={item.href}>
-            <span class="index-title">{item.label}</span>
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<Base title={site.name} description={site.description} wide>
+  <h1 class="home-lead">How do we build the political will needed to AI risk?</h1>
+  <p class="home-dek">
+    For addressing <a href="https://80000hours.org/ai/">long-term AI risk</a>,{" "}
+    <a href="https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research">the current bottleneck is political will, not research</a>.
+    We work on finding and executing the highest leverage ways to fix this.
+  </p>
+
+  <section class="home-section" aria-labelledby="featured-label">
+    <p id="featured-label" class="home-featured">Featured tool</p>
+    <a class="map-preview" href={sitePath("/congress-map/")} aria-labelledby="featured-label map-preview-title">
+      <div class="map-preview-frame" set:html={mapPreview} />
+      <h2 id="map-preview-title">AI risk in Congress</h2>
+    </a>
+  </section>
+
+  {
+    resources && (
+      <section class="home-section" aria-labelledby="resources-title">
+        <h2 id="resources-title">Our resource collection</h2>
+        <ul class="resource-squares">
+          {resources.children.map((item) => (
+            <li>
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    blogPosts.length > 0 && (
+      <section class="home-section" aria-labelledby="blog-title">
+        <h2 id="blog-title">Newest blog posts</h2>
+        <ul class="blog-posts">
+          {blogPosts.map((post) => (
+            <li>
+              <a class="blog-post-row" href={post.url} target="_blank" rel="noopener noreferrer">
+                <span class="blog-post-title">{post.title}</span>
+                <time datetime={post.date.toISOString()}>{formatDate(post.date)}</time>
+                <span class="visually-hidden"> (opens in a new tab)</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p class="blog-see-more">
+          <a href={sitePath("/blog")}>See more</a>
+        </p>
+      </section>
+    )
+  }
+
+  <p class="home-about">
+    <a href={sitePath("/about")}>About Us</a>
+  </p>
 </Base>
