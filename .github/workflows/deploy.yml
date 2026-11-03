@@ -27,7 +27,8 @@ jobs:
       - run: npm run build
         env:
           ASTRO_SITE: https://www.politicalwillai.org
-      - uses: actions/upload-pages-artifact@v3
+          NODE_OPTIONS: --max-old-space-size=6144
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 

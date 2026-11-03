@@ -154,21 +154,27 @@ async function fetchPostPage(url: string): Promise<FeedPost | undefined> {
 
 export async function loadBlogPosts(input: unknown): Promise<BlogPost[]> {
   const entries = blogSchema.parse(input);
+  const skipNetwork =
+    import.meta.env.CI &&
+    entries.every((entry) => typeof entry !== "string" && entry.title && entry.date);
   const origins = [...new Set(entries.map((entry) => new URL(typeof entry === "string" ? entry : entry.url).origin))];
   const feeds = new Map<string, Map<string, FeedPost>>();
-  await Promise.all(
-    origins.map(async (origin) => {
-      feeds.set(origin, await loadFeed(origin));
-    }),
-  );
+  if (!skipNetwork) {
+    await Promise.all(
+      origins.map(async (origin) => {
+        feeds.set(origin, await loadFeed(origin));
+      }),
+    );
+  }
 
   const posts = await Promise.all(
     entries.map(async (entry, index) => {
       const url = typeof entry === "string" ? entry : entry.url;
       const saved = typeof entry === "string" ? undefined : storedPost(entry);
       const feed = feeds.get(new URL(url).origin);
-      const post =
-        feed?.get(canonical(url)) ?? (await fetchPostPage(url)) ?? saved ?? fallbackFromUrl(url);
+      const fromFeed = feed?.get(canonical(url));
+      const fromPage = skipNetwork || saved ? undefined : await fetchPostPage(url);
+      const post = fromFeed ?? fromPage ?? saved ?? fallbackFromUrl(url);
       if (post.date.getTime() === 0) {
         console.warn(`Blog post metadata missing for ${url}; add title and date to src/data/blog.json.`);
       }

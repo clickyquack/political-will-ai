@@ -1,27 +1,40 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import * as d3 from "d3";
 import { feature } from "topojson-client";
 import type { Feature, FeatureCollection } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
-import actionsData from "../data/congress/actions.json";
-import billsData from "../data/congress/bills.json";
-import evidenceData from "../data/congress/evidence.json";
-import membersData from "../data/congress/members.json";
 import { classifyAll } from "../congress/lib/classify";
 import { joinSenateFeatures, type ColoredFeatureProps } from "../congress/lib/geo";
 import { STANCE_COLORS, type Bill, type Evidence, type LegislativeAction, type Member } from "../congress/lib/types";
 
-const members = membersData as Member[];
-const evidence = evidenceData as Evidence[];
-const bills = billsData as Bill[];
-const actions = actionsData as LegislativeAction[];
+function projectRoot(): string {
+  const marker = join("public", "geo", "states-10m.json");
+  if (existsSync(join(process.cwd(), marker))) {
+    return process.cwd();
+  }
+  let dir = fileURLToPath(new URL(".", import.meta.url));
+  for (let depth = 0; depth < 8; depth++) {
+    if (existsSync(join(dir, marker))) return dir;
+    dir = join(dir, "..");
+  }
+  throw new Error(`Could not locate ${marker} for the homepage map preview.`);
+}
+
+const root = projectRoot();
+
+function readJson<T>(path: string): T {
+  return JSON.parse(readFileSync(join(root, path), "utf8")) as T;
+}
 
 /** Static senate map for the homepage. Same colors and split seats as the full map. */
 export function senateMapPreview(): string {
-  const topo = JSON.parse(
-    readFileSync(join(process.cwd(), "public/geo/states-10m.json"), "utf8"),
-  ) as Topology<{ states: GeometryCollection }>;
+  const members = readJson<Member[]>("src/data/congress/members.json");
+  const evidence = readJson<Evidence[]>("src/data/congress/evidence.json");
+  const bills = readJson<Bill[]>("src/data/congress/bills.json");
+  const actions = readJson<LegislativeAction[]>("src/data/congress/actions.json");
+  const topo = readJson<Topology<{ states: GeometryCollection }>>("public/geo/states-10m.json");
   const states = feature(topo, topo.objects.states) as unknown as FeatureCollection;
   const stanceById = classifyAll(
     members.map((member) => member.bioguideId),
