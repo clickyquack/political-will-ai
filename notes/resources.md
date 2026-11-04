@@ -1,9 +1,9 @@
   * [The current bottleneck is political will, not research](https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research)  
-    * Concise case for this being the most important area to work on  
+    * Concise case for this being the most important area to work on.  
   * [An Activist View of AI Governance](https://www.lesswrong.com/s/4PLuwEyMZhT89Dxpo)  
-    * Longer overview of US-focused AI political advocacy.
+    * Longer overview of US-focused AI political advocacy and how it fits into high-level political strategy.
   * [The Invisible Side of AI Governance](https://www.lesswrong.com/posts/AWKkDLDnShemNCSzZ/the-invisible-side-of-ai-governance)  
-    * Overview of “insider” vs “outsider” political advocacy work  
+    * Overview of “insider” vs “outsider” political advocacy work.  
   * [What We Learned from Briefing 140+ Lawmakers on the Threat from AI](https://www.lesswrong.com/posts/A7BtBD9BAfK2kKSEr/what-we-learned-from-briefing-140-lawmakers-on-the-threat)
   * [Global Call for AI Red Lines](https://red-lines.ai/)  
     * Campaign for promoting international AI governance. The FAQ is useful for info on progress that's been made thus far and what still needs to happen in AI international governance.
