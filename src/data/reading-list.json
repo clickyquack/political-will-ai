@@ -58,8 +58,16 @@
     "description": "Campaign for promoting international AI governance. The FAQ is useful for info on progress that's been made thus far and what still needs to happen in AI international governance.",
     "authors": [
       {
-        "name": "CeSIA, The Future Society & CHAI",
-        "url": "https://red-lines.ai/"
+        "name": "CeSIA",
+        "url": "https://cesia.org/en/"
+      },
+      {
+        "name": "The Future Society",
+        "url": "https://thefuturesociety.org/"
+      },
+      {
+        "name": "CHAI",
+        "url": "https://humancompatible.ai/"
       }
     ],
     "date": "2025-09-22",
