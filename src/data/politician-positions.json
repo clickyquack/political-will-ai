@@ -12,12 +12,12 @@
   },
   {
     "title": "AI Risk in Congress",
-    "url": "https://clickyquack.github.io/Congress-AI-Map/",
+    "url": "https://www.politicalwillai.org/congress-map/",
     "description": "Visual map of current Congress members' positions on AI policy with sources, color-coded by position.",
     "authors": [
       {
-        "name": "Kai Steel",
-        "url": "https://clickyquack.github.io/"
+        "name": "Political Will AI",
+        "url": "https://www.politicalwillai.org/"
       }
     ]
   }
