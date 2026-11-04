@@ -3,19 +3,41 @@
     "title": "The current bottleneck is political will, not research",
     "url": "https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research",
     "description": "Concise case for this being the most important area to work on",
+    "authors": [
+      {
+        "name": "Charbel-Raphaël Segerie",
+        "url": "https://www.lesswrong.com/users/charbel-raphael"
+      }
+    ],
+    "date": "2026-07-11",
     "priority": true,
     "continuous": false
   },
   {
     "title": "An Activist View of AI Governance",
     "url": "https://www.lesswrong.com/s/4PLuwEyMZhT89Dxpo",
-    "description": "Very useful series on US focused AI political advocacy",
+    "description": "Longer overview of US-focused AI political advocacy.",
+    "priority": true,
+    "authors": [
+      {
+        "name": "Center for AI Policy",
+        "url": "https://www.centerforaipolicy.org/"
+      }
+    ],
+    "date": "2025-05-22",
     "continuous": false
   },
   {
     "title": "The Invisible Side of AI Governance",
     "url": "https://www.lesswrong.com/posts/AWKkDLDnShemNCSzZ/the-invisible-side-of-ai-governance",
     "description": "Overview of “insider” vs “outsider” political advocacy work",
+    "authors": [
+      {
+        "name": "Charbel-Raphaël Segerie",
+        "url": "https://www.lesswrong.com/users/charbel-raphael"
+      }
+    ],
+    "date": "2026-06-20",
     "continuous": false
   },
   {
@@ -24,51 +46,129 @@
     "authors": [
       {
         "name": "ControlAI",
-        "url": "https://controlai.com/"
+        "url": "https://controlai.org/"
       }
     ],
+    "date": "2026-02-12",
     "continuous": false
   },
   {
     "title": "Global Call for AI Red Lines",
     "url": "https://red-lines.ai/",
     "description": "Campaign for promoting international AI governance. The FAQ is useful for info on progress that's been made thus far and what still needs to happen in AI international governance.",
+    "authors": [
+      {
+        "name": "CeSIA, The Future Society & CHAI",
+        "url": "https://red-lines.ai/"
+      }
+    ],
+    "date": "2025-09-22",
     "continuous": false
   },
   {
     "title": "AI 2040",
     "url": "https://ai-2040.com/",
     "description": "Useful for thinking about how policy decisions fit into long-term future of AI development, although many of the proposals are likely too politically infeasible to aim for in practice.",
+    "authors": [
+      {
+        "name": "AI Futures Project",
+        "url": "https://aifutures.org/"
+      }
+    ],
+    "date": "2026-07-09",
     "continuous": false
   },
   {
-    "title": "IFP’s AI safety low-regret policy recommendations",
+    "title": "How Should the US Prepare for Increasingly Automated AI R&D?",
     "url": "https://ifp.org/preparing-for-ai-research-automation/",
-    "description": "AI policy proposals more feasible in the near-term.",
+    "description": "\"Low-regret\" AI policy proposals, more feasible in the near-term even despite existential risk skepticism.",
     "authors": [
       {
-        "name": "IFP",
+        "name": "Institute for Progress",
         "url": "https://ifp.org/"
       }
     ],
+    "date": "2026-08-06",
     "continuous": false
   },
   {
     "title": "Stop Donating to AI Safety Research*",
     "url": "https://forum.effectivealtruism.org/posts/HuyZE6xFfebv7ByXC/stop-donating-to-ai-safety-research",
     "description": "Strong case for donating to political advocacy groups, has detailed information about several.",
+    "authors": [
+      {
+        "name": "Sophie Kim",
+        "url": "https://counterfactual.blog/"
+      }
+    ],
+    "date": "2026-04-25",
+    "continuous": false
+  },
+  {
+    "title": "Where I Am Donating in 2025",
+    "url": "https://forum.effectivealtruism.org/posts/AGcny8oBxBDCjqxdr/where-i-am-donating-in-2025",
+    "description": "Author gives his high-level analysis for where to donate given his goals and what seems most cost-effective for reaching them and decides on PauseAI US. Useful for thinking about cost-effectiveness and high-level strategy.",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-11-22",
+    "continuous": false
+  },
+  {
+    "title": "How to Actually Spend Billions on AI Safety",
+    "url": "https://forum.effectivealtruism.org/posts/npgwfZ6GpypGPKgyZ/how-to-actually-spend-billions-on-ai-safety",
+    "description": "Overview of the main high-level funding bottlenecks in addressing AI risk (mostly political advocacy related), has many concrete ideas to build off of. Has similar value to above.",
+    "authors": [
+      {
+        "name": "Sophie Kim",
+        "url": "https://counterfactual.blog/"
+      }
+    ],
+    "date": "2026-05-12",
+    "continuous": false
+  },
+  {
+    "title": "AI safety needs a moonshot comms initiative",
+    "url": "https://counterfactual.blog/p/ai-safety-needs-a-moonshot-comms",
+    "authors": [
+      {
+        "name": "Sophie Kim",
+        "url": "https://counterfactual.blog/"
+      }
+    ],
+    "date": "2026-09-23",
     "continuous": false
   },
   {
     "title": "Speaking to Congressional staffers about AI risk",
     "url": "https://www.lesswrong.com/posts/2sLwt2cSAag74nsdN/speaking-to-congressional-staffers-about-ai-risk",
-    "description": "Title is self-explanatory. This is from 2023 but still largely useful.",
+    "authors": [
+      {
+        "name": "Akash Wasil",
+        "url": "https://www.lesswrong.com/users/akash-wasil"
+      },
+      {
+        "name": "hath",
+        "url": "https://www.lesswrong.com/users/hath"
+      }
+    ],
+    "date": "2023-12-04",
     "continuous": false
   },
   {
     "title": "Which AI harms & risks will mobilise the public to act?",
     "url": "https://www.socialchangelab.org/research/which-ai-harms-and-risks.html",
     "description": "Many harms from AI have varying degrees of salience among the public and degree to which they are helpful for policy solutions that mitigate existential risk; this paper suggests autonomous warfare strikes the best balance and explores several others.",
+    "authors": [
+      {
+        "name": "Social Change Lab",
+        "url": "https://www.socialchangelab.org/"
+      }
+    ],
+    "date": "2026-03-10",
     "continuous": false
   }
 ]

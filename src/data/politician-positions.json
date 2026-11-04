@@ -12,12 +12,12 @@
   },
   {
     "title": "AI Risk in Congress",
-    "url": "https://www.politicalwillai.org/congress-map/",
+    "url": "/congress-map/",
     "description": "Visual map of current Congress members' positions on AI policy with sources, color-coded by position.",
     "authors": [
       {
         "name": "Political Will AI",
-        "url": "https://www.politicalwillai.org/"
+        "url": "/"
       }
     ]
   }

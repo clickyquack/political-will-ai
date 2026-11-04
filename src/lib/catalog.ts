@@ -1,15 +1,20 @@
 import { z } from "astro/zod";
 import { compareCatalog, sortByDate } from "./sort-date";
 
+const linkSchema = z.union([
+  z.string().url(),
+  z.string().regex(/^\//, "Use an absolute URL or a site path starting with /"),
+]);
+
 const authorSchema = z.strictObject({
   name: z.string().min(1),
-  url: z.string().url().optional(),
+  url: linkSchema.optional(),
 });
 
 export const catalogSchema = z.array(
   z.strictObject({
     title: z.string().min(1),
-    url: z.string().url(),
+    url: linkSchema,
     description: z.string().min(1).optional(),
     authors: z.array(authorSchema).default([]),
     date: z

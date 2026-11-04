@@ -27,6 +27,14 @@ interface Props {
 const { items, pinPriority = false } = Astro.props;
 const showPreviews = items.some((item) => item.image);
 
+function catalogHref(url: string) {
+  return url.startsWith("/") ? sitePath(url) : url;
+}
+
+function isInternalLink(url: string) {
+  return url.startsWith("/");
+}
+
 function dateLabel(date?: string) {
   if (!date) return "Continuously Updated";
   return formatDate(new Date(`${date}T00:00:00Z`));
@@ -82,7 +90,13 @@ function dateLabel(date?: string) {
               {showPreviews && (
                 <td class="preview-cell">
                   {item.image && (
-                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={catalogHref(item.url)}
+                      {...(!isInternalLink(item.url) && {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })}
+                    >
                       <img class="catalog-shot" src={sitePath(item.image)} alt="" />
                       <span class="visually-hidden">{item.title}</span>
                     </a>
@@ -91,9 +105,18 @@ function dateLabel(date?: string) {
               )}
               <td>
                 {item.priority && <span class="priority-mark">Priority</span>}
-                <a class="catalog-title" href={item.url} target="_blank" rel="noopener noreferrer">
+                <a
+                  class="catalog-title"
+                  href={catalogHref(item.url)}
+                  {...(!isInternalLink(item.url) && {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
+                >
                   {item.title}
-                  <span class="visually-hidden"> (opens in a new tab)</span>
+                  {!isInternalLink(item.url) && (
+                    <span class="visually-hidden"> (opens in a new tab)</span>
+                  )}
                 </a>
                 {item.description && <p class="catalog-description">{item.description}</p>}
               </td>
@@ -103,7 +126,14 @@ function dateLabel(date?: string) {
                   <span>
                     {i > 0 && ", "}
                     {author.url ? (
-                      <a class="author-link" href={author.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        class="author-link"
+                        href={catalogHref(author.url)}
+                        {...(!isInternalLink(author.url) && {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        })}
+                      >
                         {author.name}
                       </a>
                     ) : (
