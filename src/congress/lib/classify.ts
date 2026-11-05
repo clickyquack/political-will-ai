@@ -48,7 +48,17 @@ function applySignal(
   if (RANK[implied] > RANK[state.stance]) state.stance = implied
 }
 
-/** Regulation color is independent of existential-risk concern, which is recorded as `xrisk`. */
+/**
+ * Existential-risk concern is stripes plus, by default, support for stronger-risk regulation.
+ * A sourced reason they would not support that regulation, such as prioritizing a race with China,
+ * stays on top of the default. Sponsoring an x-risk bill still counts as stronger-risk support.
+ */
+function applyXriskDefault(state: Classification) {
+  if (!state.xrisk || state.stance === 'opposes_domestic') return
+  if (RANK.strong_risk_reg > RANK[state.stance]) state.stance = 'strong_risk_reg'
+}
+
+/** Regulation color follows sourced signals. Existential-risk concern is also recorded as `xrisk`. */
 export function classifyMember(
   bioguideId: string,
   evidence: Evidence[],
@@ -70,6 +80,7 @@ export function classifyMember(
     applySignal(state, implied, implied === 'xrisk_concern')
   }
 
+  applyXriskDefault(state)
   return state
 }
 

@@ -9,13 +9,13 @@ If you find a relevant addition or correction, [open an issue in the Github repo
 
 ## **How stance is assigned**
 
-Each member gets one regulation color. Support for stronger-risk regulation outranks opposition to domestic regulation, which outranks support limited to AI ethical concerns such as deepfakes. Existential-risk concern is separately drawn as diagonal stripes over the color, so a member can acknowledge catastrophic or existential risk and still be shown as opposing regulation.[^1] The stripes can be filtered on their own. Chip and compute security bills, and international governance bills, are tracked in the list but do not currently move color.
+Each member gets one regulation color. Support for stronger-risk regulation outranks opposition to domestic regulation, which outranks support limited to AI ethical concerns such as deepfakes. Existential-risk concern is separately drawn as diagonal stripes over the color. It counts as support for stronger-risk regulation unless a sourced position gives a reason to expect they would not support it, such as prioritizing a race against China, so a member can acknowledge catastrophic or existential risk and still be shown as opposing regulation.[^1] The stripes can be filtered on their own. Chip and compute security bills, and international governance bills, are tracked in the list but do not currently move color.
 
 * **1\. Supports stronger-risk regulation** — Sponsors, cosponsors, or supports frontier catastrophic-risk bills (for example the FRONTIER Act, AI Kill Switch Act, RISE Act, or Ban Artificial Superintelligence Act), or generally calls for addressing these risks without prioritizing racing against China.  
 * **2\. Opposes domestic AI regulation** — Sourced opposition to domestic AI rulemaking (for example a state AI regulation moratorium). Does not include national-security-only measures.  
 * **3\. AI ethical concerns** — Support for addressing AI ethical concerns such as deepfakes, consumer harms, and likeness protection (for example the NO FAKES Act).  
-* **4\. Unknown / no sourced signal** — No sourced signal yet on regulation. A member can have existential-risk stripes with an unknown color.  
-* **Existential risk concern** — Diagonal stripes over the regulation color. Recorded for an explicit public discussion of AGI, superintelligence, loss of control, existential risk, recursive self-improvement, or the Singularity, or for sponsoring or cosponsoring the Ban Artificial Superintelligence Act (S.5493 / H.R.10538). Sponsoring that ban also counts as support for stronger-risk regulation.
+* **4\. Unknown / no sourced signal** — No sourced signal yet on regulation.  
+* **Existential risk concern** — Diagonal stripes over the regulation color. Recorded for an explicit public discussion of AGI, superintelligence, loss of control, existential risk, recursive self-improvement, or the Singularity, or for sponsoring or cosponsoring the Ban Artificial Superintelligence Act (S.5493 / H.R.10538). That concern counts as support for stronger-risk regulation unless a sourced position gives a reason to expect they would not support it, such as prioritizing a race against China. Sponsoring or cosponsoring the ban still counts as that support.
 
 Select a seat or row for sourced quotes and tracked bill actions with links.
 

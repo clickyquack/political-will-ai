@@ -12,7 +12,7 @@ const notes: Record<DisplayStance, string> = {
   opposes_domestic:
     "Sourced opposition to domestic AI rulemaking (for example a state AI regulation moratorium). Does not include national-security-only measures.",
   unknown:
-    "No sourced signal yet on regulation. A member can have existential-risk stripes with an unknown color.",
+    "No sourced signal yet on regulation.",
 };
 ---
 
@@ -39,9 +39,11 @@ const notes: Record<DisplayStance, string> = {
     <p>
       Each member gets one regulation color. Support for stronger-risk regulation outranks opposition
       to domestic regulation, which outranks support limited to AI ethical concerns such as deepfakes.
-      Existential-risk concern is separately drawn as diagonal stripes over the color, so a member
-      can acknowledge catastrophic or existential risk and still be shown as opposing
-      regulation.<sup id="fnref-1"><a href="#fn-1">1</a></sup> The stripes can be filtered on their own.
+      Existential-risk concern is separately drawn as diagonal stripes over the color. It counts as
+      support for stronger-risk regulation unless a sourced position gives a reason to expect they
+      would not support it, such as prioritizing a race against China, so a member can acknowledge
+      catastrophic or existential risk and still be shown as opposing regulation.
+      <sup id="fnref-1"><a href="#fn-1">1</a></sup> The stripes can be filtered on their own.
       Chip and compute security bills, and international governance bills, are tracked in the list but
       do not currently move color.
     </p>
@@ -68,8 +70,9 @@ const notes: Record<DisplayStance, string> = {
           Diagonal stripes over the regulation color. Recorded for an explicit public discussion of
           AGI, superintelligence, loss of control, existential risk, recursive self-improvement, or
           the Singularity, or for sponsoring or cosponsoring the Ban Artificial Superintelligence Act
-          (S.5493 / H.R.10538). Sponsoring that ban also counts as support for stronger-risk
-          regulation.
+          (S.5493 / H.R.10538). That concern counts as support for stronger-risk regulation unless a
+          sourced position gives a reason to expect they would not support it, such as prioritizing a
+          race against China. Sponsoring or cosponsoring the ban still counts as that support.
         </span>
       </li>
     </ol>
