@@ -13,6 +13,7 @@ import { classifyAll } from "./lib/classify";
 import type {
   Bill,
   ChamberFilter,
+  DisplayStance,
   Evidence,
   LayoutMode,
   LegislativeAction,
@@ -20,9 +21,9 @@ import type {
   Member,
   PartyFilter,
   SenateSeatFilter,
-  Stance,
+  XriskFilter,
 } from "./lib/types";
-import { STANCE_ORDER, STANCE_SHORT } from "./lib/types";
+import { DISPLAY_STANCE_ORDER, STANCE_SHORT } from "./lib/types";
 import "./congress.css";
 
 const members = membersData as Member[];
@@ -35,7 +36,8 @@ export default function CongressMap() {
   const [chamber, setChamber] = useState<MapChamber>("senate");
   const [senateSeat, setSenateSeat] = useState<SenateSeatFilter>("both");
   const [partyFilter, setPartyFilter] = useState<PartyFilter>("All");
-  const [stanceFilter, setStanceFilter] = useState<Stance | "All">("All");
+  const [stanceFilter, setStanceFilter] = useState<DisplayStance | "All">("All");
+  const [xriskFilter, setXriskFilter] = useState<XriskFilter>("All");
   const [chamberFilter, setChamberFilter] = useState<ChamberFilter>("All");
   const [stateFilter, setStateFilter] = useState("All");
   const [search, setSearch] = useState("");
@@ -49,27 +51,29 @@ export default function CongressMap() {
   );
 
   const counts = useMemo(() => {
-    const c: Record<Stance, number> = {
-      xrisk_concern: 0,
+    const c: Record<DisplayStance, number> = {
       strong_risk_reg: 0,
       mundane_risk: 0,
       opposes_domestic: 0,
       unknown: 0,
     };
     let uncalled = 0;
+    let xrisk = 0;
     for (const member of members) {
       if (member.called === false) {
         uncalled += 1;
         continue;
       }
-      const stance = stanceById.get(member.bioguideId) || "unknown";
-      c[stance] += 1;
+      const placed = stanceById.get(member.bioguideId);
+      c[placed?.stance || "unknown"] += 1;
+      if (placed?.xrisk) xrisk += 1;
     }
-    return { ...c, uncalled };
+    return { ...c, uncalled, xrisk };
   }, [stanceById]);
 
   const selected = members.find((m) => m.bioguideId === selectedId) || null;
-  const selectedStance = selected ? stanceById.get(selected.bioguideId) || "unknown" : "unknown";
+  const selectedPlaced = selected ? stanceById.get(selected.bioguideId) : undefined;
+  const selectedStance = selectedPlaced?.stance || "unknown";
   const selectedEvidence = evidence.filter((e) => e.bioguideId === selectedId);
   const selectedActions = actions.filter((a) => a.bioguideId === selectedId);
 
@@ -98,14 +102,25 @@ export default function CongressMap() {
               Stance
               <select
                 value={stanceFilter}
-                onChange={(e) => setStanceFilter(e.target.value as Stance | "All")}
+                onChange={(e) => setStanceFilter(e.target.value as DisplayStance | "All")}
               >
                 <option value="All">All</option>
-                {STANCE_ORDER.map((s) => (
+                {DISPLAY_STANCE_ORDER.map((s) => (
                   <option key={s} value={s}>
                     {STANCE_SHORT[s]}
                   </option>
                 ))}
+              </select>
+            </label>
+            <label>
+              X-risk concern
+              <select
+                value={xriskFilter}
+                onChange={(e) => setXriskFilter(e.target.value as XriskFilter)}
+              >
+                <option value="All">All</option>
+                <option value="yes">Expressed concern</option>
+                <option value="no">No expressed concern</option>
               </select>
             </label>
           </div>
@@ -113,8 +128,8 @@ export default function CongressMap() {
       ) : null}
       <StanceLegend />
       <p className="counts">
-        Classified: {counts.xrisk_concern} x-risk · {counts.strong_risk_reg} strong-risk regs ·{" "}
-        {counts.opposes_domestic} oppose · {counts.mundane_risk} ethics · {counts.unknown} unknown ·{" "}
+        Classified: {counts.strong_risk_reg} strong-risk regs · {counts.opposes_domestic} oppose ·{" "}
+        {counts.mundane_risk} ethics · {counts.unknown} unknown · {counts.xrisk} with x-risk concern ·{" "}
         {counts.uncalled} not called
       </p>
       <div className="map-main">
@@ -126,6 +141,7 @@ export default function CongressMap() {
             stanceById={stanceById}
             partyFilter={partyFilter}
             stanceFilter={stanceFilter}
+            xriskFilter={xriskFilter}
             selectedId={selectedId}
             onSelect={setSelectedId}
           />
@@ -139,6 +155,8 @@ export default function CongressMap() {
             onSearch={setSearch}
             stanceFilter={stanceFilter}
             onStanceFilter={setStanceFilter}
+            xriskFilter={xriskFilter}
+            onXriskFilter={setXriskFilter}
             chamberFilter={chamberFilter}
             onChamberFilter={setChamberFilter}
             stateFilter={stateFilter}
@@ -156,6 +174,7 @@ export default function CongressMap() {
         <MemberPanel
           member={selected}
           stance={selectedStance}
+          xrisk={Boolean(selectedPlaced?.xrisk)}
           evidence={selectedEvidence}
           actions={selectedActions}
           bills={bills}

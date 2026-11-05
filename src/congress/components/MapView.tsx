@@ -6,40 +6,53 @@ import type { Topology, GeometryCollection } from 'topojson-specification'
 import type { ColoredFeatureProps } from '../lib/geo'
 import { joinHouseFeatures, joinSenateFeatures } from '../lib/geo'
 import type {
+  Classification,
+  DisplayStance,
   MapChamber,
   Member,
   PartyFilter,
   SenateSeatFilter,
-  Stance,
+  XriskFilter,
 } from '../lib/types'
-import { STANCE_COLORS, STANCE_SHORT, seatFill } from '../lib/types'
+import { DISPLAY_STANCE_ORDER, STANCE_COLORS, STANCE_SHORT, seatFill } from '../lib/types'
 
 interface Props {
   chamber: MapChamber
   senateSeat: SenateSeatFilter
   members: Member[]
-  stanceById: Map<string, Stance>
+  stanceById: Map<string, Classification>
   partyFilter: PartyFilter
-  stanceFilter: Stance | 'All'
+  stanceFilter: DisplayStance | 'All'
+  xriskFilter: XriskFilter
   selectedId: string | null
   onSelect: (memberId: string | null) => void
+}
+
+function seatHidden(
+  p: ColoredFeatureProps,
+  partyFilter: PartyFilter,
+  stanceFilter: DisplayStance | 'All',
+  xriskFilter: XriskFilter,
+): boolean {
+  if (p.uncalled) {
+    return partyFilter !== 'All' || stanceFilter !== 'All' || xriskFilter !== 'All'
+  }
+  if (partyFilter !== 'All' && p.party && p.party !== partyFilter) return true
+  if (stanceFilter !== 'All' && p.stance !== stanceFilter) return true
+  if (xriskFilter === 'yes' && !p.xrisk) return true
+  if (xriskFilter === 'no' && p.xrisk) return true
+  return false
 }
 
 function fillFor(
   p: ColoredFeatureProps,
   partyFilter: PartyFilter,
-  stanceFilter: Stance | 'All',
+  stanceFilter: DisplayStance | 'All',
+  xriskFilter: XriskFilter,
 ): string {
-  if (p.uncalled) {
-    if (partyFilter !== 'All' || stanceFilter !== 'All') return '#ebe7de'
-    return seatFill(true, p.stance)
-  }
-  if (partyFilter !== 'All' && p.party && p.party !== partyFilter) {
-    return '#ebe7de'
-  }
-  if (stanceFilter !== 'All' && p.stance !== stanceFilter) {
-    return '#ebe7de'
-  }
+  if (seatHidden(p, partyFilter, stanceFilter, xriskFilter)) return '#ebe7de'
+  if (p.uncalled) return seatFill(true, p.stance)
+  if (p.xrisk) return `url(#xrisk-${p.stance})`
   return STANCE_COLORS[p.stance] || STANCE_COLORS.unknown
 }
 
@@ -50,6 +63,7 @@ export function MapView({
   stanceById,
   partyFilter,
   stanceFilter,
+  xriskFilter,
   selectedId,
   onSelect,
 }: Props) {
@@ -107,6 +121,24 @@ export function MapView({
     const projection = d3.geoAlbersUsa().fitSize([size.w, size.h], joined)
     const path = d3.geoPath(projection)
     const defs = svg.append('defs')
+    for (const stance of DISPLAY_STANCE_ORDER) {
+      const pattern = defs
+        .append('pattern')
+        .attr('id', `xrisk-${stance}`)
+        .attr('patternUnits', 'userSpaceOnUse')
+        .attr('width', 7)
+        .attr('height', 7)
+        .attr('patternTransform', 'rotate(45)')
+      pattern.append('rect').attr('width', 7).attr('height', 7).attr('fill', STANCE_COLORS[stance])
+      pattern
+        .append('line')
+        .attr('x1', 0)
+        .attr('y1', 0)
+        .attr('x2', 0)
+        .attr('y2', 7)
+        .attr('stroke', 'rgba(12, 28, 36, 0.55)')
+        .attr('stroke-width', 2.2)
+    }
     const g = svg.append('g')
 
     const splitMode = chamber === 'senate' && senateSeat === 'both'
@@ -175,7 +207,7 @@ export function MapView({
             return p.split ? `url(#clip-${p.id})` : null
           })
           .attr('fill', (d) =>
-            fillFor(d.properties as ColoredFeatureProps, partyFilter, stanceFilter),
+            fillFor(d.properties as ColoredFeatureProps, partyFilter, stanceFilter, xriskFilter),
           )
           .attr('stroke', 'none') as d3.Selection<
           SVGPathElement,
@@ -221,7 +253,7 @@ export function MapView({
           .join('path')
           .attr('d', (d) => path(d) || '')
           .attr('fill', (d) =>
-            fillFor(d.properties as ColoredFeatureProps, partyFilter, stanceFilter),
+            fillFor(d.properties as ColoredFeatureProps, partyFilter, stanceFilter, xriskFilter),
           )
           .attr('stroke', (d) => {
             const p = d.properties as ColoredFeatureProps
@@ -241,6 +273,7 @@ export function MapView({
     joined,
     partyFilter,
     stanceFilter,
+    xriskFilter,
     selectedId,
     onSelect,
     chamber,
@@ -264,10 +297,12 @@ export function MapView({
           <div className="tooltip-meta">{hover.props.label}</div>
           <div className="tooltip-stance">
             <span
-              className="swatch"
+              className={hover.props.xrisk && !hover.props.uncalled ? 'swatch xrisk' : 'swatch'}
               style={{ background: seatFill(hover.props.uncalled, hover.props.stance) }}
             />
-            {hover.props.uncalled ? 'Race not called' : STANCE_SHORT[hover.props.stance]}
+            {hover.props.uncalled
+              ? 'Race not called'
+              : `${STANCE_SHORT[hover.props.stance]}${hover.props.xrisk ? ' · X-risk concern' : ''}`}
           </div>
         </div>
       )}

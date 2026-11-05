@@ -2,15 +2,16 @@ import type {
   Bill,
   Evidence,
   LegislativeAction,
+  DisplayStance,
   Member,
-  Stance,
 } from '../lib/types'
 import { STANCE_COLORS, STANCE_LABELS, UNCALLED_COLOR } from '../lib/types'
 import { stateName } from '../lib/geo'
 
 interface Props {
   member: Member | null
-  stance: Stance
+  stance: DisplayStance
+  xrisk: boolean
   evidence: Evidence[]
   actions: LegislativeAction[]
   bills: Bill[]
@@ -28,6 +29,7 @@ const ACTION_LABEL: Record<string, string> = {
 export function MemberPanel({
   member,
   stance,
+  xrisk,
   evidence,
   actions,
   bills,
@@ -62,8 +64,12 @@ export function MemberPanel({
           </p>
         ) : (
           <p className="panel-stance">
-            <span className="swatch" style={{ background: STANCE_COLORS[stance] }} />
+            <span
+              className={xrisk ? 'swatch xrisk' : 'swatch'}
+              style={{ background: STANCE_COLORS[stance] }}
+            />
             {STANCE_LABELS[stance]}
+            {xrisk ? ' · Existential risk concern' : ''}
           </p>
         )}
       </header>

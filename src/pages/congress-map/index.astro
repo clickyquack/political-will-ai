@@ -6,13 +6,16 @@ import { sitePath } from "../../path";
 ---
 
 <Base title="AI risk in Congress" wide>
-  <PageHeader title="AI risk in Congress" />
+  <PageHeader title="AI risk in Congress">
+    <a slot="action" class="page-header-action" href={sitePath("/congress-map/about")}>
+      About this map
+    </a>
+  </PageHeader>
   <p class="byline">
     Where members of the incoming 120th Congress stand on AI risk and regulation, using 2026 election
     results. Races that have not been called are marked as such. Select a seat or row for sourced
     quotes and bill actions. Chip and compute security bills, and international governance bills,
     are tracked in the list and do not change a member's stance.
-    <a href={sitePath("/congress-map/about")}>About this map</a>
   </p>
   <CongressMap client:load />
 </Base>

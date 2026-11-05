@@ -1,8 +1,7 @@
-import type { Bill, Evidence, LegislativeAction, Stance } from './types'
-import { STANCE_ORDER } from './types'
+import type { Bill, Classification, DisplayStance, Evidence, LegislativeAction, Stance } from './types'
+import { DISPLAY_STANCE_ORDER } from './types'
 
-const RANK: Record<Stance, number> = {
-  xrisk_concern: 5,
+const RANK: Record<DisplayStance, number> = {
   strong_risk_reg: 4,
   opposes_domestic: 3,
   mundane_risk: 2,
@@ -34,30 +33,44 @@ function stanceFromAction(
   return null
 }
 
-/** Highest-priority stance wins. Chip/compute and international bills do not classify stance. */
+function applySignal(
+  state: Classification,
+  implied: Stance,
+  /** Sponsoring or voting for a bill coded as x-risk is also support for stronger-risk regulation. */
+  promoteBan: boolean,
+) {
+  if (implied === 'unknown') return
+  if (implied === 'xrisk_concern') {
+    state.xrisk = true
+    if (promoteBan && RANK.strong_risk_reg > RANK[state.stance]) state.stance = 'strong_risk_reg'
+    return
+  }
+  if (RANK[implied] > RANK[state.stance]) state.stance = implied
+}
+
+/** Regulation color is independent of existential-risk concern, which is recorded as `xrisk`. */
 export function classifyMember(
   bioguideId: string,
   evidence: Evidence[],
   actions: LegislativeAction[],
   bills: Bill[],
-): Stance {
+): Classification {
   const billById = new Map(bills.map((b) => [b.id, b]))
-  let best: Stance = 'unknown'
+  const state: Classification = { stance: 'unknown', xrisk: false }
 
   for (const e of evidence) {
     if (e.bioguideId !== bioguideId) continue
-    if (e.stanceImplied === 'unknown') continue
-    if (RANK[e.stanceImplied] > RANK[best]) best = e.stanceImplied
+    applySignal(state, e.stanceImplied, false)
   }
 
   for (const a of actions) {
     if (a.bioguideId !== bioguideId) continue
     const implied = stanceFromAction(a, billById.get(a.billId))
     if (!implied) continue
-    if (RANK[implied] > RANK[best]) best = implied
+    applySignal(state, implied, implied === 'xrisk_concern')
   }
 
-  return best
+  return state
 }
 
 export function classifyAll(
@@ -65,14 +78,14 @@ export function classifyAll(
   evidence: Evidence[],
   actions: LegislativeAction[],
   bills: Bill[],
-): Map<string, Stance> {
-  const map = new Map<string, Stance>()
+): Map<string, Classification> {
+  const map = new Map<string, Classification>()
   for (const id of memberIds) {
     map.set(id, classifyMember(id, evidence, actions, bills))
   }
   return map
 }
 
-export function stanceRank(s: Stance): number {
-  return STANCE_ORDER.indexOf(s)
+export function stanceRank(s: DisplayStance): number {
+  return DISPLAY_STANCE_ORDER.indexOf(s)
 }

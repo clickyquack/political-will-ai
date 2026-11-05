@@ -2,19 +2,17 @@
 import PageHeader from "../../components/PageHeader.astro";
 import Base from "../../layouts/Base.astro";
 import { sitePath } from "../../path";
-import { STANCE_COLORS, STANCE_LABELS, STANCE_ORDER, type Stance } from "../../congress/lib/types";
+import { DISPLAY_STANCE_ORDER, STANCE_COLORS, STANCE_LABELS, type DisplayStance } from "../../congress/lib/types";
 
-const notes: Record<Stance, string> = {
-  xrisk_concern:
-    "Explicit public discussion of AGI, superintelligence, loss of control, existential risk, recursive self-improvement, or the Singularity (primarily AIPN Congress on Superintelligence), or sponsor/cosponsor of the Ban Artificial Superintelligence Act (S.5493 / H.R.10538).",
+const notes: Record<DisplayStance, string> = {
   strong_risk_reg:
-    "Sponsor, cosponsor, or support for other frontier catastrophic-risk bills (for example the FRONTIER Act, AI Kill Switch Act, or RISE Act) without a public x-risk statement.",
+    "Sponsors, cosponsors, or supports frontier catastrophic-risk bills (for example the FRONTIER Act, AI Kill Switch Act, RISE Act, or Ban Artificial Superintelligence Act), or generally calls for addressing these risks without prioritizing racing against China.",
   mundane_risk:
     "Support for addressing AI ethical concerns such as deepfakes, consumer harms, and likeness protection (for example the NO FAKES Act).",
   opposes_domestic:
     "Sourced opposition to domestic AI rulemaking (for example a state AI regulation moratorium). Does not include national-security-only measures.",
   unknown:
-    "No sourced signal yet. Unknown does not mean opposed. Most members are in this category after the current research pass.",
+    "No sourced signal yet on regulation. Unknown does not mean opposed. A member can still have existential-risk stripes with an unknown color.",
 };
 ---
 
@@ -26,33 +24,30 @@ const notes: Record<Stance, string> = {
   <div class="prose">
     <p>
       This is an interactive map and directory of the incoming 120th U.S. Congress, color-coded by
-      publicly sourced positions on AI risk and domestic AI regulation. Seats follow called 2026
-      election results as of November 4, 2026. A race that has not been called is labeled “Race not
-      called” and is left blank until a winner is projected. It is a research snapshot, not a
-      complete scorecard.
+      publicly sourced positions on AI risk and domestic AI regulation.
     </p>
     <h2>Corrections</h2>
     <p>
-      If a stance, quote, bill action, or seat is wrong or missing, open an issue and include the
-      member, what should change, and a public source link. Roster, quotes, bills, and actions live
-      in <code>src/data/congress/</code>.
-    </p>
-    <p>
+      If you find a relevant addition or correction,{" "}
       <a href="https://github.com/clickyquack/political-will-ai/issues" target="_blank" rel="noreferrer">
-        Open an issue on GitHub
-      </a>
+        open an issue in the Github repository
+      </a>{" "}
+      and include the member, correction, and source link. Roster, quotes, bills, and actions are in{" "}
+      <code>src/data/congress/</code>.
     </p>
     <h2>How stance is assigned</h2>
     <p>
-      Each member gets one display stance. The most relevant signal is their position on long-term
-      or existential AI risk. When several signals exist, the highest-priority category wins, so
-      opposition to domestic AI regulation outranks support for addressing only AI ethical concerns
-      such as deepfakes. Chip and compute security bills, and international governance bills, are
-      tracked in the list and never move stance.
+      Each member gets one regulation color. Support for stronger-risk regulation outranks opposition
+      to domestic regulation, which outranks support limited to AI ethical concerns such as deepfakes.
+      Existential-risk concern does not replace that color. It is drawn as diagonal stripes, so a
+      member can acknowledge catastrophic or existential risk and still be shown as opposing
+      regulation.<sup id="fnref-1"><a href="#fn-1">1</a></sup> The stripes can be filtered on their own.
+      Chip and compute security bills, and international governance bills, are tracked in the list but
+      do not currently move color.
     </p>
     <ol class="stance-key">
       {
-        STANCE_ORDER.map((stance, index) => (
+        DISPLAY_STANCE_ORDER.map((stance, index) => (
           <li>
             <span class="swatch" style={`background:${STANCE_COLORS[stance]}`} />
             <span>
@@ -65,34 +60,23 @@ const notes: Record<Stance, string> = {
           </li>
         ))
       }
+      <li>
+        <span class="swatch xrisk"></span>
+        <span>
+          <strong>Existential risk concern</strong>
+          {" — "}
+          Diagonal stripes over the regulation color. Recorded for an explicit public discussion of
+          AGI, superintelligence, loss of control, existential risk, recursive self-improvement, or
+          the Singularity, or for sponsoring or cosponsoring the Ban Artificial Superintelligence Act
+          (S.5493 / H.R.10538). Sponsoring that ban also counts as support for stronger-risk
+          regulation.
+        </span>
+      </li>
     </ol>
     <p>
       Display stance is recomputed from quotes, tracked bill actions, and each bill's category, so
       the map stays consistent when the underlying data is edited.
     </p>
-    <h2>Map and list</h2>
-    <ul>
-      <li>
-        <strong>Senate.</strong> By default each state is split vertically: the west half is the senior
-        senator and the east half is the junior. Both, Junior, and Senior show both seats or one at a
-        time. Seniority is the earlier continuous Senate start date within the state.
-      </li>
-      <li>
-        <strong>House districts.</strong> Alabama, California, Florida, Louisiana, North Carolina,
-        Ohio, Tennessee, Texas, and Utah use the district maps from the 2026 election (Census
-        TIGER/Line <code>cd120</code>, simplified to the same scale as the rest of the map). Other
-        states use Census cartographic boundaries for the 119th Congress
-        (<code>cb_2025_us_cd119_20m</code>). Those boundaries still match the districts used there in
-        2026. Missouri is in that group: its newer map was blocked in September 2026, and the election
-        used the same districts as 2024. Winners are matched by state and district number.
-      </li>
-      <li>
-        <strong>List.</strong> The same members, filterable by stance, chamber, state, party, and
-        support for tracked bills (AI ethics, stronger-risk regulation, chip and compute security, and
-        international AI governance). Sort by name, stance, or how many of those bills a member has
-        sponsored, cosponsored, or voted for.
-      </li>
-    </ul>
     <p>Select a seat or row for sourced quotes and tracked bill actions with links.</p>
     <h2>Sources</h2>
     <ul>
@@ -108,6 +92,11 @@ const notes: Record<Stance, string> = {
         curated public statements
       </li>
       <li>
+        2026 candidate and member positions from{" "}
+        <a href="https://ontheballot.ai/">AI on the Ballot</a>, added only when the underlying source
+        could be checked and the statement fits one of the stance categories above
+      </li>
+      <li>
         Bills and actions: Congress.gov and press (including FRONTIER H.R.9925, Ban ASI S.5493 /
         H.R.10538, Kill Switch H.R.9917, RISE S.2081, NO FAKES S.1367 / S.4591, Chip Security S.1705,
         Future of AI Innovation S.3952)
@@ -117,11 +106,17 @@ const notes: Record<Stance, string> = {
         TIGER/Line 2026 <code>cd120</code>; other states from Census <code>cb_2025_us_cd119_20m</code>
       </li>
     </ul>
-    <h2>Limits</h2>
-    <p>
-      Many members remain unknown because no public signal has been collected yet. Former members who
-      appear in AIPN quotes but are not in the current roster are omitted. Vote records are sparse for
-      bills still in committee; cosponsorship is the main legislative signal used so far.
+    <p class="footnote" id="fn-1">
+      <a href="#fnref-1" aria-label="Back to reference 1">↩</a> To account for positions such as{" "}
+      <a
+        href="https://www.politico.com/live-updates/2026/09/09/congress/ted-cruz-ai-risks-legislation-01069036"
+        target="_blank"
+        rel="noreferrer"
+      >
+        “If there are going to be killer robots, I would rather they be American killer robots, rather
+        than Chinese killer robots”
+      </a>
+      .
     </p>
   </div>
 </Base>
@@ -145,5 +140,20 @@ const notes: Record<Stance, string> = {
     border-radius: 3px;
     flex-shrink: 0;
     border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .swatch.xrisk {
+    background-color: #d7ddd8;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent 0 2px,
+      rgba(12, 28, 36, 0.55) 2px 3.5px
+    );
+  }
+
+  .footnote {
+    margin-top: 1.5rem;
+    font-size: 0.92rem;
+    color: var(--muted);
   }
 </style>

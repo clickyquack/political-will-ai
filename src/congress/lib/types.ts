@@ -5,6 +5,16 @@ export type Stance =
   | 'opposes_domestic'
   | 'unknown'
 
+/** Color on the map. Existential-risk concern is an overlay, not one of these. */
+export type DisplayStance = Exclude<Stance, 'xrisk_concern'>
+
+export type XriskFilter = 'All' | 'yes' | 'no'
+
+export interface Classification {
+  stance: DisplayStance
+  xrisk: boolean
+}
+
 export type Chamber = 'senate' | 'house'
 export type SenateRank = 'junior' | 'senior'
 export type MapChamber = Chamber
@@ -70,6 +80,13 @@ export interface LegislativeAction {
 
 export const STANCE_ORDER: Stance[] = [
   'xrisk_concern',
+  'strong_risk_reg',
+  'opposes_domestic',
+  'mundane_risk',
+  'unknown',
+]
+
+export const DISPLAY_STANCE_ORDER: DisplayStance[] = [
   'strong_risk_reg',
   'opposes_domestic',
   'mundane_risk',

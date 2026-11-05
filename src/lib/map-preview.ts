@@ -7,7 +7,15 @@ import type { Feature, FeatureCollection } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import { classifyAll } from "../congress/lib/classify";
 import { joinSenateFeatures, type ColoredFeatureProps } from "../congress/lib/geo";
-import { seatFill, type Bill, type Evidence, type LegislativeAction, type Member } from "../congress/lib/types";
+import {
+  DISPLAY_STANCE_ORDER,
+  STANCE_COLORS,
+  seatFill,
+  type Bill,
+  type Evidence,
+  type LegislativeAction,
+  type Member,
+} from "../congress/lib/types";
 
 function projectRoot(): string {
   const marker = join("public", "geo", "states-10m.json");
@@ -68,8 +76,10 @@ export function senateMapPreview(): string {
     clips.push(
       `<clipPath id="${clipId}"><rect x="${rect.x}" y="${y0 - pad}" width="${rect.width}" height="${y1 - y0 + pad * 2}"/></clipPath>`,
     );
+    const fill =
+      props.xrisk && !props.uncalled ? `url(#xrisk-${props.stance})` : seatFill(props.uncalled, props.stance);
     fills.push(
-      `<path d="${outline}" clip-path="url(#${clipId})" fill="${seatFill(props.uncalled, props.stance)}"/>`,
+      `<path d="${outline}" clip-path="url(#${clipId})" fill="${fill}"/>`,
     );
   }
 
@@ -85,5 +95,10 @@ export function senateMapPreview(): string {
     })
     .join("");
 
-  return `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>${clips.join("")}</defs>${fills.join("")}${borders}</svg>`;
+  const patterns = DISPLAY_STANCE_ORDER.map(
+    (stance) =>
+      `<pattern id="xrisk-${stance}" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><rect width="7" height="7" fill="${STANCE_COLORS[stance]}"/><line x1="0" y1="0" x2="0" y2="7" stroke="rgba(12,28,36,0.55)" stroke-width="2.2"/></pattern>`,
+  ).join("");
+
+  return `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>${patterns}${clips.join("")}</defs>${fills.join("")}${borders}</svg>`;
 }

@@ -1,5 +1,5 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson'
-import type { Member, SenateRank, SenateSeatFilter, Stance } from './types'
+import type { Classification, DisplayStance, Member, SenateRank, SenateSeatFilter } from './types'
 
 export interface ColoredFeatureProps {
   id: string
@@ -7,7 +7,8 @@ export interface ColoredFeatureProps {
   memberId?: string
   memberName?: string
   party?: string
-  stance: Stance
+  stance: DisplayStance
+  xrisk?: boolean
   uncalled?: boolean
   state: string
   district?: number
@@ -68,16 +69,26 @@ export function memberForSenate(
   )
 }
 
+function placedClass(
+  member: Member | undefined,
+  stanceById: Map<string, Classification>,
+  uncalled: boolean,
+): { stance: DisplayStance; xrisk: boolean } {
+  if (uncalled || !member) return { stance: 'unknown', xrisk: false }
+  const found = stanceById.get(member.bioguideId)
+  return { stance: found?.stance || 'unknown', xrisk: Boolean(found?.xrisk) }
+}
+
 function senateFeature(
   geometry: Geometry,
   state: string,
   member: Member | undefined,
-  stanceById: Map<string, Stance>,
+  stanceById: Map<string, Classification>,
   rank: SenateRank,
   split?: 'west' | 'east',
 ): Feature {
   const uncalled = member?.called === false
-  const stance = uncalled ? 'unknown' : member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
+  const placed = placedClass(member, stanceById, uncalled)
   const rankLabel = rank === 'senior' ? 'Senior senator' : 'Junior senator'
   return {
     type: 'Feature',
@@ -88,7 +99,8 @@ function senateFeature(
       memberId: member?.bioguideId,
       memberName: uncalled ? 'Race not called' : member?.name,
       party: uncalled ? undefined : member?.party || undefined,
-      stance,
+      stance: placed.stance,
+      xrisk: placed.xrisk,
       uncalled,
       state,
       split,
@@ -100,7 +112,7 @@ function senateFeature(
 export function joinSenateFeatures(
   statesGeo: FeatureCollection,
   members: Member[],
-  stanceById: Map<string, Stance>,
+  stanceById: Map<string, Classification>,
   seat: SenateSeatFilter,
 ): FeatureCollection {
   const features: Feature[] = []
@@ -146,7 +158,7 @@ export function joinSenateFeatures(
 export function joinHouseFeatures(
   districts: FeatureCollection,
   members: Member[],
-  stanceById: Map<string, Stance>,
+  stanceById: Map<string, Classification>,
 ): FeatureCollection {
   const features: Feature[] = []
   for (const f of districts.features) {
@@ -155,7 +167,7 @@ export function joinHouseFeatures(
     if (!state) continue
     const member = memberForHouse(members, state, district)
     const uncalled = member?.called === false
-    const stance = uncalled ? 'unknown' : member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
+    const placed = placedClass(member, stanceById, uncalled)
     const distLabel = district === 0 ? 'At-Large' : `District ${district}`
     features.push({
       type: 'Feature',
@@ -166,7 +178,8 @@ export function joinHouseFeatures(
         memberId: member?.bioguideId,
         memberName: uncalled ? 'Race not called' : member?.name,
         party: uncalled ? undefined : member?.party || undefined,
-        stance,
+        stance: placed.stance,
+        xrisk: placed.xrisk,
         uncalled,
         state,
         district,

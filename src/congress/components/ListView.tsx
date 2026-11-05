@@ -10,17 +10,19 @@ import { stateName } from '../lib/geo'
 import type {
   Bill,
   ChamberFilter,
+  Classification,
+  DisplayStance,
   LegislativeAction,
   Member,
   Party,
   PartyFilter,
-  Stance,
+  XriskFilter,
 } from '../lib/types'
 import {
   BILL_GROUP_LABELS,
   BILL_GROUP_ORDER,
+  DISPLAY_STANCE_ORDER,
   STANCE_COLORS,
-  STANCE_ORDER,
   STANCE_SHORT,
   UNCALLED_COLOR,
 } from '../lib/types'
@@ -32,13 +34,15 @@ interface Props {
   members: Member[]
   bills: Bill[]
   actions: LegislativeAction[]
-  stanceById: Map<string, Stance>
+  stanceById: Map<string, Classification>
   selectedId: string | null
   onSelect: (memberId: string) => void
   search: string
   onSearch: (q: string) => void
-  stanceFilter: Stance | 'All'
-  onStanceFilter: (s: Stance | 'All') => void
+  stanceFilter: DisplayStance | 'All'
+  onStanceFilter: (s: DisplayStance | 'All') => void
+  xriskFilter: XriskFilter
+  onXriskFilter: (v: XriskFilter) => void
   chamberFilter: ChamberFilter
   onChamberFilter: (c: ChamberFilter) => void
   stateFilter: string
@@ -108,6 +112,8 @@ export function ListView({
   onSearch,
   stanceFilter,
   onStanceFilter,
+  xriskFilter,
+  onXriskFilter,
   chamberFilter,
   onChamberFilter,
   stateFilter,
@@ -129,11 +135,14 @@ export function ListView({
 
   const rows = useMemo(() => {
     const filtered = members.filter((m) => {
-      const stance = stanceById.get(m.bioguideId) || 'unknown'
+      const placed = stanceById.get(m.bioguideId)
+      const stance = placed?.stance || 'unknown'
       if (m.called === false) {
-        if (stanceFilter !== 'All' || partyFilter !== 'All') return false
+        if (stanceFilter !== 'All' || partyFilter !== 'All' || xriskFilter !== 'All') return false
       } else {
         if (stanceFilter !== 'All' && stance !== stanceFilter) return false
+        if (xriskFilter === 'yes' && !placed?.xrisk) return false
+        if (xriskFilter === 'no' && placed?.xrisk) return false
         if (partyFilter !== 'All' && m.party !== partyFilter) return false
       }
       if (chamberFilter !== 'All' && m.chamber !== chamberFilter) return false
@@ -146,8 +155,8 @@ export function ListView({
 
     return filtered.sort((a, b) => {
       if (sort === 'stance') {
-        const cmp = stanceRank(stanceById.get(a.bioguideId) || 'unknown')
-          - stanceRank(stanceById.get(b.bioguideId) || 'unknown')
+        const cmp = stanceRank(stanceById.get(a.bioguideId)?.stance || 'unknown')
+          - stanceRank(stanceById.get(b.bioguideId)?.stance || 'unknown')
         if (cmp !== 0) return cmp
       }
       if (sort === 'bills') {
@@ -161,6 +170,7 @@ export function ListView({
     members,
     stanceById,
     stanceFilter,
+    xriskFilter,
     chamberFilter,
     stateFilter,
     partyFilter,
@@ -187,14 +197,22 @@ export function ListView({
           Stance
           <select
             value={stanceFilter}
-            onChange={(e) => onStanceFilter(e.target.value as Stance | 'All')}
+            onChange={(e) => onStanceFilter(e.target.value as DisplayStance | 'All')}
           >
             <option value="All">All</option>
-            {STANCE_ORDER.map((s) => (
+            {DISPLAY_STANCE_ORDER.map((s) => (
               <option key={s} value={s}>
                 {STANCE_SHORT[s]}
               </option>
             ))}
+          </select>
+        </label>
+        <label>
+          X-risk concern
+          <select value={xriskFilter} onChange={(e) => onXriskFilter(e.target.value as XriskFilter)}>
+            <option value="All">All</option>
+            <option value="yes">Expressed concern</option>
+            <option value="no">No expressed concern</option>
           </select>
         </label>
         <label>
@@ -283,7 +301,8 @@ export function ListView({
               </tr>
             ) : (
               rows.map((m) => {
-                const stance = stanceById.get(m.bioguideId) || 'unknown'
+                const placed = stanceById.get(m.bioguideId)
+                const stance = placed?.stance || 'unknown'
                 const supported = [...supportedBillIds(m.bioguideId, actions)]
                   .map((id) => billById.get(id))
                   .filter((b): b is Bill => Boolean(b))
@@ -315,10 +334,11 @@ export function ListView({
                       ) : (
                         <span className="list-stance">
                           <span
-                            className="swatch"
+                            className={placed?.xrisk ? 'swatch xrisk' : 'swatch'}
                             style={{ background: STANCE_COLORS[stance] }}
                           />
                           {STANCE_SHORT[stance]}
+                          {placed?.xrisk ? ' · X-risk' : ''}
                         </span>
                       )}
                     </td>

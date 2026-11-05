@@ -4708,5 +4708,45 @@
     "sourceUrl": "https://micahlasher.com/",
     "sourceLabel": "Lasher campaign site",
     "notes": "Summarized by AI on the Ballot from micahlasher.com."
+  },
+  {
+    "id": "ev-482",
+    "bioguideId": "S001216",
+    "stanceImplied": "mundane_risk",
+    "quote": "I agree with my colleagues that we need strong federal legislation to govern and guide the development of these powerful AI systems as they are rapidly incorporated into more and more aspects of our everyday lives. [...] Republicans want to ban the enforcement of all those state laws with absolutely no national bill ready to go to address the real-world harms from AI.",
+    "date": "2025-05-21",
+    "sourceUrl": "https://democrats-energycommerce.house.gov/media/press-releases/rep-schrier-opening-hearing-artificial-intelligence",
+    "sourceLabel": "Hearing on AI regulation",
+    "notes": "Found via AI on the Ballot and checked against her opening remarks. She cited state laws on deepfakes, health care, education, housing, employment, and children as protections a 10-year enforcement ban would block."
+  },
+  {
+    "id": "ev-483",
+    "bioguideId": "L000397",
+    "stanceImplied": "mundane_risk",
+    "quote": "It's troubling to imagine why Republicans would oppose these items, such as efforts to address concerns about youth exposure to AI, data centers, and the inclusion of community colleges in our AI future. [...] Democrats will continue to fight for a future that carefully assesses the risks of AI while also capitalizing on the opportunities it brings.",
+    "date": "2026-06-25",
+    "sourceUrl": "https://lofgren.house.gov/media/press-releases/ranking-member-lofgren-applauds-passage-ten-ai-bills-commits-fighting",
+    "sourceLabel": "Press release",
+    "notes": "Found via AI on the Ballot and checked against the press release. The committee markup she was describing also advanced the Protecting Consumers from Deceptive AI Act."
+  },
+  {
+    "id": "ev-484",
+    "bioguideId": "F000477",
+    "stanceImplied": "mundane_risk",
+    "quote": "President Trump's AI framework falls short at a moment when Americans needs real protections and clear leadership. [...] Congress must put workers first, safeguard civil rights and civil liberties, and ensure these technologies are deployed responsibly. [...] This proposal lacks meaningful guardrails. [...] It also takes the wrong approach by attempting to preempt state and local governments from acting. [...] we should not be tying the hands of local leaders who are responding to real concerns like youth online safety and consumer protection.",
+    "date": "2026-03-20",
+    "sourceUrl": "https://foushee.house.gov/media/press-releases/congresswoman-foushee-blasts-white-house-ai-framework-that-fails-to-put-people-first",
+    "sourceLabel": "Press release",
+    "notes": "Found via AI on the Ballot and checked against the press release."
+  },
+  {
+    "id": "ev-485",
+    "bioguideId": "W000821",
+    "stanceImplied": "mundane_risk",
+    "quote": "The increased use of AI and social media by bad actors with little regulation from the tech industry has led to severe impacts on our children's safety and mental health. [...] From AI-generated photos to chatbots on social media, we are seeing an increased amount of deception online. [...] when it comes to an issue where our children's lives are on the line, we cannot gamble with the hope that Big Tech will step up to do the right thing.",
+    "date": "2026-03-13",
+    "sourceUrl": "https://westerman.house.gov/media-center/weekly-columns/protecting-our-kids-digital-world",
+    "sourceLabel": "Weekly column",
+    "notes": "Found via AI on the Ballot and checked against the column. He describes AI-generated sexual images of minors and a child's death after an AI chatbot conversation."
   }
 ]
