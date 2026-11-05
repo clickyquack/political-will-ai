@@ -17,13 +17,15 @@ export type ChamberFilter = 'All' | Chamber
 export interface Member {
   bioguideId: string
   name: string
-  party: Party
+  party: Party | null
   state: string
   chamber: Chamber
   district?: number
   senateRank?: SenateRank
   stance: Stance
   lastReviewed: string
+  /** False when the 2026 race for this seat has not been called. */
+  called?: boolean
 }
 
 export interface Evidence {
@@ -80,6 +82,12 @@ export const STANCE_LABELS: Record<Stance, string> = {
   mundane_risk: 'AI ethical concerns',
   opposes_domestic: 'Opposes domestic AI regulation',
   unknown: 'Unknown / no sourced signal',
+}
+
+export const UNCALLED_COLOR = '#6e7c8a'
+
+export function seatFill(uncalled: boolean | undefined, stance: Stance) {
+  return uncalled ? UNCALLED_COLOR : STANCE_COLORS[stance]
 }
 
 export const STANCE_COLORS: Record<Stance, string> = {

@@ -12,7 +12,7 @@ import type {
   SenateSeatFilter,
   Stance,
 } from '../lib/types'
-import { STANCE_COLORS, STANCE_SHORT } from '../lib/types'
+import { STANCE_COLORS, STANCE_SHORT, seatFill } from '../lib/types'
 
 interface Props {
   chamber: MapChamber
@@ -30,6 +30,10 @@ function fillFor(
   partyFilter: PartyFilter,
   stanceFilter: Stance | 'All',
 ): string {
+  if (p.uncalled) {
+    if (partyFilter !== 'All' || stanceFilter !== 'All') return '#ebe7de'
+    return seatFill(true, p.stance)
+  }
   if (partyFilter !== 'All' && p.party && p.party !== partyFilter) {
     return '#ebe7de'
   }
@@ -68,7 +72,7 @@ export function MapView({
         const fc = feature(topo, topo.objects.states) as unknown as FeatureCollection
         setStatesTopo(fc)
       })
-    fetch(`${geo}/districts-119.json`)
+    fetch(`${geo}/districts-120.json`)
       .then((r) => r.json())
       .then((fc: FeatureCollection) => setDistricts(fc))
   }, [])
@@ -255,15 +259,15 @@ export function MapView({
         <div className="tooltip" style={{ left: hover.x + 12, top: hover.y + 12 }}>
           <div className="tooltip-name">
             {hover.props.memberName || 'Vacant / unmatched'}
-            {hover.props.party ? ` (${hover.props.party})` : ''}
+            {!hover.props.uncalled && hover.props.party ? ` (${hover.props.party})` : ''}
           </div>
           <div className="tooltip-meta">{hover.props.label}</div>
           <div className="tooltip-stance">
             <span
               className="swatch"
-              style={{ background: STANCE_COLORS[hover.props.stance] }}
+              style={{ background: seatFill(hover.props.uncalled, hover.props.stance) }}
             />
-            {STANCE_SHORT[hover.props.stance]}
+            {hover.props.uncalled ? 'Race not called' : STANCE_SHORT[hover.props.stance]}
           </div>
         </div>
       )}

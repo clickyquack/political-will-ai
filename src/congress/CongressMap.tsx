@@ -56,8 +56,16 @@ export default function CongressMap() {
       opposes_domestic: 0,
       unknown: 0,
     };
-    for (const s of stanceById.values()) c[s]++;
-    return c;
+    let uncalled = 0;
+    for (const member of members) {
+      if (member.called === false) {
+        uncalled += 1;
+        continue;
+      }
+      const stance = stanceById.get(member.bioguideId) || "unknown";
+      c[stance] += 1;
+    }
+    return { ...c, uncalled };
   }, [stanceById]);
 
   const selected = members.find((m) => m.bioguideId === selectedId) || null;
@@ -106,7 +114,8 @@ export default function CongressMap() {
       <StanceLegend />
       <p className="counts">
         Classified: {counts.xrisk_concern} x-risk · {counts.strong_risk_reg} strong-risk regs ·{" "}
-        {counts.opposes_domestic} oppose · {counts.mundane_risk} ethics · {counts.unknown} unknown
+        {counts.opposes_domestic} oppose · {counts.mundane_risk} ethics · {counts.unknown} unknown ·{" "}
+        {counts.uncalled} not called
       </p>
       <div className="map-main">
         {layout === "map" ? (

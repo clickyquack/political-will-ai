@@ -5,7 +5,7 @@ import type {
   Member,
   Stance,
 } from '../lib/types'
-import { STANCE_COLORS, STANCE_LABELS } from '../lib/types'
+import { STANCE_COLORS, STANCE_LABELS, UNCALLED_COLOR } from '../lib/types'
 import { stateName } from '../lib/geo'
 
 interface Props {
@@ -49,17 +49,27 @@ export function MemberPanel({
         ×
       </button>
       <header className="panel-header">
-        <h2>{member.name}</h2>
+        <h2>{member.called === false ? 'Race not called' : member.name}</h2>
         <p className="panel-meta">
-          {member.party}-{member.state} · {member.chamber === 'senate' ? 'Senate' : 'House'} ·{' '}
-          {stateName(member.state)} · {seat}
+          {member.called === false
+            ? `${member.chamber === 'senate' ? 'Senate' : 'House'} · ${stateName(member.state)} · ${seat}`
+            : `${member.party}-${member.state} · ${member.chamber === 'senate' ? 'Senate' : 'House'} · ${stateName(member.state)} · ${seat}`}
         </p>
-        <p className="panel-stance">
-          <span className="swatch" style={{ background: STANCE_COLORS[stance] }} />
-          {STANCE_LABELS[stance]}
-        </p>
+        {member.called === false ? (
+          <p className="panel-stance">
+            <span className="swatch" style={{ background: UNCALLED_COLOR }} />
+            This 2026 race has not been called. No member is listed until a winner is projected.
+          </p>
+        ) : (
+          <p className="panel-stance">
+            <span className="swatch" style={{ background: STANCE_COLORS[stance] }} />
+            {STANCE_LABELS[stance]}
+          </p>
+        )}
       </header>
 
+      {member.called === false ? null : (
+        <>
       <section>
         <h3>Evidence</h3>
         {evidence.length === 0 ? (
@@ -113,6 +123,8 @@ export function MemberPanel({
           </ul>
         )}
       </section>
+        </>
+      )}
     </aside>
   )
 }

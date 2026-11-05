@@ -1,5 +1,5 @@
 import type { Stance } from '../lib/types'
-import { STANCE_COLORS, STANCE_LABELS, STANCE_ORDER } from '../lib/types'
+import { STANCE_COLORS, STANCE_LABELS, STANCE_ORDER, UNCALLED_COLOR } from '../lib/types'
 
 export function StanceLegend() {
   return (
@@ -10,6 +10,10 @@ export function StanceLegend() {
           <span>{STANCE_LABELS[s]}</span>
         </li>
       ))}
+      <li>
+        <span className="swatch" style={{ background: UNCALLED_COLOR }} />
+        <span>Race not called</span>
+      </li>
     </ul>
   )
 }

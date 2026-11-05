@@ -7,7 +7,7 @@ import type { Feature, FeatureCollection } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import { classifyAll } from "../congress/lib/classify";
 import { joinSenateFeatures, type ColoredFeatureProps } from "../congress/lib/geo";
-import { STANCE_COLORS, type Bill, type Evidence, type LegislativeAction, type Member } from "../congress/lib/types";
+import { seatFill, type Bill, type Evidence, type LegislativeAction, type Member } from "../congress/lib/types";
 
 function projectRoot(): string {
   const marker = join("public", "geo", "states-10m.json");
@@ -69,7 +69,7 @@ export function senateMapPreview(): string {
       `<clipPath id="${clipId}"><rect x="${rect.x}" y="${y0 - pad}" width="${rect.width}" height="${y1 - y0 + pad * 2}"/></clipPath>`,
     );
     fills.push(
-      `<path d="${outline}" clip-path="url(#${clipId})" fill="${STANCE_COLORS[props.stance]}"/>`,
+      `<path d="${outline}" clip-path="url(#${clipId})" fill="${seatFill(props.uncalled, props.stance)}"/>`,
     );
   }
 

@@ -4488,5 +4488,225 @@
     "sourceUrl": "https://elections.transformernews.ai/",
     "sourceLabel": "Transformer AI Campaign Finance Tracker",
     "notes": "Pro-safety independent expenditures supporting Valerie Foushee in NC House District 04 ($1.62M total per tracker race summary)."
+  },
+  {
+    "id": "ev-460",
+    "bioguideId": "elect-2026-MI-S",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "We've also been calling for a pause on any of this frontier AI research until we can ensure that this is being done safely.",
+    "date": "2026-09-13",
+    "sourceUrl": "https://www.cbsnews.com/news/abdul-el-sayed-ai-public-oversight-hugging-face-spencer-cox/",
+    "sourceLabel": "CBS News",
+    "notes": "Face the Nation. He also called for a public agency focused on AI safety and for AI \"no-gos,\" including weapons and decisions about jobs and health care."
+  },
+  {
+    "id": "ev-461",
+    "bioguideId": "elect-2026-MT-01",
+    "stanceImplied": "xrisk_concern",
+    "quote": "His campaign website says he would create strict federal oversight and regulation of artificial intelligence companies, saying the technology could threaten the economy and humanity itself.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-462",
+    "bioguideId": "elect-2026-CO-08",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "His campaign website says large AI companies should have to report critical safety incidents and undergo independent safety reviews before major model releases.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-463",
+    "bioguideId": "elect-2026-CT-01",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "His campaign website calls for a federal AI framework with clear standards for transparency and testing, and more investment in the Center for AI Standards and Innovation to test models for safety.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-464",
+    "bioguideId": "elect-2026-MN-02",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "His campaign website says he would require companies to build guardrails for AI, create public-interest safety oversight agencies, and have the U.S. lead binding international agreements for a global AI safety regime.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-465",
+    "bioguideId": "elect-2026-CO-01",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "Her platform calls for strong oversight to prevent AI-driven discrimination in housing, hiring, criminal justice and health care, a ban on government AI mass surveillance, and international agreements on shared AI safety standards.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-466",
+    "bioguideId": "elect-2026-IL-S",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign's affordability blueprint says she would restrict the use of artificial intelligence in setting rents and screening rental applications.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-467",
+    "bioguideId": "elect-2026-KS-S",
+    "stanceImplied": "mundane_risk",
+    "quote": "His campaign website says he supports the No Robot Bosses Act, which would require human review of decisions on hiring, firing and promotions instead of leaving them to AI alone.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-468",
+    "bioguideId": "elect-2026-KY-06",
+    "stanceImplied": "mundane_risk",
+    "quote": "His campaign website says he supports AI safeguards to protect children interacting with chatbots and to keep the newest models from posing major cybersecurity risks, and that companies should give notice before replacing employees with AI.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-469",
+    "bioguideId": "elect-2026-SC-S",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says she would regulate AI and facial recognition tools that can discriminate or be abused.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-470",
+    "bioguideId": "elect-2026-TX-S",
+    "stanceImplied": "mundane_risk",
+    "quote": "His campaign website says he would protect workers from AI surveillance on the job, require transparency and human review of automated decisions about promotions, discipline and firing, and require AI companies to follow copyright law.",
+    "date": "2026-10-27",
+    "sourceUrl": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/",
+    "sourceLabel": "Talarico campaign site",
+    "notes": "Also summarized by SuperCitizen from his Social Media, AI & Tech and Labor & Business pages."
+  },
+  {
+    "id": "ev-471",
+    "bioguideId": "elect-2026-CA-22",
+    "stanceImplied": "mundane_risk",
+    "quote": "His campaign website says he would pass legislation requiring age verification and parental consent for high-risk AI tools, requiring chatbots to screen for content related to unsafe behavior, and cracking down on AI-generated child sexual abuse material.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-472",
+    "bioguideId": "elect-2026-IA-02",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says AI companies should be held to safety standards and that online platforms and chatbots should be prohibited from impersonating licensed professionals.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-473",
+    "bioguideId": "elect-2026-IL-02",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says the United States needs strong and thoughtful federal AI regulation, including strict regulation for the safety of kids and teens.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-474",
+    "bioguideId": "elect-2026-IL-08",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says she will establish clear rules that protect rights and safety without hampering innovation.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-475",
+    "bioguideId": "elect-2026-IL-09",
+    "stanceImplied": "mundane_risk",
+    "quote": "His campaign website says Congress must develop a policy framework that encourages responsible AI development to create good-paying jobs, protect the environment and keep kids safe.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-476",
+    "bioguideId": "elect-2026-CA-34",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website calls for banning AI-generated sexually explicit deepfakes and holding companies accountable, and opposes AI surveillance tools built for immigration enforcement.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-477",
+    "bioguideId": "elect-2026-NE-02",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says she wants more guardrails and regulation for artificial intelligence, balancing investment in new technology with protection of American jobs.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-478",
+    "bioguideId": "elect-2026-NH-01",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says AI should not make decisions that belong to doctors and nurses, and points to a planned Medicare program that would allow AI to deny coverage and care.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-479",
+    "bioguideId": "elect-2026-NJ-07",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her one-pager on protecting families online says a company whose AI drives a child to self-harm should be fully liable in civil court for the harm it causes.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-480",
+    "bioguideId": "elect-2026-NV-02",
+    "stanceImplied": "mundane_risk",
+    "quote": "Her campaign website says she would develop strong regulations to prevent mass job losses caused by artificial intelligence.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://supercitizen.org/issues/ai-rules",
+    "sourceLabel": "SuperCitizen",
+    "notes": "Paraphrase of the candidate's campaign materials, compiled by SuperCitizen."
+  },
+  {
+    "id": "ev-481",
+    "bioguideId": "elect-2026-NY-12",
+    "stanceImplied": "mundane_risk",
+    "quote": "Backs protections against federal use of AI for mass surveillance, civil-rights abuses, and autonomous weapons.",
+    "date": "2026-10-11",
+    "sourceUrl": "https://micahlasher.com/",
+    "sourceLabel": "Lasher campaign site",
+    "notes": "Summarized by AI on the Ballot from micahlasher.com."
   }
 ]

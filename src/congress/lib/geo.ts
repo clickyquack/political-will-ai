@@ -8,6 +8,7 @@ export interface ColoredFeatureProps {
   memberName?: string
   party?: string
   stance: Stance
+  uncalled?: boolean
   state: string
   district?: number
   split?: 'west' | 'east'
@@ -75,7 +76,8 @@ function senateFeature(
   rank: SenateRank,
   split?: 'west' | 'east',
 ): Feature {
-  const stance = member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
+  const uncalled = member?.called === false
+  const stance = uncalled ? 'unknown' : member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
   const rankLabel = rank === 'senior' ? 'Senior senator' : 'Junior senator'
   return {
     type: 'Feature',
@@ -84,9 +86,10 @@ function senateFeature(
       id: split ? `${state}-${rank}-${split}` : `${state}-${rank}`,
       label: `${stateName(state)} · ${rankLabel}`,
       memberId: member?.bioguideId,
-      memberName: member?.name,
-      party: member?.party,
+      memberName: uncalled ? 'Race not called' : member?.name,
+      party: uncalled ? undefined : member?.party || undefined,
       stance,
+      uncalled,
       state,
       split,
       senateRank: rank,
@@ -151,7 +154,8 @@ export function joinHouseFeatures(
     const district = Number(f.properties?.district)
     if (!state) continue
     const member = memberForHouse(members, state, district)
-    const stance = member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
+    const uncalled = member?.called === false
+    const stance = uncalled ? 'unknown' : member ? stanceById.get(member.bioguideId) || 'unknown' : 'unknown'
     const distLabel = district === 0 ? 'At-Large' : `District ${district}`
     features.push({
       type: 'Feature',
@@ -160,9 +164,10 @@ export function joinHouseFeatures(
         id: `${state}-${district}`,
         label: `${stateName(state)} · ${distLabel}`,
         memberId: member?.bioguideId,
-        memberName: member?.name,
-        party: member?.party,
+        memberName: uncalled ? 'Race not called' : member?.name,
+        party: uncalled ? undefined : member?.party || undefined,
         stance,
+        uncalled,
         state,
         district,
       } satisfies ColoredFeatureProps,

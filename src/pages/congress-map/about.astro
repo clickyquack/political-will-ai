@@ -25,8 +25,10 @@ const notes: Record<Stance, string> = {
   </p>
   <div class="prose">
     <p>
-      This is an interactive map and directory of the 119th U.S. Congress, color-coded by publicly
-      sourced positions on AI risk and domestic AI regulation. It is a research snapshot, not a
+      This is an interactive map and directory of the incoming 120th U.S. Congress, color-coded by
+      publicly sourced positions on AI risk and domestic AI regulation. Seats follow called 2026
+      election results as of November 4, 2026. A race that has not been called is labeled “Race not
+      called” and is left blank until a winner is projected. It is a research snapshot, not a
       complete scorecard.
     </p>
     <h2>Corrections</h2>
@@ -76,8 +78,13 @@ const notes: Record<Stance, string> = {
         time. Seniority is the earlier continuous Senate start date within the state.
       </li>
       <li>
-        <strong>House districts.</strong> 119th Congress cartographic boundaries (Census
-        <code>cb_2025_us_cd119_20m</code>).
+        <strong>House districts.</strong> Alabama, California, Florida, Louisiana, North Carolina,
+        Ohio, Tennessee, Texas, and Utah use the district maps from the 2026 election (Census
+        TIGER/Line <code>cd120</code>, simplified to the same scale as the rest of the map). Other
+        states use Census cartographic boundaries for the 119th Congress
+        (<code>cb_2025_us_cd119_20m</code>). Those boundaries still match the districts used there in
+        2026. Missouri is in that group: its newer map was blocked in September 2026, and the election
+        used the same districts as 2024. Winners are matched by state and district number.
       </li>
       <li>
         <strong>List.</strong> The same members, filterable by stance, chamber, state, party, and
@@ -105,7 +112,10 @@ const notes: Record<Stance, string> = {
         H.R.10538, Kill Switch H.R.9917, RISE S.2081, NO FAKES S.1367 / S.4591, Chip Security S.1705,
         Future of AI Innovation S.3952)
       </li>
-      <li>House geography: Census CD119 shapefile, stored as <code>public/geo/districts-119.json</code></li>
+      <li>
+        House geography: <code>public/geo/districts-120.json</code>. Redrawn states from Census
+        TIGER/Line 2026 <code>cd120</code>; other states from Census <code>cb_2025_us_cd119_20m</code>
+      </li>
     </ul>
     <h2>Limits</h2>
     <p>

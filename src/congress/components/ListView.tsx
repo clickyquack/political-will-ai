@@ -22,6 +22,7 @@ import {
   STANCE_COLORS,
   STANCE_ORDER,
   STANCE_SHORT,
+  UNCALLED_COLOR,
 } from '../lib/types'
 import { stanceRank } from '../lib/classify'
 
@@ -129,10 +130,14 @@ export function ListView({
   const rows = useMemo(() => {
     const filtered = members.filter((m) => {
       const stance = stanceById.get(m.bioguideId) || 'unknown'
-      if (stanceFilter !== 'All' && stance !== stanceFilter) return false
+      if (m.called === false) {
+        if (stanceFilter !== 'All' || partyFilter !== 'All') return false
+      } else {
+        if (stanceFilter !== 'All' && stance !== stanceFilter) return false
+        if (partyFilter !== 'All' && m.party !== partyFilter) return false
+      }
       if (chamberFilter !== 'All' && m.chamber !== chamberFilter) return false
       if (stateFilter !== 'All' && m.state !== stateFilter) return false
-      if (partyFilter !== 'All' && m.party !== partyFilter) return false
       if (!matchesSearch(m, search)) return false
       const supported = supportedBillIds(m.bioguideId, actions)
       if (!memberSupportsBillFilter(supported, bills, billFilter)) return false
@@ -296,19 +301,26 @@ export function ListView({
                     }}
                   >
                     <td className="list-name">{m.name}</td>
-                    <td>{PARTY_LABEL[m.party]}</td>
+                    <td>{m.called === false || !m.party ? '—' : PARTY_LABEL[m.party]}</td>
                     <td>
                       {stateName(m.state)} ({m.state})
                     </td>
                     <td>{seatLabel(m)}</td>
                     <td>
-                      <span className="list-stance">
-                        <span
-                          className="swatch"
-                          style={{ background: STANCE_COLORS[stance] }}
-                        />
-                        {STANCE_SHORT[stance]}
-                      </span>
+                      {m.called === false ? (
+                        <span className="list-stance">
+                          <span className="swatch" style={{ background: UNCALLED_COLOR }} />
+                          Not called
+                        </span>
+                      ) : (
+                        <span className="list-stance">
+                          <span
+                            className="swatch"
+                            style={{ background: STANCE_COLORS[stance] }}
+                          />
+                          {STANCE_SHORT[stance]}
+                        </span>
+                      )}
                     </td>
                     <td>
                       {supported.length === 0 ? (
