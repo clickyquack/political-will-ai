@@ -12,7 +12,7 @@ const notes: Record<DisplayStance, string> = {
   opposes_domestic:
     "Sourced opposition to domestic AI rulemaking (for example a state AI regulation moratorium). Does not include national-security-only measures.",
   unknown:
-    "No sourced signal yet on regulation. Unknown does not mean opposed. A member can still have existential-risk stripes with an unknown color.",
+    "No sourced signal yet on regulation. A member can have existential-risk stripes with an unknown color.",
 };
 ---
 
@@ -39,8 +39,8 @@ const notes: Record<DisplayStance, string> = {
     <p>
       Each member gets one regulation color. Support for stronger-risk regulation outranks opposition
       to domestic regulation, which outranks support limited to AI ethical concerns such as deepfakes.
-      Existential-risk concern does not replace that color. It is drawn as diagonal stripes, so a
-      member can acknowledge catastrophic or existential risk and still be shown as opposing
+      Existential-risk concern is separately drawn as diagonal stripes over the color, so a member
+      can acknowledge catastrophic or existential risk and still be shown as opposing
       regulation.<sup id="fnref-1"><a href="#fn-1">1</a></sup> The stripes can be filtered on their own.
       Chip and compute security bills, and international governance bills, are tracked in the list but
       do not currently move color.
@@ -73,10 +73,6 @@ const notes: Record<DisplayStance, string> = {
         </span>
       </li>
     </ol>
-    <p>
-      Display stance is recomputed from quotes, tracked bill actions, and each bill's category, so
-      the map stays consistent when the underlying data is edited.
-    </p>
     <p>Select a seat or row for sourced quotes and tracked bill actions with links.</p>
     <h2>Sources</h2>
     <ul>
@@ -87,7 +83,7 @@ const notes: Record<DisplayStance, string> = {
         </a>
       </li>
       <li>
-        X-risk quotes primarily from{" "}
+        Existential risk quotes primarily from{" "}
         <a href="https://theaipn.org/issue/quotes/">AIPN Congress on Superintelligence</a>, plus other
         curated public statements
       </li>
