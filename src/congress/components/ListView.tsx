@@ -1,9 +1,9 @@
 import { useMemo } from 'react'
 import {
+  billOptionsByGroup,
   billSupportCount,
-  billsByGroup,
+  billTagDisplayById,
   memberSupportsBillFilter,
-  shortBillTitle,
   supportedBillIds,
 } from '../lib/bills'
 import { stateName } from '../lib/geo'
@@ -130,8 +130,9 @@ export function ListView({
     return [...set].sort((a, b) => stateName(a).localeCompare(stateName(b)))
   }, [members])
 
-  const groupedBills = useMemo(() => billsByGroup(bills), [bills])
+  const billSelectByGroup = useMemo(() => billOptionsByGroup(bills), [bills])
   const billById = useMemo(() => new Map(bills.map((b) => [b.id, b])), [bills])
+  const billTagById = useMemo(() => billTagDisplayById(bills), [bills])
 
   const rows = useMemo(() => {
     const filtered = members.filter((m) => {
@@ -222,9 +223,9 @@ export function ListView({
             {BILL_GROUP_ORDER.map((g) => (
               <optgroup key={g} label={BILL_GROUP_LABELS[g]}>
                 <option value={`group:${g}`}>Any {BILL_GROUP_LABELS[g].toLowerCase()} bill</option>
-                {(groupedBills.get(g) || []).map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.title}
+                {(billSelectByGroup.get(g) || []).map((opt) => (
+                  <option key={opt.filterValue} value={opt.filterValue}>
+                    {opt.label}
                   </option>
                 ))}
               </optgroup>
@@ -306,6 +307,15 @@ export function ListView({
                 const supported = [...supportedBillIds(m.bioguideId, actions)]
                   .map((id) => billById.get(id))
                   .filter((b): b is Bill => Boolean(b))
+                const seenTag = new Set<string>()
+                const billTags: { tagKey: string; label: string; category: Bill['category'] }[] =
+                  []
+                for (const b of supported) {
+                  const d = billTagById.get(b.id)
+                  if (!d || seenTag.has(d.tagKey)) continue
+                  seenTag.add(d.tagKey)
+                  billTags.push(d)
+                }
                 return (
                   <tr
                     key={m.bioguideId}
@@ -347,9 +357,9 @@ export function ListView({
                         <span className="muted">—</span>
                       ) : (
                         <span className="bill-tags">
-                          {supported.map((b) => (
-                            <span key={b.id} className={`bill-tag bill-tag-${b.category}`}>
-                              {shortBillTitle(b.title)}
+                          {billTags.map((t) => (
+                            <span key={t.tagKey} className={`bill-tag bill-tag-${t.category}`}>
+                              {t.label}
                             </span>
                           ))}
                         </span>

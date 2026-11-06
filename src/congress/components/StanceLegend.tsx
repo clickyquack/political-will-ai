@@ -11,7 +11,7 @@ export function StanceLegend() {
         </li>
       ))}
       <li>
-        <span className="swatch xrisk" style={{ background: '#d7ddd8' }} />
+        <span className="swatch xrisk" style={{ backgroundColor: '#d7ddd8' }} />
         <span>Existential risk concern</span>
       </li>
       <li>

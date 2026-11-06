@@ -12,7 +12,7 @@ function stanceFromAction(
   action: LegislativeAction,
   bill: Bill | undefined,
 ): Stance | null {
-  if (!bill || bill.category === 'other' || bill.category === 'chip_security' || bill.category === 'international') {
+  if (!bill || bill.category === 'other' || bill.category === 'chip_security') {
     return null
   }
   if (action.action === 'vote_nay') {

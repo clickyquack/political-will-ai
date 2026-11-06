@@ -1093,15 +1093,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-AR-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "H001072",
+    "name": "French Hill",
+    "party": "R",
     "state": "AR",
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "W000809",
@@ -1134,15 +1133,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-AZ-01",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-AZ-01",
+    "name": "Amish Shah",
+    "party": "D",
     "state": "AZ",
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "uncalled-2026-AZ-02",
@@ -1176,15 +1174,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-AZ-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-AZ-05",
+    "name": "Mark Lamb",
+    "party": "R",
     "state": "AZ",
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-AZ-06",
@@ -1330,15 +1327,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-CA-11",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-CA-11",
+    "name": "Scott Wiener",
+    "party": "D",
     "state": "CA",
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001231",
@@ -1774,15 +1770,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-CO-03",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "H001100",
+    "name": "Jeff Hurd",
+    "party": "R",
     "state": "CO",
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "uncalled-2026-CO-04",
@@ -1796,15 +1791,14 @@
     "called": false
   },
   {
-    "bioguideId": "uncalled-2026-CO-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-CO-05",
+    "name": "Jessica Killin",
+    "party": "D",
     "state": "CO",
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001121",
@@ -3064,15 +3058,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-MI-04",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-MI-04",
+    "name": "Sean McCann",
+    "party": "D",
     "state": "MI",
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "W000798",
@@ -3095,15 +3088,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-MI-07",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-MI-07",
+    "name": "William Lawrence",
+    "party": "D",
     "state": "MI",
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001237",
@@ -3126,15 +3118,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-MI-10",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-MI-10",
+    "name": "Christina Hines",
+    "party": "D",
     "state": "MI",
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-MI-11",
@@ -3613,15 +3604,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-NJ-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-NJ-02",
+    "name": "Zack Mullock",
+    "party": "D",
     "state": "NJ",
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001136",
@@ -3794,26 +3784,24 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-NY-01",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "L000598",
+    "name": "Nicolas LaLota",
+    "party": "R",
     "state": "NY",
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
-    "bioguideId": "uncalled-2026-NY-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "G000597",
+    "name": "Andrew Garbarino",
+    "party": "R",
     "state": "NY",
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001201",
@@ -3956,15 +3944,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-NY-17",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-NY-17",
+    "name": "Cait Conley",
+    "party": "D",
     "state": "NY",
     "chamber": "house",
     "district": 17,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "R000579",
@@ -3997,15 +3984,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-NY-21",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-NY-21",
+    "name": "Anthony Constantino",
+    "party": "R",
     "state": "NY",
     "chamber": "house",
     "district": 21,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001231",
@@ -4148,15 +4134,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-OH-10",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-OH-10",
+    "name": "Kristina Knickerbocker",
+    "party": "D",
     "state": "OH",
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001313",
@@ -4249,15 +4234,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-OK-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "B000740",
+    "name": "Stephanie Bice",
+    "party": "R",
     "state": "OK",
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001278",
@@ -4683,15 +4667,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TN-09",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TN-09",
+    "name": "Brent Taylor",
+    "party": "R",
     "state": "TN",
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001224",
@@ -4704,15 +4687,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TX-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TX-02",
+    "name": "Steve Toth",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001224",
@@ -4735,15 +4717,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TX-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "G000589",
+    "name": "Lance Gooden",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "E000071",
@@ -4776,15 +4757,14 @@
     "lastReviewed": "2026-11-04"
   },
   {
-    "bioguideId": "uncalled-2026-TX-09",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TX-09",
+    "name": "Leticia Gutierrez",
+    "party": "D",
     "state": "TX",
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-TX-10",
@@ -4907,15 +4887,14 @@
     "lastReviewed": "2026-11-04"
   },
   {
-    "bioguideId": "uncalled-2026-TX-22",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TX-22",
+    "name": "Trever Nehls",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 22,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-TX-23",
@@ -4958,15 +4937,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TX-27",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "C001115",
+    "name": "Michael Cloud",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 27,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001063",
@@ -5009,15 +4987,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TX-32",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TX-32",
+    "name": "Jace Yarbrough",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 32,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-TX-33",
@@ -5070,15 +5047,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-TX-38",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-TX-38",
+    "name": "Jon Bonck",
+    "party": "R",
     "state": "TX",
     "chamber": "house",
     "district": 38,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-UT-01",
@@ -5121,15 +5097,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-VA-01",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-VA-01",
+    "name": "Shannon Taylor",
+    "party": "D",
     "state": "VA",
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-VA-02",
@@ -5162,15 +5137,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-VA-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "M001239",
+    "name": "John McGuire",
+    "party": "R",
     "state": "VA",
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001118",
@@ -5283,15 +5257,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-WA-04",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-WA-04",
+    "name": "Amanda McKinney",
+    "party": "R",
     "state": "WA",
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "uncalled-2026-WA-05",

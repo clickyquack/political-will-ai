@@ -458,10 +458,6 @@
     background: #d5dde4;
   }
 
-  .bill-tag-international {
-    background: #d9d4e8;
-  }
-
   @media (max-width: 720px) {
     .panel {
       position: fixed;

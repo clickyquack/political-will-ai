@@ -236,7 +236,7 @@
     "quote": "Industry leaders have publicly acknowledged the development of increasingly powerful artificial intelligence systems, with some discussing the potential for artificial general intelligence and superintelligence that could fundamentally reshape the society of the United States.",
     "date": "2025-06-12",
     "sourceUrl": "https://www.congress.gov/119/bills/s2081/BILLS-119s2081is.htm",
-    "sourceLabel": "RISE Act of 2025; protecting AI developers from civil liability if they comply with certain transparency requirements.",
+    "sourceLabel": "S.2081 bill text (RISE Act of 2025, superseded; no longer tracked in list)",
     "notes": "Sourced via AIPN Congress on Superintelligence"
   },
   {
@@ -3781,7 +3781,7 @@
     "date": "2025-08-01",
     "sourceUrl": "https://www.young.senate.gov/newsroom/press-releases/young-budd-urge-commerce-department-to-probe-deepseek-ais-connections-to-china/",
     "sourceLabel": "DeepSeek probe letter",
-    "notes": "Sponsored Future of AI Innovation Act (international category) per actions.json."
+    "notes": "Previously sponsored Future of AI Innovation Act; that bill is no longer tracked in the list."
   },
   {
     "id": "ev-386",
@@ -4768,5 +4768,75 @@
     "sourceUrl": "https://www.youtube.com/watch?v=YX44XDt0gXI&t=182s",
     "sourceLabel": "60 Minutes",
     "notes": "Same extended interview. He described frontier incentives that could kill everyone, recursive self-improvement, and loss of control."
+  },
+  {
+    "id": "ev-488",
+    "bioguideId": "elect-2026-AZ-01",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "I'm squarely on the side of AI safety. Human dignity and human safety is non-negotiable, as far as I'm concerned. AI has the potential in the future to provide benefits, but we have to make sure that any technology that we use has to be used responsibly.",
+    "date": "2026-10-06",
+    "sourceUrl": "https://coppercourier.com/news/politics/amish-shah-data-center-stance/",
+    "sourceLabel": "The Copper Courier",
+    "notes": "He also opposes new data centers in Arizona’s 1st District because of water and energy use. AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-489",
+    "bioguideId": "elect-2026-CA-11",
+    "stanceImplied": "xrisk_concern",
+    "quote": "Pass federal AI transparency and safety requirements so the largest AI developers must publish safety frameworks, disclose critical incidents to federal authorities, and be honest about the catastrophic risks their models could pose — including mass casualty events, attacks on critical infrastructure, and the development of biological or chemical weapons.",
+    "date": "2026-05-12",
+    "sourceUrl": "https://www.scottwiener.com/tech-policy",
+    "sourceLabel": "Wiener campaign tech platform",
+    "notes": "Platform reported May 12, 2026. He also proposes a federal AI safety regulator, minimum safety standards, and independent verification. AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-490",
+    "bioguideId": "elect-2026-CO-05",
+    "stanceImplied": "xrisk_concern",
+    "quote": "I think we all know now that it is time to put a check on the AI industry. [...] I'm not a big believer in overregulation, but I think this is a burgeoning industry that needs to have some guardrails set on it around privacy concerns, misuse, loss of control, water and energy usage. [...] there's a lot of scary stuff, and I think we need to take a beat and take a look at that and actually address it at the federal level.",
+    "date": "2026-10-28",
+    "sourceUrl": "https://krdo.com/news/2026/10/28/the-big-race-on-the-ballot-krdo13-sits-down-with-jeff-crank-and-jessica-killin-to-talk-about-issues-in-southern-colorado/",
+    "sourceLabel": "KRDO interview",
+    "notes": "AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-491",
+    "bioguideId": "elect-2026-MI-07",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "I support a 12-month federal moratorium to ensure that appropriate guardrails are put in place before further expansion of data centers and AI race forward. [...] Finally, we need to regulate not only data centers, but the AI that they generate, and ensure that AI is deployed for the benefit of all humanity, not only a few billionaires in silicon valley.",
+    "date": "2026-09-18",
+    "sourceUrl": "https://voterguide.planetdetroit.org/candidates/william-lawrence",
+    "sourceLabel": "Planet Detroit voter guide",
+    "notes": "Questionnaire updated September 2026. Michigan Public reported the same day that his plan pauses advanced AI development and sets safety requirements for new models. AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-492",
+    "bioguideId": "elect-2026-MI-10",
+    "stanceImplied": "mundane_risk",
+    "quote": "This is a top concern. We're right next to Lake St. Clair. People are very worried about protecting our water. [...] People are already struggling with the high cost of gas and groceries and healthcare. We cannot afford for our bills to keep going up. [...] we need a strong Congress that is actually going to engage in sensible regulation to protect the American people.",
+    "date": "2026-10-19",
+    "sourceUrl": "https://michiganadvance.com/2026/10/19/jeffries-talks-ai-concerns-at-roundtable-with-macomb-county-community-leaders/",
+    "sourceLabel": "Michigan Advance",
+    "notes": "She supported a moratorium on data centers and called for regulation to protect people. Her campaign site also says the U.S. should lead in AI while setting guardrails for families, workers, and savings. AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-493",
+    "bioguideId": "elect-2026-NJ-02",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "AI and Big Tech in general are grossly underregulated. As a father of three, I care deeply about the world we are leaving for the next generation. Today, we have an opportunity to shape our future into one that works for all of us. We need elected officials who aren’t bought off by Big Tech!",
+    "date": "2026-11-06",
+    "sourceUrl": "https://theaipact.com/",
+    "sourceLabel": "AI Pact",
+    "notes": "Statement posted with his signature on the AI Pact, whose pillars include a mandatory independent safety review before release of every new major AI model. Reviewed 2026-11-06. AP called the race after the Nov. 4 snapshot."
+  },
+  {
+    "id": "ev-494",
+    "bioguideId": "elect-2026-NY-17",
+    "stanceImplied": "strong_risk_reg",
+    "quote": "Mike Lawler and the one big ugly bill in the version he voted for voted to not allow states to regulate AI for a decade, a decade. While Congress, controlled by Republicans, does absolutely nothing to rein it in, I do believe the federal government has a role to ensure the safety and security of the people, and that means regulating AI, a technology we cannot afford to get wrong.",
+    "date": "2026-11-02",
+    "sourceUrl": "https://www.wamc.org/news/2026-11-02/election-2026-ny-17-cait-conley-conversation",
+    "sourceLabel": "WAMC",
+    "notes": "AP called the race after the Nov. 4 snapshot."
   }
 ]

@@ -49,7 +49,7 @@ export interface Evidence {
   notes?: string
 }
 
-export type BillCategory = 'strong_risk' | 'ethics' | 'chip_security' | 'international' | 'other'
+export type BillCategory = 'strong_risk' | 'ethics' | 'chip_security' | 'other'
 
 export interface Bill {
   id: string
@@ -127,13 +127,11 @@ export const BILL_GROUP_ORDER: BillCategory[] = [
   'ethics',
   'strong_risk',
   'chip_security',
-  'international',
 ]
 
 export const BILL_GROUP_LABELS: Record<BillCategory, string> = {
   ethics: 'AI ethics',
   strong_risk: 'Stronger-risk regulation',
   chip_security: 'Chip / compute security',
-  international: 'International AI governance',
   other: 'Other',
 }

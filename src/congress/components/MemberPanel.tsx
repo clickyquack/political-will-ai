@@ -119,7 +119,7 @@ export function MemberPanel({
                   ) : (
                     bill?.title || a.billId
                   )}
-                  {bill?.category === 'chip_security' || bill?.category === 'international' ? (
+                  {bill?.category === 'chip_security' ? (
                     <span className="tag">tracked — does not move stance</span>
                   ) : null}
                   {a.date ? <span className="muted"> ({a.date})</span> : null}

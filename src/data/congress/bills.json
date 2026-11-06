@@ -45,15 +45,6 @@
     "congressGovUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5511"
   },
   {
-    "id": "s2081-119",
-    "congress": 119,
-    "billType": "s",
-    "number": 2081,
-    "title": "RISE Act of 2025",
-    "category": "strong_risk",
-    "congressGovUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/2081"
-  },
-  {
     "id": "s1367-119",
     "congress": 119,
     "billType": "s",
@@ -142,24 +133,6 @@
     "title": "Remote Access Security Act",
     "category": "chip_security",
     "congressGovUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3519"
-  },
-  {
-    "id": "s3952-119",
-    "congress": 119,
-    "billType": "s",
-    "number": 3952,
-    "title": "Future of AI Innovation Act of 2026",
-    "category": "international",
-    "congressGovUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3952"
-  },
-  {
-    "id": "s1269-119",
-    "congress": 119,
-    "billType": "s",
-    "number": 1269,
-    "title": "U.S. Leadership in Standards Act of 2025",
-    "category": "international",
-    "congressGovUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/1269"
   },
   {
     "id": "s5493-119",
