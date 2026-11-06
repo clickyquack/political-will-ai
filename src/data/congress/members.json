@@ -347,8 +347,8 @@
     "state": "LA",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "L000595",
@@ -848,8 +848,8 @@
     "state": "TX",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-TX-S",

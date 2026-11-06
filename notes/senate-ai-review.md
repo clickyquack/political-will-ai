@@ -141,9 +141,9 @@ Searched Mike Crapo with artificial intelligence. The Social Security safeguards
 
 ## Ted Cruz (TX)
 
-On file now: ev-409 2026-09-09 opposes_domestic (X post on Jacob Coxon Anthropic resignation); ev-410 2026-09-10 opposes_domestic (X post opposing Democratic AI regulation); ev-416 2026-09-10 xrisk_concern (AI Policy Daily (ABC The View interview, via Guardian)); ev-427 2025-07-01 opposes_domestic (AP News: Senate AI state-regulation moratorium fight).
+On file now: ev-409 2026-09-09 opposes_domestic (X post on Jacob Coxon Anthropic resignation); ev-410 2026-09-10 opposes_domestic (X post opposing Democratic AI regulation); ev-416 2026-09-10 xrisk_concern (AI Policy Daily (ABC The View interview, via Guardian)); ev-427 2025-07-01 opposes_domestic (AP News: Senate AI state-regulation moratorium fight); ev-536 2026-09-09 xrisk_concern (Politico Live Updates).
 
-Already sourced (opposes_domestic, xrisk_concern). This pass did not add a second quote over the one above.
+Added ev-536 from Politico September 9, 2026: China racing ahead; “killer robots” American vs Chinese—existential-risk stripe alongside opposes / light-touch regulatory color from newer rows. Classifier keeps xrisk if any dated row has xrisk_concern.
 
 ## John R. Curtis (UT)
 
@@ -305,7 +305,7 @@ Already sourced (mundane_risk, strong_risk_reg). This pass did not add a second 
 
 On file now: ev-8 2023-05-16 xrisk_concern (2023 Sam Altman hearing.); ev-82 2026-09-16 xrisk_concern (Senate floor remarks on his AI Emergency Button Act.); ev-425 2026-09-18 strong_risk_reg (Transformer Weekly (Sep 18, 2026)).
 
-Already sourced (strong_risk_reg, xrisk_concern). This pass did not add a second quote over the one above.
+The September 18, 2026 row is the kill-switch UC attempt; regulatory color. Existential-risk stripe persists from any earlier xrisk row (ev-8, ev-82) under the classifier’s cumulative xrisk rule.
 
 ## Andy Kim (NJ)
 
@@ -359,7 +359,7 @@ The deepfake signing line already on file is an ethical concern. Added the Septe
 
 On file now: ev-441 2026-07-29 mundane_risk (Manhattan Institute AI policy address); ev-514 2026-10-01 xrisk_concern (The Free Press).
 
-Searched Dave McCormick with artificial intelligence and regulation. The October 1, 2026 Free Press op-ed with John Fetterman calls for liability when a powerful system causes catastrophic harm and for oversight of models with credible biological, cyber, or nuclear risks; it also frames the China race in existential terms. Category: existential-risk concern (stripe); display stance stays stronger-risk regulation on that date via classify default. Older mundane row does not override October 1.
+Searched Dave McCormick with artificial intelligence and regulation. The October 1, 2026 Free Press op-ed with John Fetterman calls for liability when a powerful system causes catastrophic harm and for oversight of models with credible biological, cyber, or nuclear risks; it also frames the China race in existential terms. Category: existential-risk concern (stripe); regulatory color from latest dated stance (applyXriskDefault promotes to stronger-risk regulation when not opposes_domestic). Older mundane row does not override October 1.
 
 ## Jeff Merkley (OR)
 

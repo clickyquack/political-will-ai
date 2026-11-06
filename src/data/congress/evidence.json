@@ -4790,7 +4790,7 @@
     "date": "2026-10-01",
     "sourceUrl": "https://www.thefp.com/p/john-fetterman-dave-mccormick-ai-policy-data-centers",
     "sourceLabel": "The Free Press",
-    "notes": "Op-ed with Senator John Fetterman, October 1, 2026. Coded xrisk_concern for catastrophic-harm and bio/cyber/nuclear risk framing; they also write the race with China has existential stakes. Classifier still colors stronger-risk regulation (applyXriskDefault) unless a newer dated row overrides."
+    "notes": "Op-ed with Senator John Fetterman, October 1, 2026. Existential-risk stripe from catastrophic-harm and bio/cyber/nuclear risk framing; they also write the race with China has existential stakes. Regulation color from the latest dated regulatory row (applyXriskDefault when stance is not opposes_domestic)."
   },
   {
     "id": "ev-515",
@@ -5001,5 +5001,15 @@
     "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
     "sourceLabel": "Letter to DOE Secretary Wright",
     "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-536",
+    "bioguideId": "C001098",
+    "stanceImplied": "xrisk_concern",
+    "quote": "One of the real challenges is [that] China is going full speed ahead, and whatever we do here, China is not going to stop,\" Cruz said. \"If there are going to be killer robots, I would rather they be American killer robots, rather than Chinese killer robots.\"",
+    "date": "2026-09-09",
+    "sourceUrl": "https://www.politico.com/live-updates/2026/09/09/congress/ted-cruz-ai-risks-legislation-01069036",
+    "sourceLabel": "Politico Live Updates",
+    "notes": "Quoted discussion of advanced weaponized systems and the U.S.–China race; paired in the piece with debate over AI safety legislation. Existential-risk stripe only; regulatory color comes from other dated rows (e.g. opposes_domestic)."
   }
 ]

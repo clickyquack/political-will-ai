@@ -72,10 +72,11 @@ function applyXriskDefault(state: Classification) {
 }
 
 /**
- * Regulation color follows sourced signals. Existential-risk concern is also recorded as `xrisk`.
- * Among dated evidence rows, only the latest calendar date contributes stance and xrisk, so a newer
- * quote can supersede an older one. Same-date rows use the higher regulatory rank; any xrisk_concern
- * on that date sets stripes. Undated rows fall back to max-rank merge with dated resolution.
+ * Regulation color follows sourced signals. Existential-risk stripes (`xrisk`) are tracked separately:
+ * true if any evidence row (any date) or qualifying bill action is `xrisk_concern`. Among dated rows,
+ * only the latest calendar date sets regulatory stance (excluding xrisk-only rows from the rank merge);
+ * a newer quote can supersede an older color. Same-date rows use the higher regulatory rank. Undated
+ * rows merge stance by rank with dated resolution.
  */
 export function classifyMember(
   bioguideId: string,
@@ -90,6 +91,10 @@ export function classifyMember(
   const dated = memberEvidence.filter((e) => evidenceDateKey(e))
   const undated = memberEvidence.filter((e) => !evidenceDateKey(e))
 
+  for (const e of memberEvidence) {
+    if (e.stanceImplied === 'xrisk_concern') state.xrisk = true
+  }
+
   if (dated.length > 0) {
     let maxD = '0000-01-01'
     for (const e of dated) {
@@ -98,18 +103,13 @@ export function classifyMember(
     }
     const latest = dated.filter((e) => evidenceDateKey(e) === maxD)
     let bestStance: DisplayStance = 'unknown'
-    let xriskOnLatest = false
     for (const e of latest) {
-      if (e.stanceImplied === 'xrisk_concern') {
-        xriskOnLatest = true
-        continue
-      }
+      if (e.stanceImplied === 'xrisk_concern') continue
       if (e.stanceImplied === 'unknown') continue
       const s = e.stanceImplied as DisplayStance
       if (RANK[s] > RANK[bestStance]) bestStance = s
     }
     state.stance = bestStance
-    state.xrisk = xriskOnLatest
   }
 
   for (const e of undated) {
