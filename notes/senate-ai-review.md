@@ -45,9 +45,9 @@ Date corrected from the WPSD page. The article was published February 3, 2026. T
 
 ## John Barrasso (WY)
 
-On file now: ev-345 2025-01-16 mundane_risk (TAKE IT DOWN Act (S. 146)); ev-358 2025-01-16 mundane_risk (American Voices in Federal Lands Act on AI bots in public comments).
+On file now: ev-345 2025-01-16 mundane_risk (TAKE IT DOWN Act (S. 146)); ev-358 2025-01-16 mundane_risk (American Voices in Federal Lands Act on AI bots in public comments); ev-530 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Searched John Barrasso with artificial intelligence, the AI race, and light-touch regulation. What turned up is energy and China competition, plus the deepfake and public-comment items already on file. No new category.
+The January 13, 2026 Energy Committee letter on Genesis Mission and winning the AI race with China is the latest dated row, so the seat displays as opposes / light-touch only.
 
 ## Michael F. Bennet (CO)
 
@@ -123,9 +123,9 @@ Searched Roy Cooper with artificial intelligence and guardrails. Added the Cardi
 
 ## Tom Cotton (AR)
 
-On file now: ev-372 2025-11-06 opposes_domestic (AI dominance resolution (with Coons)).
+On file now: ev-372 2025-11-06 opposes_domestic (AI dominance resolution (with Coons)); ev-529 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Already sourced (opposes_domestic). This pass did not add a second quote over the one above.
+Already sourced (opposes_domestic). Also signed the January 13, 2026 Energy Committee letter on Genesis Mission and the AI race with China (ev-529).
 
 ## Kevin Cramer (ND)
 
@@ -213,9 +213,9 @@ Already sourced (opposes_domestic). This pass did not add a second quote over th
 
 ## Adam Hamilton (KS)
 
-On file now: ev-495 2026-10-21 xrisk_concern (KCUR: Kansas Senate debate).
+On file now: ev-495 2026-10-21 xrisk_concern (Facebook reel).
 
-The Facebook reel could not be dated from the page. The same argument is in the October 21, 2026 FOX4 debate, reported by KCUR: a potential existential threat, and not a light touch. Date set to 2026-10-21. Category: existential-risk concern.
+Primary source is the user's Facebook reel URL; the quote text is verified against the October 21, 2026 Senate debate transcript (Wichita Liberty, WDAF/FOX4). The reel page does not show a public post date, so the date is the debate. Category: existential-risk concern.
 
 ## Margaret Wood Hassan (NH)
 
@@ -243,9 +243,9 @@ Already sourced (opposes_domestic). This pass did not add a second quote over th
 
 ## John W. Hickenlooper (CO)
 
-On file now: ev-46 2024-02-05 xrisk_concern (Public statement).
+On file now: ev-46 2024-02-05 xrisk_concern (Public statement); ev-527 2026-09-29 xrisk_concern (Letter to President Trump (press release)).
 
-Already sourced (xrisk_concern). This pass did not add a second quote over the one above.
+Added ev-527 from notes/congress-members.md: press release dated September 29, 2026. He quotes his letter to President Trump calling for guardrails and independent evaluations, and criticizes rolling back safeguards and calling researcher fears a hoax. Category: existential-risk concern (responds to unregulated-AI and irresponsible-development risk). The February 2024 auditing statement (ev-46) already carried stripes.
 
 ## Mazie K. Hirono (HI)
 
@@ -255,9 +255,9 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 ## John Hoeven (ND)
 
-On file now: ev-506 2026-10-01 xrisk_concern (Axios).
+On file now: ev-506 2026-10-05 opposes_domestic (Fox News).
 
-No quote was on file. Added his line in the October 1, 2026 Axios story: statute and regulation are required, and this is not unique to superintelligence. Category: existential-risk concern, because he names superintelligence and asks for law.
+Replaced the Axios quote per notes/congress-members.md. “Super intelligence” in some 2026 reporting tracks the White House term for AI, not Bostrom-style superintelligence. The Fox News article is dated Published October 5, 2026. His quote emphasizes staying ahead of China and doing it safely; it does not support an existential-risk stripe. Category: opposes regulation or light-touch only (China race framed first).
 
 ## Chris Van Hollen (MD)
 
@@ -285,9 +285,9 @@ The old September 30, 2025 wording was not the letter. Replaced it with the Sept
 
 ## James C. Justice (WV)
 
-On file now: ev-360 2026-07-23 mundane_risk (Senior Chatbot Protection Act introduction).
+On file now: ev-535 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Searched Jim Justice with artificial intelligence and data centers. He says the amazement of AI dumbfounds people, and that data-center companies should cover water, noise, and power bills. Neither line is an about-map category. No quote added.
+Searched Jim Justice with artificial intelligence and data centers. The Senior Chatbot Protection Act introduction is Mark Kelly (ev-373), not Justice. Added ev-535: Energy Committee letter on Genesis Mission and winning the AI race with China. Category: opposes regulation or light-touch only.
 
 ## Tim Kaine (VA)
 
@@ -315,21 +315,21 @@ Already had stronger-risk and existential-risk quotes. Added his cosponsorship o
 
 ## Amy Klobuchar (MN)
 
-On file now: ev-431 2025-03-15 mundane_risk (NO FAKES / deepfake legislative advocacy); ev-497 2026-09-11 strong_risk_reg (Nextgov/FCW).
+On file now: ev-431 2025-03-15 mundane_risk (NO FAKES / deepfake legislative advocacy); ev-497 2026-09-11 strong_risk_reg (POLITICO).
 
-The Politico page is dated September 11, 2026, but the sentence that had been stored is not on that page. Replaced it with her statement to Nextgov the same day: government oversight of the greatest risks, testing with government experts, and no release of dangerous models, including ones that evade their developers' control. Category: stronger-risk regulation. The loss-of-control clause is about dangerous-model release, and the row is not marked as a separate existential-risk stripe.
+The ev-497 source URL is notes/congress-members.md (POLITICO story 09/11/2026). The quote matches Nextgov/FCW the same day. Category: stronger-risk regulation. The loss-of-control clause is about dangerous-model release; the row is not marked as a separate existential-risk stripe.
 
 ## James Lankford (OK)
 
-On file now: ev-347 2025-11-20 mundane_risk (NO FAKES Act of 2025 (S. 1367)); ev-400 2025-11-01 opposes_domestic (Genesis Mission / China AI competition letter).
+On file now: ev-347 2025-11-20 mundane_risk (NO FAKES Act of 2025 (S. 1367)); ev-532 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Already sourced (mundane_risk, opposes_domestic). This pass did not add a second quote over the one above.
+Already had mundane_risk. Added ev-532 for the Energy Committee letter on Genesis Mission and the AI race with China (replacing the duplicate older Genesis row). Latest dated row is January 13, 2026, so the seat displays as opposes / light-touch only.
 
 ## Mike Lee (UT)
 
-On file now: ev-7 2025-11-27 xrisk_concern (Public statement).
+On file now: ev-7 2025-11-27 xrisk_concern (Public statement); ev-528 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Already sourced (xrisk_concern). This pass did not add a second quote over the one above.
+The November 27, 2025 post is still an existential-risk stripe on its date. The January 13, 2026 Energy Committee letter is newer, so the seat displays as opposes / light-touch only (no xrisk stripe from the letter).
 
 ## Julia Letlow (LA)
 
@@ -357,9 +357,9 @@ The deepfake signing line already on file is an ethical concern. Added the Septe
 
 ## David McCormick (PA)
 
-On file now: ev-441 2026-07-29 mundane_risk (Manhattan Institute AI policy address); ev-514 2026-10-01 strong_risk_reg (The Free Press).
+On file now: ev-441 2026-07-29 mundane_risk (Manhattan Institute AI policy address); ev-514 2026-10-01 xrisk_concern (The Free Press).
 
-Searched Dave McCormick with artificial intelligence and regulation. Added the October 1, 2026 Free Press op-ed with John Fetterman. They call for liability when a powerful system causes catastrophic harm and for oversight of biological, cyber, or nuclear risks. Category: stronger-risk regulation. They also call the race with China existential and say it is not enough to tell American developers to slow down. That race sentence is why the row is not marked as an existential-risk stripe.
+Searched Dave McCormick with artificial intelligence and regulation. The October 1, 2026 Free Press op-ed with John Fetterman calls for liability when a powerful system causes catastrophic harm and for oversight of models with credible biological, cyber, or nuclear risks; it also frames the China race in existential terms. Category: existential-risk concern (stripe); display stance stays stronger-risk regulation on that date via classify default. Older mundane row does not override October 1.
 
 ## Jeff Merkley (OR)
 
@@ -381,15 +381,15 @@ Searched Barry Moore with artificial intelligence and China. Added the Yellowham
 
 ## Jerry Moran (KS)
 
-On file now: ev-381 2023-11-01 strong_risk_reg (Federal AI Risk Management Act press release).
+On file now: ev-381 2023-11-01 strong_risk_reg (Federal AI Risk Management Act press release); ev-533 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Already had a federal-agency testing quote. Added his cosponsorship of S. 5616, the December 19, 2024 extreme-risk bill. No new quote.
+Already had a federal-agency testing quote. Added his cosponsorship of S. 5616, the December 19, 2024 extreme-risk bill. The January 13, 2026 Energy Committee letter is the latest dated row, so the seat displays as opposes / light-touch only.
 
 ## Bernie Moreno (OH)
 
 On file now: ev-430 2025-09-10 opposes_domestic (Senate Commerce hearing: America's AI Action Plan); ev-501 2026-10-05 opposes_domestic (Axios).
 
-Axios is dated October 5, 2026, and the letter was sent that Monday. The duplicate Transformer row was already removed. Category: opposes regulation or light-touch only. The Commerce hearing quote from September 10, 2025 stays.
+The Axios story is dated October 5, 2026; the letter was sent that Monday per Axios. ev-501 includes the full letter excerpt from congress-members.md. Category: opposes regulation or light-touch only. The Commerce hearing quote from September 10, 2025 stays.
 
 ## Lisa Murkowski (AK)
 
@@ -447,9 +447,9 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 ## James E. Risch (ID)
 
-On file now: ev-376 2025-07-25 mundane_risk (Senate ENR hearing remarks).
+On file now: ev-376 2025-07-25 mundane_risk (Senate ENR hearing remarks); ev-531 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Searched Jim Risch with artificial intelligence. The electricity-demand remark already on file is the closest line. No regulation or loss-of-control quote turned up.
+Searched Jim Risch with artificial intelligence. The electricity-demand remark stays as an older mundane row. Added ev-531 for the Energy Committee letter; it is the latest dated row, so the seat displays as opposes / light-touch only.
 
 ## Lisa Blunt Rochester (DE)
 
@@ -477,9 +477,9 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 ## Brian Schatz (HI)
 
-On file now: ev-367 2023-10-24 mundane_risk (AI Labeling Act); ev-423 2026-09-29 strong_risk_reg (Politico Live Updates); ev-502 2026-09-24 strong_risk_reg (Kim press release quoting Schatz).
+On file now: ev-367 2023-10-24 mundane_risk (AI Labeling Act); ev-423 2026-09-29 strong_risk_reg (Politico Live Updates); ev-502 2026-09-24 strong_risk_reg (Schatz press release).
 
-The July 31, 2026 date was the day a summary was stored, not the statement. His announcement, also posted by Senator Kim, is September 24, 2026. The quote is his: models going rogue, humans remaining in control, testing and oversight. Category: stronger-risk regulation. Congress.gov lists the bill as S. 5576, introduced September 29, 2026, with Senator Warner as sponsor and Senators Schatz and Kim as cosponsors. The September 29 floor request was already a separate row.
+ev-502 uses schatz.senate.gov per congress-members.md, dated Published: 09.24.2026. Same text appears on Kim's press release that day. Congress.gov lists S. 5576 as introduced September 29, 2026; an advisory placed floor remarks September 29. Category: stronger-risk regulation.
 
 ## Adam B. Schiff (CA)
 
@@ -501,9 +501,9 @@ Already sourced (mundane_risk, strong_risk_reg, xrisk_concern). This pass did no
 
 ## Rick Scott (FL)
 
-On file now: ev-73 2026-09-14 xrisk_concern (Public statement); ev-365 2026-06-24 mundane_risk (Generative AI Terrorism Risk Assessment Act).
+On file now: ev-73 2026-09-14 opposes_domestic (Public statement); ev-365 2026-06-24 mundane_risk (Generative AI Terrorism Risk Assessment Act).
 
-Already sourced (mundane_risk, xrisk_concern). This pass did not add a second quote over the one above.
+The September 14, 2026 post says companies should not wave off responsibility by saying Congress has to act, and that AI regulations should not be rushed—so they are “not going to happen this year.” Category: opposes regulation or light-touch only (not existential-risk coloring). ev-365 is older.
 
 ## Tim Scott (SC)
 
@@ -591,9 +591,9 @@ Searched Ron Wyden with artificial intelligence, criminal law, and surveillance.
 
 ## Todd Young (IN)
 
-On file now: ev-385 2025-08-01 opposes_domestic (DeepSeek probe letter).
+On file now: ev-385 2025-08-01 opposes_domestic (DeepSeek probe letter); ev-534 2026-01-13 opposes_domestic (Letter to DOE Secretary Wright).
 
-Already sourced (opposes_domestic). This pass did not add a second quote over the one above.
+Already sourced (opposes_domestic). Also signed the January 13, 2026 Energy Committee letter on Genesis Mission and the AI race with China (ev-534).
 
 ## Race not called (AK)
 

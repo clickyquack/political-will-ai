@@ -47,8 +47,8 @@
     "state": "AR",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001236",
@@ -107,8 +107,8 @@
     "state": "CO",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001267",
@@ -167,8 +167,8 @@
     "state": "FL",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001244",
@@ -247,8 +247,8 @@
     "state": "ID",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C000880",
@@ -287,8 +287,8 @@
     "state": "IN",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001299",
@@ -307,7 +307,7 @@
     "state": "KS",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "strong_risk_reg",
+    "stance": "opposes_domestic",
     "lastReviewed": "2026-11-06"
   },
   {
@@ -548,7 +548,7 @@
     "state": "ND",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "strong_risk_reg",
+    "stance": "opposes_domestic",
     "lastReviewed": "2026-11-06"
   },
   {
@@ -708,8 +708,8 @@
     "state": "OK",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "H001082",
@@ -868,8 +868,8 @@
     "state": "UT",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001114",
@@ -978,8 +978,8 @@
     "state": "WV",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001261",
@@ -988,8 +988,8 @@
     "state": "WY",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "H001096",

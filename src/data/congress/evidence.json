@@ -722,12 +722,12 @@
   {
     "id": "ev-73",
     "bioguideId": "S001217",
-    "stanceImplied": "xrisk_concern",
+    "stanceImplied": "opposes_domestic",
     "quote": "[Quote-tweeting David Sacks, co-chair of the President’s Council of Advisors on Science and Technology: \"Dario has written that we need to “pace the frontier,” and Sam has agreed. People may be surprised by my response: go ahead. You guys are the frontier.\"] I agree with @DavidSacks. AI isn’t going anywhere, so we need a plan to move forward safely, with America leading the way. These companies have said what they are building could kill mankind. Seems pretty obvious they need to slow down now. But these companies can’t just raise their hands and say Congress has to do something. We can’t lose to Communist China, obviously. If America doesn’t lead, we allow Communist China to make the rules and develop truly dangerous AI that will hurt Americans, especially our kids. Congress is a mess right now. We can’t even pass election security protections. But AI regulations shouldn’t be rushed. It has to be thoughtful, so that is not going to happen this year. AI companies need to be good corporate citizens, protect our kids' safety online and do the right thing without fear of their bottom line.",
     "date": "2026-09-14",
     "sourceUrl": "https://x.com/SenRickScott/status/2099557655127756985",
     "sourceLabel": "Public statement",
-    "notes": "Sourced via AIPN Congress on Superintelligence"
+    "notes": "Coded as opposes/light-touch: says companies should not default to “Congress has to do something,” and that federal AI regulations are not happening this year because they must not be rushed. Same post mentions industry “kill mankind” warnings; that line does not call for congressional action. Sourced via AIPN Congress on Superintelligence"
   },
   {
     "id": "ev-74",
@@ -3346,7 +3346,7 @@
   },
   {
     "id": "ev-360",
-    "bioguideId": "J000312",
+    "bioguideId": "K000377",
     "stanceImplied": "mundane_risk",
     "quote": "A.I. chatbots are an incredible tool for older Americans, but we can't miss the opportunity to protect our seniors who rely on chatbots for support, companionship, and even important decisions during critical times. The Senior Chatbot Protection Act sets transparency standards so our seniors know they are speaking with a chatbot and not a real person.",
     "date": "2026-07-23",
@@ -3708,16 +3708,6 @@
     "date": "2025-05-09",
     "sourceUrl": "https://www.cassidy.senate.gov/newsroom/press-releases/cassidy-rosen-introduce-legislation-to-protect-sensitive-federal-data-from-deepseek-adversarial-ai-technologies/",
     "sourceLabel": "Protection Against Foreign Adversarial AI Act",
-    "notes": "Existing evidence is NO FAKES cosponsorship only."
-  },
-  {
-    "id": "ev-400",
-    "bioguideId": "L000575",
-    "stanceImplied": "opposes_domestic",
-    "quote": "America's long-term scientific advancements and national security depend on the US winning the global race for technology.",
-    "date": "2025-11-01",
-    "sourceUrl": "https://www.lankford.senate.gov/news/press-releases/lankford-cotton-and-colleagues-urge-department-of-energy-to-ban-chinese-nationals-from-american-laboratories/",
-    "sourceLabel": "Genesis Mission / China AI competition letter",
     "notes": "Existing evidence is NO FAKES cosponsorship only."
   },
   {
@@ -4716,11 +4706,12 @@
   {
     "id": "ev-506",
     "bioguideId": "H001061",
-    "stanceImplied": "xrisk_concern",
-    "quote": "You have to have the strength of statute and law and regulation. Like for any other industry, this is not unique to super intelligence.",
-    "date": "2026-10-01",
-    "sourceUrl": "https://www.axios.com/2026/10/01/senate-ai-artificial-intelligence-trump",
-    "sourceLabel": "Axios"
+    "stanceImplied": "opposes_domestic",
+    "quote": "Look, I think we need to use common sense. So we want to develop it. Obviously, we need to stay ahead of adversaries like China, but we need to do it safely.",
+    "date": "2026-10-05",
+    "sourceUrl": "https://www.foxnews.com/politics/gop-senators-skeptical-bill-gates-fearmongering-ai-warning-democrats-sound-alarm",
+    "sourceLabel": "Fox News",
+    "notes": "Replace the Axios line that used “super intelligence.” That phrasing often follows the White House term for AI; it is not the same as existential-risk superintelligence. This quote leads with staying ahead of China and doing it safely. The article is dated Published October 5, 2026."
   },
   {
     "id": "ev-507",
@@ -4794,12 +4785,12 @@
   {
     "id": "ev-514",
     "bioguideId": "M001243",
-    "stanceImplied": "strong_risk_reg",
+    "stanceImplied": "xrisk_concern",
     "quote": "If a company develops an extraordinarily powerful AI system that causes catastrophic harm, there has to be accountability. [...] The federal government must also work hand in hand with industry to increase its oversight of models that pose credible biological, cyber, or nuclear risks.",
     "date": "2026-10-01",
     "sourceUrl": "https://www.thefp.com/p/john-fetterman-dave-mccormick-ai-policy-data-centers",
     "sourceLabel": "The Free Press",
-    "notes": "Op-ed with Senator John Fetterman, October 1, 2026. They also wrote that the race with China has existential stakes and that telling American developers only to slow down is not enough."
+    "notes": "Op-ed with Senator John Fetterman, October 1, 2026. Coded xrisk_concern for catastrophic-harm and bio/cyber/nuclear risk framing; they also write the race with China has existential stakes. Classifier still colors stronger-risk regulation (applyXriskDefault) unless a newer dated row overrides."
   },
   {
     "id": "ev-515",
@@ -4920,5 +4911,95 @@
     "sourceUrl": "https://yellowhammernews.com/barry-moore-believes-trump-has-the-right-approach-on-ai-we-cannot-let-china-get-upper-hand/",
     "sourceLabel": "Yellowhammer News",
     "notes": "Interview published September 23, 2026. The hyperbolic line is about claims that AI will destroy humanity."
+  },
+  {
+    "id": "ev-527",
+    "bioguideId": "H000273",
+    "stanceImplied": "xrisk_concern",
+    "quote": "\"Many of the attendees at this meeting have warned about the risks of unregulated AI and have called for stronger safety measures,\" Hickenlooper wrote. \"We are in a critical moment, where the White House and Congress must act together to pass safety and transparency measures that keep the American people safe and informed as this technology is developed. Now is the time to move beyond warnings and start writing the guardrails, including independent third-party evaluations that will help protect Americans.\" \"To date, our country has not established transparent, meaningful safeguards to address the growing risks of AI,\" Hickenlooper wrote. \"You have prioritized accelerating AI development and maintaining a voluntary classified benchmarking process through the National Security Agency for advanced cyber capabilities while rolling back various federal safeguards. In addition, you have publicly called fears from AI researchers a 'hoax,' downplaying the potential threats of irresponsible development of this technology.\"",
+    "date": "2026-09-29",
+    "sourceUrl": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-calls-on-trump-ai-ceos-to-work-with-congress-on-responsible-ai-guardrails-ahead-of-white-house-meeting/",
+    "sourceLabel": "Letter to President Trump (press release)",
+    "notes": "Press release dated September 29, 2026."
+  },
+  {
+    "id": "ev-528",
+    "bioguideId": "L000577",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-529",
+    "bioguideId": "C001095",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-530",
+    "bioguideId": "B001261",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-531",
+    "bioguideId": "R000584",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-532",
+    "bioguideId": "L000575",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-533",
+    "bioguideId": "M000934",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-534",
+    "bioguideId": "Y000064",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
+  },
+  {
+    "id": "ev-535",
+    "bioguideId": "J000312",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Genesis Mission was launched to help the U.S. win the race with China for AI supremacy by harnessing untapped prowess in this space at our national laboratories. Continuing to give access to the cutting-edge work performed at these laboratories to Chinese nationals who will turn everything they know over to the CCP directly undermines the purpose of Genesis Mission.",
+    "date": "2026-01-13",
+    "sourceUrl": "https://www.energy.senate.gov/press/rep/lee-senators-to-wright-ban-chinese-nationals-from-american-laboratories/",
+    "sourceLabel": "Letter to DOE Secretary Wright",
+    "notes": "Press release dated January 13, 2026; the letter itself is dated January 12, 2026. National-security and export-access policy to win the AI race with China, not a call for broad domestic frontier-AI rulemaking."
   }
 ]
