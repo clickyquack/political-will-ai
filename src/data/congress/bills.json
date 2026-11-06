@@ -153,5 +153,23 @@
     "category": "strong_risk",
     "supportStance": "xrisk_concern",
     "congressGovUrl": "https://www.congress.gov/bill/119th-congress/house-bill/10538"
+  },
+  {
+    "id": "s5576-119",
+    "congress": 119,
+    "billType": "s",
+    "number": 5576,
+    "title": "Artificial Intelligence Risk Management and Security Act of 2026",
+    "category": "strong_risk",
+    "congressGovUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/5576"
+  },
+  {
+    "id": "s5616-118",
+    "congress": 118,
+    "billType": "s",
+    "number": 5616,
+    "title": "Preserving American Dominance in AI Act",
+    "category": "strong_risk",
+    "congressGovUrl": "https://www.congress.gov/bill/118th-congress/senate-bill/5616"
   }
 ]

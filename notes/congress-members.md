@@ -1,12 +1,17 @@
-Abdul El-Sayed | https://www.youtube.com/watch?v=YX44XDt0gXI&t=182s | x-risk, strong risk regs
-"Number one, we need a cabinet level agency that is going to invest in and focus on regulating inside of the AI industry, kind of like an FDA or an SEC for AI. We need to also make sure that there are AI no-gos, meaning AI shouldn't fire a weapon, shouldn't fire you, shouldn't be able to deny you healthcare, right?"
-...
-"You need to make sure that the risks that we are barreling toward are thought through at the board governance level. That we're not just inadvertently following this microscale incentive to create technologies that could kill us all and that if the CEOs are right that this is going to potentially take 50% of the white collar jobs in the order of 5 to 10 years."
-...
-[INTERVIEWER]: "What about the frontier where companies are pushing forward?"
-[EL-SAYED]: "Full on pause."
-[INTERVIEWER]: "Full On Pause. Okay. And what happens then? The instant question. What happens if we pause and China doesn't?"
-[EL-SAYED]: "See, I just don't take that as seriously as a lot of people do. Here's why. A lot of the frontier research is just spoofing our models. China's research. And it'd be like, you know, you're pulling a skier on a boat and you speed up the boat and you're like, the skier is still so close!"
-...
-"The point that I'm making here is that I think all of us are interested in the preservation of humanity, right? Because you know in China they're humans too and we're humans too and creating robots that get to this point of recursive self-improvement, kind of like that horror point in Fantasia where you've got the the mops with the buckets that are self-creating. None of us want to get there and none of us want to see what happens when you open Pandora's box and all of a sudden AI has far exceeded our control. So, I think we all have an incentive to get this right, but to understand that we are going to have to figure out how to work together. Similarly to what we've done when it came to other potentially humanity risking technological endeavors like nuclear power to be able to contain the potential threat and work together to make sure that we are focused more on protecting humanity than just simply what the microscale incentives might look like."
+Wherever supercitizen.org is cited, cite the source it uses for its own claims instead. Also if any bills are cited as evidence of position but not currently tracked, ADD THEM! Also here are relevant sources/quotes I found:
 
+Adam Hamilton: https://www.facebook.com/reel/1625817112361769 and the quote: "This is a potential existential threat to the human race. And I'm not somebody's crying wolf, I'm just saying we can't go with a light-touch and hope everybody does their best. We've got to be more involved than that, and this is one place where the federal government needs to be more engaged and involved." And this quote updates him to existential risk concerned and strong risk regulations
+
+Amy Klobuchar: https://www.politico.com/news/2026/09/11/klobuchar-thune-ai-safety-bill-faces-impasse-01073026
+
+Andy Barr: https://www.wpsdlocal6.com/news/rep-andy-barr-talks-nuclear-energy-artificial-intelligence-and-opponents-on-campaign-trail/article_5cf7b36d-70d9-4bba-93e7-76f80e578b71.html
+
+Angus S King Jr.: https://www.king.senate.gov/newsroom/press-releases/king-stresses-importance-of-uschina-engagement-on-ais-shared-risks
+
+Ashley Moody: https://www.moody.senate.gov/press-releases/video-in-homeland-security-subcommittee-senator-moody-questions-witnesses-on-potential-threats-posed-to-americas-children-and-seniors-from-ai/
+
+Ben Ray Lujan: https://www.lujan.senate.gov/newsroom/press-releases/lujan-calls-on-senate-leadership-to-establish-bipartisan-select-committee-on-ai/ 
+
+Bernie Moreno: instead of transformer news use this source https://www.axios.com/2026/10/05/gop-senator-bernie-moreno-ai-anthropic-dario-amodei-superintelligence and here's the relevant quotes: [In a letter to Anthropic CEO Dario Amodei]: "I do not understand how you can ask them to invest their hard-earned savings in Anthropic’s continued development while warning those same Americans that your product could ultimately lead to their extinction. I am equally concerned that this focus on potential catastrophic outcomes risks crowding out an equally important public debate: how American SI leadership can strengthen U.S. national security, counter SI-powered attacks from our adversaries, and ensure that the United States, not China, shapes the future of this technology. Rather than highlighting how SI could end humanity, public discourse around SI should focus on developing solutions to the real vulnerabilities SI has found in American critical infrastructure and cybersecurity. We should not unnecessarily metastasize SI 'doomerism,' but rather recognize that SI, like any cutting-edge technology, presents risks that must be addressed by companies who are able to rise to the occasion."
+
+Brian Schatz: https://www.schatz.senate.gov/news/press-releases/schatz-warner-to-take-to-senate-floor-to-demand-passage-of-new-ai-security-legislation

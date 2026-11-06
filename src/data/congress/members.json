@@ -17,8 +17,8 @@
     "state": "AK",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001319",
@@ -27,8 +27,8 @@
     "state": "AL",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001212",
@@ -37,8 +37,8 @@
     "state": "AL",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001095",
@@ -87,8 +87,8 @@
     "state": "CA",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001150",
@@ -177,8 +177,8 @@
     "state": "FL",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "O000174",
@@ -197,8 +197,8 @@
     "state": "GA",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001194",
@@ -207,8 +207,8 @@
     "state": "HI",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "H001042",
@@ -267,8 +267,8 @@
     "state": "IL",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-IL-S",
@@ -307,8 +307,8 @@
     "state": "KS",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-KS-S",
@@ -317,8 +317,8 @@
     "state": "KS",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "P000603",
@@ -327,8 +327,8 @@
     "state": "KY",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001282",
@@ -337,8 +337,8 @@
     "state": "KY",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "K000393",
@@ -397,8 +397,8 @@
     "state": "MD",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "K000383",
@@ -407,8 +407,8 @@
     "state": "ME",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-ME-S",
@@ -417,8 +417,8 @@
     "state": "ME",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001208",
@@ -447,8 +447,8 @@
     "state": "MN",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-MN-S",
@@ -457,8 +457,8 @@
     "state": "MN",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S001227",
@@ -538,8 +538,8 @@
     "state": "NC",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "H001061",
@@ -548,8 +548,8 @@
     "state": "ND",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001096",
@@ -588,8 +588,8 @@
     "state": "NH",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "P000614",
@@ -598,8 +598,8 @@
     "state": "NH",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001288",
@@ -618,8 +618,8 @@
     "state": "NJ",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "L000570",
@@ -628,8 +628,8 @@
     "state": "NM",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "H001046",
@@ -648,8 +648,8 @@
     "state": "NV",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "R000608",
@@ -658,8 +658,8 @@
     "state": "NV",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S000148",
@@ -678,8 +678,8 @@
     "state": "NY",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001242",
@@ -688,8 +688,8 @@
     "state": "OH",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "elect-2026-OH-S",
@@ -698,8 +698,8 @@
     "state": "OH",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "L000575",
@@ -728,8 +728,8 @@
     "state": "OR",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "W000779",
@@ -748,8 +748,8 @@
     "state": "PA",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-10-27"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "M001243",
@@ -758,8 +758,8 @@
     "state": "PA",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "R000122",
@@ -768,8 +768,8 @@
     "state": "RI",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "W000802",
@@ -888,8 +888,8 @@
     "state": "VA",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "K000384",
@@ -898,8 +898,8 @@
     "state": "VA",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "W000800",
@@ -908,8 +908,8 @@
     "state": "VT",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "S000033",
@@ -948,8 +948,8 @@
     "state": "WI",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "B001230",
@@ -958,8 +958,8 @@
     "state": "WI",
     "chamber": "senate",
     "senateRank": "junior",
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-06"
   },
   {
     "bioguideId": "C001047",

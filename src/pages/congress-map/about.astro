@@ -21,7 +21,7 @@ const billUrl = {
   <div class="prose">
     <p>
       This is an interactive map and directory of the incoming 120th U.S. Congress, color-coded by
-      publicly sourced positions on AI risk and domestic AI regulation.
+      publicly sourced positions on AI risk and AI regulation.
     </p>
     <h2>Corrections</h2>
     <p>
@@ -34,8 +34,9 @@ const billUrl = {
     </p>
     <h2>Stance assignment</h2>
     <p>
-      Support for stronger risk regulation outranks opposition to domestic regulation, which outranks
-      support limited to AI ethical concerns such as deepfakes. Positions are color-coded, and existential
+      Support for stronger risk regulation outranks opposition to AI regulation or light-touch-only
+      approaches, which outranks support limited to AI ethical concerns such as deepfakes. Positions
+      are color-coded, and existential
       risk concern is separately drawn as diagonal stripes over the color. It counts as support for
       stronger risk regulation unless there is reason to expect they would not support it, such as
       prioritizing a race against China. That is, a member can acknowledge catastrophic or existential
@@ -81,8 +82,9 @@ const billUrl = {
               )}
               {stance === "opposes_domestic" && (
                 <>
-                  Sourced opposition to domestic AI rulemaking (e.g. a state AI regulation moratorium). Does
-                  not include national-security-only measures.
+                  Sourced opposition to substantive AI rulemaking, or support only for light-touch
+                  approaches (e.g. a state AI regulation moratorium). Does not include national-security-only
+                  measures.
                 </>
               )}
               {stance === "unknown" && <>No sourced signal yet on regulation.</>}

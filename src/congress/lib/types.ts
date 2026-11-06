@@ -97,7 +97,7 @@ export const STANCE_LABELS: Record<Stance, string> = {
   xrisk_concern: 'Long-term / existential risk concern',
   strong_risk_reg: 'Supports stronger-risk regulation',
   mundane_risk: 'AI ethical concerns',
-  opposes_domestic: 'Opposes domestic AI regulation',
+  opposes_domestic: 'Opposes AI regulation or light-touch only',
   unknown: 'Unknown / no sourced signal',
 }
 
@@ -119,7 +119,7 @@ export const STANCE_SHORT: Record<Stance, string> = {
   xrisk_concern: 'X-risk concern',
   strong_risk_reg: 'Stronger-risk regs',
   mundane_risk: 'Ethical concerns',
-  opposes_domestic: 'Opposes regulation',
+  opposes_domestic: 'Opposes or light-touch',
   unknown: 'Unknown',
 }
 

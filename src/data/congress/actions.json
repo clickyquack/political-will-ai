@@ -1186,5 +1186,54 @@
     "action": "cosponsor",
     "date": "2026-10-13",
     "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/10538"
+  },
+  {
+    "bioguideId": "W000805",
+    "billId": "s5576-119",
+    "action": "sponsor",
+    "date": "2026-09-29",
+    "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/5576"
+  },
+  {
+    "bioguideId": "S001194",
+    "billId": "s5576-119",
+    "action": "cosponsor",
+    "date": "2026-09-29",
+    "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/5576"
+  },
+  {
+    "bioguideId": "K000394",
+    "billId": "s5576-119",
+    "action": "cosponsor",
+    "date": "2026-09-29",
+    "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/5576"
+  },
+  {
+    "bioguideId": "H001076",
+    "billId": "s5616-118",
+    "action": "cosponsor",
+    "date": "2024-12-19",
+    "sourceUrl": "https://www.congress.gov/bill/118th-congress/senate-bill/5616"
+  },
+  {
+    "bioguideId": "R000122",
+    "billId": "s5616-118",
+    "action": "cosponsor",
+    "date": "2024-12-19",
+    "sourceUrl": "https://www.congress.gov/bill/118th-congress/senate-bill/5616"
+  },
+  {
+    "bioguideId": "M000934",
+    "billId": "s5616-118",
+    "action": "cosponsor",
+    "date": "2024-12-19",
+    "sourceUrl": "https://www.congress.gov/bill/118th-congress/senate-bill/5616"
+  },
+  {
+    "bioguideId": "K000383",
+    "billId": "s5616-118",
+    "action": "cosponsor",
+    "date": "2024-12-19",
+    "sourceUrl": "https://www.congress.gov/bill/118th-congress/senate-bill/5616"
   }
 ]
