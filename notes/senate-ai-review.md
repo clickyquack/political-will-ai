@@ -257,7 +257,7 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 On file now: ev-506 2026-10-05 opposes_domestic (Fox News).
 
-Replaced the Axios quote per notes/congress-members.md. “Super intelligence” in some 2026 reporting tracks the White House term for AI, not Bostrom-style superintelligence. The Fox News article is dated Published October 5, 2026. His quote emphasizes staying ahead of China and doing it safely; it does not support an existential-risk stripe. Category: opposes regulation or light-touch only (China race framed first).
+Fox News piece published October 5, 2026. Quote: stay ahead of China and develop safely. Category: opposes regulation or light-touch only.
 
 ## Chris Van Hollen (MD)
 

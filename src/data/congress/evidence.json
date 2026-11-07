@@ -97,7 +97,7 @@
     "date": "2025-06-25",
     "sourceUrl": "https://www.youtube.com/live/GDNrUZBZDA4?si=J5X6EcYy1t_qcNam&t=3587",
     "sourceLabel": "Committee on the CCP hearing, Authoritarians and Algorithms: Why U.S. AI Must Lead.",
-    "notes": "Sourced via AIPN Congress on Superintelligence Classified as opposing domestic AI regulation because this statement prioritizes U.S. winning the global AI race over existential-risk framing."
+    "notes": "Sourced via AIPN Congress on Superintelligence"
   },
   {
     "id": "ev-11",
@@ -727,7 +727,7 @@
     "date": "2026-09-14",
     "sourceUrl": "https://x.com/SenRickScott/status/2099557655127756985",
     "sourceLabel": "Public statement",
-    "notes": "Coded as opposes/light-touch: says companies should not default to “Congress has to do something,” and that federal AI regulations are not happening this year because they must not be rushed. Same post mentions industry “kill mankind” warnings; that line does not call for congressional action. Sourced via AIPN Congress on Superintelligence"
+    "notes": "September 14, 2026. Sourced via AIPN Congress on Superintelligence."
   },
   {
     "id": "ev-74",
@@ -4711,7 +4711,7 @@
     "date": "2026-10-05",
     "sourceUrl": "https://www.foxnews.com/politics/gop-senators-skeptical-bill-gates-fearmongering-ai-warning-democrats-sound-alarm",
     "sourceLabel": "Fox News",
-    "notes": "Replace the Axios line that used “super intelligence.” That phrasing often follows the White House term for AI; it is not the same as existential-risk superintelligence. This quote leads with staying ahead of China and doing it safely. The article is dated Published October 5, 2026."
+    "notes": "Article published October 5, 2026."
   },
   {
     "id": "ev-507",
@@ -4790,7 +4790,7 @@
     "date": "2026-10-01",
     "sourceUrl": "https://www.thefp.com/p/john-fetterman-dave-mccormick-ai-policy-data-centers",
     "sourceLabel": "The Free Press",
-    "notes": "Op-ed with Senator John Fetterman, October 1, 2026. Existential-risk stripe from catastrophic-harm and bio/cyber/nuclear risk framing; they also write the race with China has existential stakes. Regulation color from the latest dated regulatory row (applyXriskDefault when stance is not opposes_domestic)."
+    "notes": "Op-ed with Senator John Fetterman, October 1, 2026."
   },
   {
     "id": "ev-515",
@@ -5010,6 +5010,6 @@
     "date": "2026-09-09",
     "sourceUrl": "https://www.politico.com/live-updates/2026/09/09/congress/ted-cruz-ai-risks-legislation-01069036",
     "sourceLabel": "Politico Live Updates",
-    "notes": "Quoted discussion of advanced weaponized systems and the U.S.–China race; paired in the piece with debate over AI safety legislation. Existential-risk stripe only; regulatory color comes from other dated rows (e.g. opposes_domestic)."
+    "notes": "September 9, 2026."
   }
 ]
