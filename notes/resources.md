@@ -16,7 +16,7 @@
   * [Where I Am Donating in 2025](https://forum.effectivealtruism.org/posts/AGcny8oBxBDCjqxdr/where-i-am-donating-in-2025)  
     * Author gives his high-level analysis for where to donate given his goals and what seems most cost-effective for reaching them and decides on [PauseAI US](https://www.pauseai-us.org/). Useful for thinking about cost-effectiveness and high-level strategy.
   * [How to Actually Spend Billions on AI Safety](https://forum.effectivealtruism.org/posts/npgwfZ6GpypGPKgyZ/how-to-actually-spend-billions-on-ai-safety)  
-    * Overview of the main high-level funding bottlenecks in addressing AI risk (mostly political advocacy related), has many concrete ideas to build off of. Has similar value to above.
+    * Overview of the main high-level funding bottlenecks in addressing AI risk (mostly political advocacy related), has many concrete ideas to build off of.
   * [AI safety needs a moonshot comms initiative](https://counterfactual.blog/p/ai-safety-needs-a-moonshot-comms)
   * [Speaking to Congressional staffers about AI risk](https://www.lesswrong.com/posts/2sLwt2cSAag74nsdN/speaking-to-congressional-staffers-about-ai-risk)  
   * [Which AI harms & risks will mobilise the public to act?](https://www.socialchangelab.org/research/which-ai-harms-and-risks.html)
