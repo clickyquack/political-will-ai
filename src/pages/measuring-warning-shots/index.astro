@@ -1,0 +1,17 @@
+---
+import WarningShotTimeline from "../../components/WarningShotTimeline.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import Base from "../../layouts/Base.astro";
+
+const title =
+  "Measuring the Political Impact of the Hugging Face Incident, Coxon Media Frenzy, and Related Events";
+---
+
+<Base
+  title={title}
+  description="A timeline of the Hugging Face incident, the Coxon coverage, and the political responses that followed."
+  wide
+>
+  <PageHeader title={title} />
+  <WarningShotTimeline />
+</Base>

@@ -11,6 +11,17 @@
     ]
   },
   {
+    "title": "AI StopWatch's Percentage of Headlines by Topic",
+    "url": "https://aistop.watch/",
+    "description": "Each new article by AI StopWatch opens with a graph showing the percentage of news headlines they track on AI, AI risk, and climate separately.",
+    "authors": [
+      {
+        "name": "AI StopWatch",
+        "url": "https://aistop.watch/"
+      }
+    ]
+  },
+  {
     "title": "Blue Rose Research Polls",
     "url": "https://x.com/davidshor/status/2100300687003259292",
     "description": "Public polling on AI existential risk concern, including how it ranks among other political issues.",

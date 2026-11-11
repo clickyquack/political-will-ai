@@ -26,6 +26,7 @@ interface Props {
 
 const { items, pinPriority = false } = Astro.props;
 const showPreviews = items.some((item) => item.image);
+const showAuthors = items.some((item) => item.authors.length > 0);
 
 function catalogHref(url: string) {
   return url.startsWith("/") ? sitePath(url) : url;
@@ -70,7 +71,11 @@ function dateLabel(date?: string) {
             )
           }
           <th scope="col">Title</th>
-          <th class="author-col" scope="col">Author</th>
+          {showAuthors && (
+            <th class="author-col" scope="col">
+              Author
+            </th>
+          )}
           <th class="date-col" scope="col" data-date-heading aria-sort={pinPriority ? "none" : "descending"}>
             Date
           </th>
@@ -120,28 +125,30 @@ function dateLabel(date?: string) {
                 </a>
                 {item.description && <p class="catalog-description">{item.description}</p>}
               </td>
-              <td>
-                {item.authors.length > 0 && <span class="field-label">Author</span>}
-                {item.authors.map((author, i) => (
-                  <span>
-                    {i > 0 && ", "}
-                    {author.url ? (
-                      <a
-                        class="author-link"
-                        href={catalogHref(author.url)}
-                        {...(!isInternalLink(author.url) && {
-                          target: "_blank",
-                          rel: "noopener noreferrer",
-                        })}
-                      >
-                        {author.name}
-                      </a>
-                    ) : (
-                      author.name
-                    )}
-                  </span>
-                ))}
-              </td>
+              {showAuthors && (
+                <td>
+                  {item.authors.length > 0 && <span class="field-label">Author</span>}
+                  {item.authors.map((author, i) => (
+                    <span>
+                      {i > 0 && ", "}
+                      {author.url ? (
+                        <a
+                          class="author-link"
+                          href={catalogHref(author.url)}
+                          {...(!isInternalLink(author.url) && {
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                          })}
+                        >
+                          {author.name}
+                        </a>
+                      ) : (
+                        author.name
+                      )}
+                    </span>
+                  ))}
+                </td>
+              )}
               <td>
                 {(item.date || item.continuous) && <span class="field-label">Date</span>}
                 {item.date ? (

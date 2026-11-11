@@ -1,0 +1,16 @@
+---
+import data from "../data/newsletters.json";
+import Catalog from "../components/Catalog.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { parseCatalog } from "../lib/catalog";
+import Base from "../layouts/Base.astro";
+import { getNavItem } from "../site";
+
+const page = getNavItem("blogs-and-newsletters");
+const items = parseCatalog(data, { pinPriority: true });
+---
+
+<Base title={page.label} wide>
+  <PageHeader title={page.label} />
+  <Catalog items={items} pinPriority />
+</Base>

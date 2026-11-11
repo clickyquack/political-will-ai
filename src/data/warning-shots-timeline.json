@@ -1,0 +1,604 @@
+[
+  {
+    "id": "fable-5",
+    "date": "2026-06-09",
+    "dateLabel": "June 9",
+    "kind": "lab",
+    "title": "Anthropic releases Fable 5",
+    "summary": "Anthropic releases Fable 5, a restricted version of Mythos 5, known for its advanced cybersecurity capabilities.",
+    "sources": [
+      {
+        "label": "Anthropic",
+        "url": "https://www.anthropic.com/news/glasswing-initial-update"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "export-controls",
+    "date": "2026-06-12",
+    "dateLabel": "June 12",
+    "kind": "policy",
+    "title": "White House export controls on Fable 5",
+    "summary": "The White House temporarily places export controls on Anthropic’s Fable 5, citing cybersecurity and national security concerns after being shown a perceived jailbreak to access its cybersecurity capabilities.",
+    "sources": [
+      {
+        "label": "Politico",
+        "url": "https://www.politico.com/news/2026/06/13/inside-the-whirlwind-24-hours-that-led-the-white-house-to-slap-export-controls-on-anthropic-00961519"
+      }
+    ],
+    "references": ["fable-5"]
+  },
+  {
+    "id": "ratcliffe",
+    "date": "2026-06-30",
+    "dateLabel": "June 30",
+    "kind": "press",
+    "title": "Ratcliffe compares frontier AI to digital nuclear weapons",
+    "summary": "The New York Times reports that, on frontier AI, CIA Director John Ratcliffe said it was “not misplaced to refer to their capabilities as akin to digital nuclear weapons.”",
+    "sources": [
+      {
+        "label": "New York Times",
+        "url": "https://www.nytimes.com/2026/06/30/us/politics/cia-reorganization-cyber-ai.html"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "hf-report",
+    "date": "2026-07-16",
+    "dateLabel": "July 16",
+    "kind": "disclosure",
+    "title": "Hugging Face reports the attack",
+    "summary": "Hugging Face reports the security incident.",
+    "sources": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/blog/security-incident-july-2026"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "openai-attribution",
+    "date": "2026-07-21",
+    "dateLabel": "July 21",
+    "kind": "disclosure",
+    "title": "OpenAI attributes the attack",
+    "summary": "OpenAI attributes the Hugging Face attack to its own systems.",
+    "sources": [
+      {
+        "label": "OpenAI",
+        "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "kill-switch",
+    "date": "2026-07-23",
+    "dateLabel": "July 23",
+    "kind": "policy",
+    "title": "AI Kill Switch Act introduced",
+    "summary": "The AI Kill Switch Act is introduced. Its press release cites the Hugging Face incident.",
+    "sources": [
+      {
+        "label": "Lieu",
+        "url": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "kratsios",
+    "date": "2026-07-23",
+    "dateLabel": "July 23",
+    "kind": "policy",
+    "title": "Kratsios is “monitoring the situation”",
+    "summary": "White House technology advisor Michael Kratsios is “monitoring the situation.”",
+    "sources": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/legal/litigation/ai-kill-switch-bill-floated-by-us-house-lawmakers-2026-07-23/"
+      }
+    ],
+    "references": ["kill-switch"]
+  },
+  {
+    "id": "pacing",
+    "date": "2026-07-28",
+    "dateLabel": "July 28",
+    "kind": "advocacy",
+    "title": "Pacing the Frontier letter",
+    "summary": "The Pacing the Frontier letter is released.",
+    "sources": [
+      {
+        "label": "Pacing the Frontier",
+        "url": "https://www.pacingthefrontier.com/"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "frontier-act",
+    "date": "2026-07-28",
+    "dateLabel": "July 28",
+    "kind": "policy",
+    "title": "FRONTIER Act support cites the Hugging Face incident",
+    "summary": "A press release on support for the FRONTIER Act cites the Hugging Face incident.",
+    "sources": [
+      {
+        "label": "Trahan",
+        "url": "https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3825"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "altman-dc",
+    "date": "2026-07-29",
+    "dateLabel": "July 29",
+    "kind": "advocacy",
+    "title": "Altman meets with senators",
+    "summary": "Sam Altman meets with senators in Washington. The breach was discussed “a little bit.”",
+    "sources": [
+      {
+        "label": "Quartz",
+        "url": "https://qz.com/sam-altman-senators-openai-rogue-agent-hugging-face-073026"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "trump-controls",
+    "date": "2026-07-29",
+    "dateLabel": "July 29",
+    "kind": "press",
+    "title": "Trump on AI controls and China",
+    "summary": "When asked about the Hugging Face incident, Trump tells reporters: “We're looking at AI. We're looking at controls. We're also making sure that we lead. So, we're leading China in AI by a lot. China has virtually no controls. It's freewheeling a little bit. So, we have to be careful in both ways. We don't want to restrict them where all of a sudden we come in second to China.” The administration had otherwise maintained skepticism of AI regulation before this, aside from national security concerns about Mythos’s advanced cybersecurity capabilities.",
+    "sources": [
+      {
+        "label": "Remarks",
+        "url": "https://www.youtube.com/watch?v=kTWO1DU-3ZA"
+      }
+    ],
+    "references": ["hf-report", "export-controls"]
+  },
+  {
+    "id": "anthropic-incidents",
+    "date": "2026-07-30",
+    "dateLabel": "July 30",
+    "kind": "disclosure",
+    "title": "Anthropic discloses three rogue-agent incidents",
+    "summary": "Anthropic discloses three rogue-agent incidents.",
+    "sources": [
+      {
+        "label": "Anthropic",
+        "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "senate-wh-letter",
+    "date": "2026-08-04",
+    "dateLabel": "August 4",
+    "kind": "policy",
+    "title": "Senators press the White House on model oversight",
+    "summary": "Five senators cite the Hugging Face incident in a White House letter on oversight of new artificial intelligence models.",
+    "sources": [
+      {
+        "label": "Warner",
+        "url": "https://www.warner.senate.gov/newsroom/press-releases/warner-colleagues-press-trump-administration-on-chaotic-opaque-oversight-of-new-artificial-intelligence-models/"
+      },
+      {
+        "label": "Gillibrand",
+        "url": "https://www.gillibrand.senate.gov/news/press/release/gillibrand-schiff-and-colleagues-press-trump-administration-on-chaotic-opaque-oversight-of-new-artificial-intelligence-models/"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "bbc-viruses",
+    "date": "2026-08-06",
+    "dateLabel": "August 6",
+    "kind": "press",
+    "title": "AI used to design new viruses",
+    "summary": "The BBC reports that artificial intelligence was used to design brand new viruses.",
+    "sources": [
+      {
+        "label": "BBC",
+        "url": "https://www.bbc.com/news/articles/c5y3j3ngevmo"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "sanders-pause",
+    "date": "2026-08-10",
+    "dateLabel": "August 10",
+    "kind": "policy",
+    "title": "Sanders calls for a pause",
+    "summary": "Bernie Sanders publishes an open letter to the CEOs of OpenAI, Anthropic, and Meta calling for a pause on AI development, citing the Hugging Face incident, the report on AI-assisted novel viruses, and John Ratcliffe’s “digital nuclear weapons” statements.",
+    "sources": [
+      {
+        "label": "Letter",
+        "url": "https://www.sanders.senate.gov/wp-content/uploads/AI-Pause-Letter-FINAL.pdf"
+      }
+    ],
+    "references": ["hf-report", "bbc-viruses", "ratcliffe"]
+  },
+  {
+    "id": "csis",
+    "date": "2026-08-24",
+    "dateLabel": "August 24",
+    "kind": "advocacy",
+    "title": "CSIS event on agent containment failures",
+    "summary": "A CSIS event on “AI Agent Containment Failures” discusses the Hugging Face incident. Rep. Suhas Subramanyam hopes to add AI containment language to the FRONTIER Act, prompted by the incident.",
+    "sources": [
+      {
+        "label": "CSIS",
+        "url": "https://www.csis.org/events/ai-agent-containment-failures-technical-realities-and-policy-responses"
+      },
+      {
+        "label": "Nextgov",
+        "url": "https://www.nextgov.com/artificial-intelligence/2026/08/dem-lawmaker-hopes-add-ai-containment-language-frontier-act/415602/"
+      }
+    ],
+    "references": ["hf-report", "frontier-act"]
+  },
+  {
+    "id": "metr",
+    "date": "2026-08-26",
+    "dateLabel": "August 26",
+    "kind": "disclosure",
+    "title": "METR investigation of the Hugging Face incident",
+    "summary": "METR releases a brief independent investigation of agents’ behavior, reasoning, and collaboration in the OpenAI / Hugging Face hacking incident.",
+    "sources": [
+      {
+        "label": "METR",
+        "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "ban-asi-announce",
+    "date": "2026-09-03",
+    "dateLabel": "September 3",
+    "kind": "policy",
+    "title": "Sanders and Casar announce a superintelligence ban",
+    "summary": "Bernie Sanders and Greg Casar announce the Ban Artificial Superintelligence Act, citing the Hugging Face incident and quoting the agents in the press release.",
+    "sources": [
+      {
+        "label": "Sanders",
+        "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "paulson-rubin",
+    "date": "2026-09-03",
+    "dateLabel": "September 3",
+    "kind": "press",
+    "title": "Paulson and Rubin call for an AI cooperation treaty",
+    "summary": "Former Treasury secretaries Henry M. Paulson Jr. and Robert E. Rubin publish a Washington Post op-ed calling for an “AI Cooperation Treaty” with China and something like the President’s Working Group on Financial Markets for AI. They cite rogue-agent incidents from OpenAI and Anthropic and compare the situation to past financial crises.",
+    "sources": [
+      {
+        "label": "Washington Post",
+        "url": "https://www.washingtonpost.com/opinions/2026/09/03/ai-safety-security-risks-demand-new-government-body/"
+      },
+      {
+        "label": "Washington Post on OpenAI",
+        "url": "https://www.washingtonpost.com/technology/2026/08/26/openai-says-its-ai-consistently-tries-cheat/"
+      }
+    ],
+    "references": ["hf-report", "anthropic-incidents"]
+  },
+  {
+    "id": "collusion-wiki",
+    "date": "2026-09-04",
+    "dateLabel": "September 4",
+    "kind": "disclosure",
+    "title": "collusion.wiki published",
+    "summary": "collusion.wiki is published, another rogue-agent incident from OpenAI, notable for having been independently discovered rather than disclosed by OpenAI.",
+    "sources": [
+      {
+        "label": "collusion.wiki",
+        "url": "https://collusion.wiki/"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "coxon",
+    "date": "2026-09-08",
+    "dateLabel": "September 8",
+    "kind": "press",
+    "title": "Jacob Coxon resigns",
+    "summary": "Jacob Coxon quits, citing safety concerns, near-term existential risk, and the Hugging Face incident.",
+    "sources": [
+      {
+        "label": "Coxon",
+        "url": "https://x.com/hilbertspaess/status/2097476196791709843"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "hubinger",
+    "date": "2026-09-08",
+    "dateLabel": "September 8",
+    "kind": "press",
+    "title": "Evan Hubinger agrees",
+    "summary": "Evan Hubinger, Alignment Science lead at Anthropic, agrees, and explicitly names a greater than 10% chance within the next decade.",
+    "sources": [
+      {
+        "label": "Hubinger",
+        "url": "https://x.com/EvanHub/status/2097497037956891126"
+      }
+    ],
+    "references": ["coxon"]
+  },
+  {
+    "id": "wsj-coxon",
+    "date": "2026-09-09",
+    "dateLabel": "September 9",
+    "kind": "press",
+    "title": "Wall Street Journal on Coxon",
+    "summary": "The Wall Street Journal publishes an exclusive on Coxon.",
+    "sources": [
+      {
+        "label": "Wall Street Journal",
+        "url": "https://www.wsj.com/tech/ai/anthropic-researcher-quits-over-out-of-control-ai-fears-707b7628"
+      }
+    ],
+    "references": ["coxon"]
+  },
+  {
+    "id": "stop-rogue",
+    "date": "2026-09-09",
+    "dateLabel": "September 9",
+    "kind": "policy",
+    "title": "Stop Rogue AI Act introduced",
+    "summary": "The Stop Rogue AI Act is introduced. The press release implicitly refers to past rogue-agent incidents.",
+    "sources": [
+      {
+        "label": "Gottheimer",
+        "url": "https://gottheimer.house.gov/posts/release-gottheimer-introduces-bipartisan-bill-to-stop-rogue-ai-agents-and-keep-people-in-control"
+      }
+    ],
+    "references": ["hf-report", "anthropic-incidents"]
+  },
+  {
+    "id": "policy-window",
+    "date": "2026-09-09",
+    "dateLabel": "September 9",
+    "kind": "advocacy",
+    "title": "OpenAI says the policy window is open",
+    "summary": "OpenAI posts “The AI policy window is open. We need to act.”",
+    "sources": [
+      {
+        "label": "OpenAI",
+        "url": "https://openai.com/index/ai-policy-window/"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "congress-posts",
+    "date": "2026-09-09",
+    "dateLabel": "September 9-10",
+    "kind": "press",
+    "title": "Members of Congress respond to Coxon",
+    "summary": "At least 27 members of Congress post on Twitter about Coxon’s statement. Two of those posts were on September 10.",
+    "sources": [
+      {
+        "label": "Thread",
+        "url": "https://x.com/daniel_271828/status/2097866883307602163"
+      }
+    ],
+    "references": ["coxon"]
+  },
+  {
+    "id": "hawley",
+    "date": "2026-09-10",
+    "dateLabel": "September 10",
+    "kind": "policy",
+    "title": "Hawley launches an investigation",
+    "summary": "Josh Hawley launches an investigation into the Hugging Face incident. This is probably the most significant action actually taken by the US federal government in response to the incident.",
+    "sources": [
+      {
+        "label": "Hawley",
+        "url": "https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/"
+      }
+    ],
+    "references": ["hf-report"]
+  },
+  {
+    "id": "van-hollen-altman",
+    "date": "2026-09-10",
+    "dateLabel": "September 10",
+    "kind": "policy",
+    "title": "Van Hollen letter to Altman",
+    "summary": "Chris Van Hollen publishes a letter to Sam Altman over concerns that Astra is less monitorable, implicitly referencing collusion.wiki.",
+    "sources": [
+      {
+        "label": "Van Hollen",
+        "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-presses-openai-ceo-sam-altman-on-alarming-new-ai-model-claims-calls-for-risk-assessment-of-ai-capabilities"
+      }
+    ],
+    "references": ["collusion-wiki"]
+  },
+  {
+    "id": "pauseai-signups",
+    "date": "2026-09-10",
+    "dateLabel": "September 10",
+    "kind": "press",
+    "title": "PauseAI UK sign-ups",
+    "summary": "Joseph Miller shares a chart of PauseAI UK daily sign-ups.",
+    "sources": [
+      {
+        "label": "LessWrong",
+        "url": "https://www.lesswrong.com/posts/cannX863Qu4FGMjep/jennas-s-shortform?commentId=3GtttPDuHv94F6yzD"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "amodei",
+    "date": "2026-09-12",
+    "dateLabel": "September 12",
+    "kind": "advocacy",
+    "title": "Amodei: We Must Pace the Frontier",
+    "summary": "Anthropic CEO Dario Amodei publishes “We Must Pace the Frontier,” calling for an international agreement to slow or pause frontier AI development. The essay links Pacing the Frontier and opens by explaining recursive self-improvement, the Hugging Face incident via METR’s report, and Anthropic’s own rogue-agent incidents. Several other frontier-lab leaders endorsed it.",
+    "sources": [
+      {
+        "label": "Essay",
+        "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+      },
+      {
+        "label": "Elon Musk",
+        "url": "https://x.com/elonmusk/status/2098789109980332057"
+      },
+      {
+        "label": "Sam Altman",
+        "url": "https://x.com/sama/status/2098811563415150910"
+      },
+      {
+        "label": "Demis Hassabis",
+        "url": "https://x.com/demishassabis/status/2098909516582490602"
+      },
+      {
+        "label": "Satya Nadella",
+        "url": "https://x.com/satyanadella/status/2099220712024408084"
+      }
+    ],
+    "references": ["pacing", "metr", "hf-report", "anthropic-incidents"]
+  },
+  {
+    "id": "obama-nyt",
+    "date": "2026-09-13",
+    "dateLabel": "September 13",
+    "kind": "press",
+    "title": "Obama urges Democrats to center AI oversight",
+    "summary": "The New York Times reports that Obama urged Democrats to move AI oversight to the center of their agenda, about statements made on September 10 that had not been published before.",
+    "sources": [
+      {
+        "label": "New York Times",
+        "url": "https://www.nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "shor",
+    "date": "2026-09-16",
+    "dateLabel": "September 16",
+    "kind": "press",
+    "title": "David Shor on the shift after Coxon",
+    "summary": "David Shor publishes data capturing a political shift among the general public after the Coxon media frenzy.",
+    "sources": [
+      {
+        "label": "Shor",
+        "url": "https://x.com/davidshor/status/2100300687003259292"
+      }
+    ],
+    "references": ["coxon"]
+  },
+  {
+    "id": "xrisk-observatory",
+    "date": "2026-09-16",
+    "dateLabel": "September 16",
+    "kind": "press",
+    "title": "Existential Risk Observatory polling",
+    "summary": "The Existential Risk Observatory publishes data showing similar results.",
+    "sources": [
+      {
+        "label": "LessWrong",
+        "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk"
+      }
+    ],
+    "references": ["shor"]
+  },
+  {
+    "id": "obama-colgate",
+    "date": "2026-09-18",
+    "dateLabel": "September 18",
+    "kind": "press",
+    "title": "Obama at Colgate on AI risk",
+    "summary": "Obama discusses recursive self-improvement, AI existential risk, mass automation, and misalignment at Colgate University. “In the last couple of weeks, this has finally popped as a central issue,” presumably referring to the Jacob Coxon media frenzy.",
+    "sources": [
+      {
+        "label": "Remarks",
+        "url": "https://www.youtube.com/watch?v=N0EmPWhXCuQ"
+      }
+    ],
+    "references": ["coxon"]
+  },
+  {
+    "id": "van-hollen-treaty",
+    "date": "2026-09-23",
+    "dateLabel": "September 23",
+    "kind": "policy",
+    "title": "Senate Democrats push for AI guardrails with China",
+    "summary": "Seventeen Senate Democrats sign a letter led by Chris Van Hollen calling for an international treaty to address AI risk. It cites leading AI experts on extinction risk, Pacing the Frontier, Amodei’s “We Must Pace the Frontier” and other lab leaders’ endorsements, the Washington Post op-ed by Paulson and Rubin, and Ratcliffe’s “digital nuclear weapons” statements.",
+    "sources": [
+      {
+        "label": "Van Hollen",
+        "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-more-than-15-senate-democrats-push-trump-to-negotiate-ai-guardrails-with-xi"
+      }
+    ],
+    "references": ["pacing", "amodei", "paulson-rubin", "ratcliffe"]
+  },
+  {
+    "id": "ban-asi-intro",
+    "date": "2026-09-23",
+    "dateLabel": "September 23",
+    "kind": "policy",
+    "title": "Ban Artificial Superintelligence Act introduced",
+    "summary": "Sanders and Casar formally introduce the Ban Artificial Superintelligence Act. The press release cites cyberattack, bioweapon, and recursive self-improvement concerns, quotes several leading AI scientists on existential risk, and cites the Pacing the Frontier letter.",
+    "sources": [
+      {
+        "label": "Sanders",
+        "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-create-new-federal-agency-to-ban-artificial-superintelligence-pause-advanced-ai-development/"
+      }
+    ],
+    "references": ["ban-asi-announce", "pacing"]
+  },
+  {
+    "id": "wh-accord",
+    "date": "2026-09-29",
+    "dateLabel": "September 29",
+    "kind": "policy",
+    "title": "White House Accord on Super Intelligence",
+    "summary": "The White House Accord on Super Intelligence is organized by the White House and several frontier lab leaders, and is described as “morally binding.”",
+    "sources": [
+      {
+        "label": "Accord",
+        "url": "https://www.presidency.ucsb.edu/documents/white-house-accord-super-intelligence"
+      },
+      {
+        "label": "ABC News",
+        "url": "https://abcnews.com/Politics/top-ai-leaders-meet-trump-white-house-amid/story?id=136832988"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "ftc-probe",
+    "date": "2026-09-30",
+    "dateLabel": "September 30",
+    "kind": "enforcement",
+    "title": "FTC opens a probe into AI companies",
+    "summary": "Reuters reports that the FTC opened a probe into AI companies including Anthropic and OpenAI.",
+    "sources": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
+      }
+    ],
+    "references": []
+  }
+]

@@ -35,8 +35,10 @@ export const nav: NavEntry[] = [
       { id: "politician-positions", href: sitePath("/politician-positions"), label: "Politician positions" },
       { id: "industry-lobbying", href: sitePath("/industry-lobbying"), label: "Industry lobbying" },
       { id: "proxy-measures", href: sitePath("/proxy-measures"), label: "Proxy measures" },
+      { id: "blogs-and-newsletters", href: sitePath("/blogs-and-newsletters"), label: "Blogs & Newsletters" },
     ],
   },
+  { id: "measuring-warning-shots", href: sitePath("/measuring-warning-shots"), label: "Measuring Warning Shots" },
   { id: "blog", href: sitePath("/blog"), label: "Blog" },
 ];
 

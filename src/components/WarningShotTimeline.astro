@@ -1,0 +1,227 @@
+---
+import {
+  WARNING_SHOT_KIND_LABELS,
+  loadWarningShots,
+  warningShotKinds,
+} from "../lib/warning-shots";
+
+const groups = loadWarningShots();
+---
+
+<div class="shot-timeline">
+  <ul class="shot-legend">
+    {
+      warningShotKinds.map((kind) => (
+        <li class={`kind-${kind}`}>
+          <span>{WARNING_SHOT_KIND_LABELS[kind]}</span>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    groups.map((group) => (
+      <section class="shot-group">
+        <h2>{group.label}</h2>
+        <ol>
+          {group.events.map((event) => (
+            <li id={event.id} class={`kind-${event.kind}`}>
+              <article>
+                <p class="shot-meta">
+                  <time datetime={event.date}>{event.dateLabel}</time>
+                  <span class="shot-kind">{WARNING_SHOT_KIND_LABELS[event.kind]}</span>
+                </p>
+                <h3>{event.title}</h3>
+                <p>{event.summary}</p>
+                {event.sources.length > 0 && (
+                  <p class="shot-sources">
+                    Sources:{" "}
+                    {event.sources.map((source, index) => (
+                      <>
+                        {index > 0 && " · "}
+                        <a href={source.url} target="_blank" rel="noopener noreferrer">
+                          {source.label}
+                          <span class="visually-hidden"> (opens in a new tab)</span>
+                        </a>
+                      </>
+                    ))}
+                  </p>
+                )}
+                {(event.referenceLinks.length > 0 || event.referencedBy.length > 0) && (
+                  <div class="shot-links">
+                    {event.referenceLinks.length > 0 && (
+                      <p>
+                        <span>References</span>
+                        <span class="shot-link-list">
+                          {event.referenceLinks.map((link, index) => (
+                            <>
+                              {index > 0 && " · "}
+                              <a href={`#${link.id}`}>{link.title}</a>
+                            </>
+                          ))}
+                        </span>
+                      </p>
+                    )}
+                    {event.referencedBy.length > 0 && (
+                      <p>
+                        <span>Referenced by</span>
+                        <span class="shot-link-list">
+                          {event.referencedBy.map((link, index) => (
+                            <>
+                              {index > 0 && " · "}
+                              <a href={`#${link.id}`}>{link.title}</a>
+                            </>
+                          ))}
+                        </span>
+                      </p>
+                    )}
+                  </div>
+                )}
+              </article>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))
+  }
+</div>
+
+<style>
+  .shot-timeline {
+    margin-top: 2rem;
+  }
+
+  .shot-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+  }
+
+  .shot-legend li::before {
+    content: "";
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-right: 0.4rem;
+    border: 2px solid var(--kind, var(--accent));
+    border-radius: 50%;
+    vertical-align: 0.05em;
+  }
+
+  .shot-group + .shot-group {
+    margin-top: 2.25rem;
+  }
+
+  .shot-group h2 {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+    font-weight: 520;
+    letter-spacing: -0.02em;
+  }
+
+  .shot-group ol {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.15rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .shot-group li {
+    position: relative;
+    padding: 0 0 1.35rem 1.15rem;
+    scroll-margin-top: 1.25rem;
+  }
+
+  .shot-group li::before {
+    content: "";
+    position: absolute;
+    top: 0.55rem;
+    left: -1.15rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: -0.35rem;
+    background: var(--bg);
+    border: 2px solid var(--kind, var(--accent));
+    border-radius: 50%;
+  }
+
+  .shot-group article {
+    padding: 0.95rem 1.05rem 1rem;
+    border: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg) 88%, white);
+  }
+
+  .shot-group li:target article {
+    border-color: var(--accent);
+    background: #e7f0eb;
+  }
+
+  .shot-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.88rem;
+  }
+
+  .shot-kind {
+    color: var(--kind, var(--accent));
+  }
+
+  .shot-group h3 {
+    margin: 0.3rem 0 0.45rem;
+    font-size: 1.28rem;
+    font-weight: 520;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .shot-group article > p {
+    margin: 0;
+  }
+
+  .shot-sources,
+  .shot-links {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+  }
+
+  .shot-links p {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    gap: 0.2rem 0.75rem;
+    align-items: baseline;
+    margin: 0.45rem 0 0;
+  }
+
+  .shot-links p > span:first-child {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .shot-link-list {
+    font-weight: 400;
+  }
+
+  .shot-timeline a {
+    color: var(--accent);
+  }
+
+  .kind-incident { --kind: #8c3a32; }
+  .kind-disclosure { --kind: #9a5b12; }
+  .kind-press { --kind: #6b5420; }
+  .kind-context { --kind: #5c564e; }
+  .kind-policy { --kind: #1f4a3e; }
+  .kind-advocacy { --kind: #24556e; }
+  .kind-enforcement { --kind: #3d4d8f; }
+  .kind-lab { --kind: #5a3d6b; }
+</style>
