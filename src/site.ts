@@ -38,7 +38,6 @@ export const nav: NavEntry[] = [
       { id: "blogs-and-newsletters", href: sitePath("/blogs-and-newsletters"), label: "Blogs & Newsletters" },
     ],
   },
-  { id: "measuring-warning-shots", href: sitePath("/measuring-warning-shots"), label: "Measuring Warning Shots" },
   { id: "blog", href: sitePath("/blog"), label: "Blog" },
 ];
 

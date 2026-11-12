@@ -178,5 +178,98 @@
     ],
     "date": "2026-03-10",
     "continuous": false
+  },
+  {
+    "title": "Writing Your Representatives: A Cost-Effective and Neglected Intervention",
+    "url": "https://forum.effectivealtruism.org/posts/PvJL4Rnz2Dq9J2omd/writing-your-representatives-a-worthwhile-and-neglected",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-11-09",
+    "continuous": false
+  },
+  {
+    "title": "Epistemic Spot Check: Expected Value of Donating to Alex Bores's Congressional Campaign",
+    "url": "https://mdickens.me/2025/11/13/spot_check_alex_bores/",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-11-13",
+    "continuous": false
+  },
+  {
+    "title": "Do Protests Work? A Critical Review",
+    "url": "https://mdickens.me/2025/04/18/protest_outcomes_critical_review/",
+    "description": "TL;DR: Most likely",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-04-18",
+    "continuous": false
+  },
+  {
+    "title": "Do small protests work?",
+    "url": "https://mdickens.me/2025/11/04/do_small_protests_work/",
+    "description": "TL;DR: Maybe somewhat, although not as much as large protests",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-11-04",
+    "continuous": false
+  },
+  {
+    "title": "Do Disruptive or Violent Protests Work?",
+    "url": "https://mdickens.me/2025/11/19/do_disruptive_protests_work/",
+    "description": "TL;DR: Violent protests most likely do not and may harm the cause if anything, disruptive protests maybe do but most likely aren't as good as peaceful protests",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-11-19",
+    "continuous": false
+  },
+  {
+    "title": "AI Safety Landscape & Strategic Gaps",
+    "url": "https://forum.effectivealtruism.org/posts/CbHX5zL2uEvTasuiP/ai-safety-landscape-and-strategic-gaps",
+    "description": "Huge overview of strategy for reducing existential risk from AI, brainstorms the biggest gaps to fill and primarily focuses on political advocacy",
+    "authors": [
+      {
+        "name": "Michael Dickens",
+        "url": "https://mdickens.me/"
+      }
+    ],
+    "date": "2025-09-17",
+    "continuous": false
+  },
+  {
+    "title": "How cost-effective are AI safety YouTubers?",
+    "url": "https://forum.effectivealtruism.org/posts/SBsGCwkoAemPawfJz/how-cost-effective-are-ai-safety-youtubers",
+    "description": "Not political advocacy focused, but useful for thinking about mass-communications projects for it nonetheless",
+    "authors": [
+      {
+        "name": "Marcus Abramovitch",
+        "url": "https://forum.effectivealtruism.org/users/marcus-abramovitch"
+      },
+      {
+        "name": "Austin",
+        "url": "https://forum.effectivealtruism.org/users/austin"
+      }
+    ],
+    "date": "2025-09-12",
+    "continuous": false
   }
 ]

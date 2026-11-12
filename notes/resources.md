@@ -21,3 +21,15 @@
   * [Speaking to Congressional staffers about AI risk](https://www.lesswrong.com/posts/2sLwt2cSAag74nsdN/speaking-to-congressional-staffers-about-ai-risk)  
   * [Which AI harms & risks will mobilise the public to act?](https://www.socialchangelab.org/research/which-ai-harms-and-risks.html)
     * Many harms from AI have varying degrees of salience among the public and degree to which they are helpful for policy solutions that mitigate existential risk; this paper suggests autonomous warfare strikes the best balance and explores several others.
+  * [Writing Your Representatives: A Cost-Effective and Neglected Intervention](https://forum.effectivealtruism.org/posts/PvJL4Rnz2Dq9J2omd/writing-your-representatives-a-worthwhile-and-neglected)
+  * [Epistemic Spot Check: Expected Value of Donating to Alex Bores's Congressional Campaign](https://mdickens.me/2025/11/13/spot_check_alex_bores/)
+  * [Do Protests Work? A Critical Review](https://mdickens.me/2025/04/18/protest_outcomes_critical_review/)
+    * TL;DR: Most likely
+  * [https://mdickens.me/2025/11/04/do_small_protests_work/](https://mdickens.me/2025/11/04/do_small_protests_work/)
+    * TL;DR: Maybe somewhat, although not as much as large protests
+  * [Do Disruptive or Violent Protests Work?](https://mdickens.me/2025/11/19/do_disruptive_protests_work/)
+    * TL;DR: Violent protests most likely do not and may harm the cause if anything, disruptive protests maybe do but most likely aren't as good as [peaceful protests](https://mdickens.me/2025/04/18/protest_outcomes_critical_review/)
+  * [AI Safety Landscape & Strategic Gaps](https://forum.effectivealtruism.org/posts/CbHX5zL2uEvTasuiP/ai-safety-landscape-and-strategic-gaps)
+    * Huge overview of strategy for reducing existential risk from AI, brainstorms the biggest gaps to fill and primarily focuses on political advocacy
+  * [How cost-effective are AI safety YouTubers?](https://forum.effectivealtruism.org/posts/SBsGCwkoAemPawfJz/how-cost-effective-are-ai-safety-youtubers)
+    * Not political advocacy focused, but useful for thinking about mass-communications projects for it nonetheless
