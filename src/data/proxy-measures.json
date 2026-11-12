@@ -2,7 +2,7 @@
   {
     "title": "Congress on Superintelligence",
     "url": "https://theaipn.org/issue/quotes/",
-    "description": "Graph and timeline of Congress members who have expressed concerns relating to Superintelligence, with sourced quotes and color-coding by party.",
+    "description": "Graph and timeline of Congress members who have expressed concerns relating to Superintelligence, with sourced quotes and color-coding by party. Tool by The AI Policy Network.",
     "authors": [
       {
         "name": "The AI Policy Network",
@@ -22,9 +22,9 @@
     ]
   },
   {
-    "title": "Blue Rose Research Polls",
+    "title": "Blue Rose Research Polls, September",
     "url": "https://x.com/davidshor/status/2100300687003259292",
-    "description": "Public polling on AI existential risk concern, including how it ranks among other political issues.",
+    "description": "Public polling by Blue Rose Research on AI existential risk concern, including how it ranks among other political issues (which is relevant for swaying election outcomes and defeating special interest group lobbying). Notably, shows a spike after the Jacob Coxon media frenzy.",
     "authors": [
       {
         "name": "Blue Rose Research",
@@ -36,7 +36,7 @@
   {
     "title": "Existential risk awareness among US public over time",
     "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk",
-    "description": "Public polling on concern for existential risk from AI.",
+    "description": "Public polling on concern for existential risk from AI. Notably, shows a spike after the Jacob Coxon media frenzy.",
     "authors": [
       {
         "name": "Existential Risk Observatory",
@@ -44,5 +44,17 @@
       }
     ],
     "date": "2026-09-16"
+  },
+  {
+    "title": "Blue Rose Research Polls, March",
+    "url": "https://x.com/davidshor/status/2033906948525928569",
+    "description": "Notably, includes a graph showing how AI has climbed in salience the most as a relative to other political issues in the past year",
+    "authors": [
+      {
+        "name": "Blue Rose Research",
+        "url": "https://blueroseresearch.org/"
+      }
+    ],
+    "date": "2026-03-17"
   }
 ]

@@ -271,5 +271,55 @@
     ],
     "date": "2025-09-12",
     "continuous": false
+  },
+  {
+    "title": "Consider donating to Alex Bores, author of the RAISE Act",
+    "url": "https://www.lesswrong.com/posts/TbsdA7wG9TvMQYMZj/consider-donating-to-alex-bores-author-of-the-raise-act-1",
+    "authors": [
+      {
+        "name": "Eric Neyman",
+        "url": "https://www.lesswrong.com/users/unexpectedvalues"
+      }
+    ],
+    "date": "2025-10-20",
+    "continuous": false
+  },
+  {
+    "title": "Voters are surprisingly open to talking about AI risk",
+    "url": "https://www.lesswrong.com/posts/9WPfkYDZCacnbhprX/voters-are-surprisingly-open-to-talking-about-ai-risk",
+    "authors": [
+      {
+        "name": "less_raichu",
+        "url": "https://www.lesswrong.com/users/less_raichu"
+      }
+    ],
+    "date": "2026-05-13",
+    "continuous": false
+  },
+  {
+    "title": "Preventing extinction from ASI on a $50M yearly budget",
+    "url": "https://www.lesswrong.com/posts/TnAR5Sf5hphfnzNTr/preventing-extinction-from-asi-on-a-usd50m-yearly-budget",
+    "description": "Details ControlAI's theory of change and pitch for funding them, who primarily focus on briefing policymakers on existential risk from AI. Useful for thinking about turning high-level political strategy into concrete action.",
+    "authors": [
+      {
+        "name": "ControlAI",
+        "url": "https://controlai.org/"
+      }
+    ],
+    "date": "2026-04-21",
+    "continuous": false
+  },
+  {
+    "title": "Existential AI safety needs an effective social movement. PauseAI is building it",
+    "url": "https://www.lesswrong.com/posts/aoqhszdEWqcFWbnda/existential-ai-safety-needs-an-effective-social-movement",
+    "description": "Details PauseAI's theory of change and pitch for funding them, who focus on building a grassroots political movement to address existential risk from AI. Useful for thinking about turning high-level political strategy into concrete action.",
+    "authors": [
+      {
+        "name": "PauseAI",
+        "url": "https://pauseai.org/"
+      }
+    ],
+    "date": "2026-06-26",
+    "continuous": false
   }
 ]

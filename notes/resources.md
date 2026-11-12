@@ -33,3 +33,9 @@
     * Huge overview of strategy for reducing existential risk from AI, brainstorms the biggest gaps to fill and primarily focuses on political advocacy
   * [How cost-effective are AI safety YouTubers?](https://forum.effectivealtruism.org/posts/SBsGCwkoAemPawfJz/how-cost-effective-are-ai-safety-youtubers)
     * Not political advocacy focused, but useful for thinking about mass-communications projects for it nonetheless
+  * [Consider donating to Alex Bores, author of the RAISE Act](https://www.lesswrong.com/posts/TbsdA7wG9TvMQYMZj/consider-donating-to-alex-bores-author-of-the-raise-act-1)
+  * [Voters are surprisingly open to talking about AI risk](https://www.lesswrong.com/posts/9WPfkYDZCacnbhprX/voters-are-surprisingly-open-to-talking-about-ai-risk)
+  * [Preventing extinction from ASI on a $50M yearly budget](https://www.lesswrong.com/posts/TnAR5Sf5hphfnzNTr/preventing-extinction-from-asi-on-a-usd50m-yearly-budget)
+    * Details ControlAI's theory of change and pitch for funding them, who primarily focus on briefing policymakers on existential risk from AI. Useful for thinking about turning high-level political strategy into concrete action.
+  * [Existential AI safety needs an effective social movement. PauseAI is building it](https://www.lesswrong.com/posts/aoqhszdEWqcFWbnda/existential-ai-safety-needs-an-effective-social-movement)
+    * Details PauseAI's theory of change and pitch for funding them, who focus on building a grassroots political movement to address existential risk from AI. Useful for thinking about turning high-level political strategy into concrete action.
