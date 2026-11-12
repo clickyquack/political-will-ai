@@ -114,10 +114,10 @@
     "bioguideId": "C001132",
     "stanceImplied": "xrisk_concern",
     "quote": "Does anyone on this panel feel or believe in any way as we are going down the road in this AI race we might be simultaneously engineering our own destruction? [...] We're seeing reports that Anthropic's Claude [Mythos] has been deemed too powerful and dangerous for public release and how it could be weaponized against banks, hospitals, energy grids, etc. [...] In the event that this some of this technology was to fall into the wrong hands, what keeps you guys up at night in relation to these powerful AI systems?",
-    "date": "2026-04-17",
+    "date": "2026-04-16",
     "sourceUrl": "https://oversight.house.gov/roundtable/artificial-intelligence-and-american-power-leadership-security-and-prosperity/",
     "sourceLabel": "AI and American Power roundtable",
-    "notes": "Sourced via AIPN Congress on Superintelligence"
+    "notes": "The committee page dates the roundtable April 16, 2026. He asks whether the AI race could be engineering our own destruction and cites reports that a Claude model was too powerful and dangerous for public release."
   },
   {
     "id": "ev-13",
@@ -5011,5 +5011,44 @@
     "sourceUrl": "https://www.politico.com/live-updates/2026/09/09/congress/ted-cruz-ai-risks-legislation-01069036",
     "sourceLabel": "Politico Live Updates",
     "notes": "September 9, 2026."
+  },
+  {
+    "id": "ev-537",
+    "bioguideId": "M001163",
+    "stanceImplied": "xrisk_concern",
+    "quote": "Given the serious risk that frontier AI models can pose, it is imperative we have a detailed understanding of how this security incident unfolded, including any potential negligence on the part of Anthropic. We also strongly believe Congress must hold oversight hearings, conduct a full investigation into these incidents and into Anthropic's culpability, and put federal guardrails into place to prevent incidents like this one from happening in the future. [...] Will you continue to pursue AI that could recursively self-improve itself before you have put these guardrails in place?",
+    "date": "2026-08-10",
+    "sourceUrl": "https://casar.house.gov/sites/evo-subsites/casar.house.gov/files/evo-media-document/oversight-letter-to-anthropic-regaring-security-incidents.pdf",
+    "sourceLabel": "Letter to Anthropic on cybersecurity incidents",
+    "notes": "Letter dated August 10, 2026, and signed by Rep. Matsui. It calls for federal guardrails after frontier-model incidents and asks whether Anthropic will keep pursuing recursively self-improving AI before those guardrails exist."
+  },
+  {
+    "id": "ev-538",
+    "bioguideId": "B001322",
+    "stanceImplied": "opposes_domestic",
+    "quote": "Artificial intelligence is not a moon shot or a Manhattan Project. This is the dawn of a new industrial revolution, and like the last one, America will win if we trust free people to innovate without asking the government for permission. Washington state has every advantage to lead—from Spokane's data centers to WSU's AgAID Institute, and the University of Washington's AI research. But we will lose that edge if we let California or Brussels write the rules for us.",
+    "date": "2025-09-19",
+    "sourceUrl": "https://baumgartner.house.gov/2025/09/19/baumgartner-introduces-bill-codify-trump-executive-order-preventing-patchwork/",
+    "sourceLabel": "Press release on H.R. 5388",
+    "notes": "Press release dated September 19, 2025. H.R. 5388, announced in the same release, would impose a five-year moratorium on state and local laws regulating AI models and systems."
+  },
+  {
+    "id": "ev-539",
+    "bioguideId": "S000168",
+    "stanceImplied": "mundane_risk",
+    "quote": "In this new era of AI, bad actors are quickly and easily profiting from the creativity of others. Our laws must catch up. The NO FAKES Act is simple and sacred: you own your identity—not Big Tech, not scammers, not algorithms. Deepfakes are digital lies that ruin real lives, and it's time to fight back.",
+    "date": "2026-05-20",
+    "sourceUrl": "https://dean.house.gov/2026/5/dean-salazar-reintroduce-bill-to-protect-americans-from-ai-deepfakes",
+    "sourceLabel": "NO FAKES Act reintroduction press release"
+  },
+  {
+    "id": "ev-540",
+    "bioguideId": "elect-2026-MS-S",
+    "stanceImplied": "mundane_risk",
+    "quote": "What crosses a prosecutor's desk today is AI used to steal — scam calls that empty a retirement account, fake images made of real people, including children. That is already a crime, but most local prosecutors do not have the tools or the training to make the case. District Attorney Colom will fight to get it to them. And when an automated system is handling our money, our health care or our benefits, we should be told, and a real person should have to answer for the decision.",
+    "date": "2026-10-08",
+    "sourceUrl": "https://scottcolom.com/making-ai-work-for-mississippi/",
+    "sourceLabel": "Campaign website",
+    "notes": "Page published October 8, 2026."
   }
 ]

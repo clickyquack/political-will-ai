@@ -481,15 +481,14 @@
     "lastReviewed": "2026-10-27"
   },
   {
-    "bioguideId": "uncalled-2026-MS-S",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-MS-S",
+    "name": "Scott Colom",
+    "party": "D",
     "state": "MS",
     "chamber": "senate",
     "senateRank": "senior",
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "W000437",
@@ -1143,15 +1142,14 @@
     "lastReviewed": "2026-11-06"
   },
   {
-    "bioguideId": "uncalled-2026-AZ-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "C001132",
+    "name": "Elijah Crane",
+    "party": "R",
     "state": "AZ",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "A000381",
@@ -1204,15 +1202,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-AZ-08",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "H001098",
+    "name": "Abraham J. Hamadeh",
+    "party": "R",
     "state": "AZ",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "G000565",
@@ -1286,15 +1283,14 @@
     "lastReviewed": "2026-11-04"
   },
   {
-    "bioguideId": "uncalled-2026-CA-07",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "M001163",
+    "name": "Doris O. Matsui",
+    "party": "D",
     "state": "CA",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "G000559",
@@ -1357,15 +1353,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-CA-14",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "W000832",
+    "name": "Aisha Wahab",
+    "party": "D",
     "state": "CA",
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "M001225",
@@ -1619,15 +1614,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-CA-40",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "C000059",
+    "name": "Ken Calvert",
+    "party": "R",
     "state": "CA",
     "chamber": "house",
     "district": 40,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "S001156",
@@ -1961,15 +1955,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-FL-07",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-FL-07",
+    "name": "Ryan Elijah",
+    "party": "R",
     "state": "FL",
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "H001099",
@@ -1982,15 +1975,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-FL-09",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "S001200",
+    "name": "Darren Soto",
+    "party": "D",
     "state": "FL",
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "F000476",
@@ -2153,26 +2145,24 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-FL-26",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "D000600",
+    "name": "Mario Diaz-Balart",
+    "party": "R",
     "state": "FL",
     "chamber": "house",
     "district": 26,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
-    "bioguideId": "uncalled-2026-FL-27",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "S000168",
+    "name": "Maria Elvira Salazar",
+    "party": "R",
     "state": "FL",
     "chamber": "house",
     "district": 27,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "G000593",
@@ -3017,15 +3007,14 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-ME-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-ME-02",
+    "name": "Paul LePage",
+    "party": "R",
     "state": "ME",
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "B001301",
@@ -3462,15 +3451,14 @@
     "called": false
   },
   {
-    "bioguideId": "uncalled-2026-NC-08",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "H001102",
+    "name": "Mark Harris",
+    "party": "R",
     "state": "NC",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "elect-2026-NC-09",
@@ -4504,26 +4492,24 @@
     "lastReviewed": "2026-08-26"
   },
   {
-    "bioguideId": "uncalled-2026-SC-01",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "elect-2026-SC-01",
+    "name": "Nancy Lacore",
+    "party": "D",
     "state": "SC",
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "lastReviewed": "2026-11-12"
   },
   {
-    "bioguideId": "uncalled-2026-SC-02",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "W000795",
+    "name": "Joe Wilson",
+    "party": "R",
     "state": "SC",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "B001325",
@@ -5267,15 +5253,14 @@
     "lastReviewed": "2026-11-06"
   },
   {
-    "bioguideId": "uncalled-2026-WA-05",
-    "name": "Race not called",
-    "party": null,
+    "bioguideId": "B001322",
+    "name": "Michael Baumgartner",
+    "party": "R",
     "state": "WA",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04",
-    "called": false
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-12"
   },
   {
     "bioguideId": "R000621",
