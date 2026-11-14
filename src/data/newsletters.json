@@ -2,22 +2,52 @@
   {
     "title": "Transformer",
     "url": "https://www.transformernews.ai/",
-    "priority": true
+    "priority": true,
+    "authors": [
+      {
+        "name": "Tarbell Center for AI Journalism",
+        "url": "http://tarbellfellowship.org"
+      }
+    ]
   },
   {
-    "title": "Don't Worry About the Vase",
-    "url": "https://thezvi.substack.com/"
+    "title": "Don't Worry About The Vase",
+    "url": "https://thezvi.substack.com/",
+    "description": "Sort of a mix of a blog and a newsletter. Tends to be more opinionated but also more thorough.",
+    "authors": [
+      {
+        "name": "Zvi Mowshowitz"
+      }
+    ]
   },
   {
     "title": "AI Policy Daily",
-    "url": "https://aipolicydaily.org/"
+    "url": "https://aipolicydaily.org/",
+    "authors": [
+      {
+        "name": "The AI Policy Institute",
+        "url": "https://theaipi.org"
+      }
+    ]
   },
   {
     "title": "AI StopWatch",
-    "url": "https://aistop.watch/"
+    "url": "https://aistop.watch/",
+    "authors": [
+      {
+        "name": "Machine Intelligence Research Institute",
+        "url": "https://intelligence.org/"
+      }
+    ]
   },
   {
     "title": "AI Safety in China",
-    "url": "https://aisafetychina.substack.com/"
+    "url": "https://aisafetychina.substack.com/",
+    "authors": [
+      {
+        "name": "Concordia AI",
+        "url": "https://concordia-ai.com/"
+      }
+    ]
   }
 ]

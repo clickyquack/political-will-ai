@@ -1019,7 +1019,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000481",
@@ -1028,8 +1028,8 @@
     "state": "AL",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000575",
@@ -1039,7 +1039,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000055",
@@ -1049,7 +1049,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001220",
@@ -1059,7 +1059,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000609",
@@ -1069,7 +1069,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001185",
@@ -1078,8 +1078,8 @@
     "state": "AL",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001087",
@@ -1088,8 +1088,8 @@
     "state": "AR",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001072",
@@ -1098,8 +1098,8 @@
     "state": "AR",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000809",
@@ -1109,7 +1109,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000821",
@@ -1118,8 +1118,8 @@
     "state": "AR",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-05"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000600",
@@ -1128,8 +1128,8 @@
     "state": "AS",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-AZ-01",
@@ -1139,7 +1139,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001132",
@@ -1148,8 +1148,8 @@
     "state": "AZ",
     "chamber": "house",
     "district": 2,
-    "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-12"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000381",
@@ -1158,8 +1158,8 @@
     "state": "AZ",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001211",
@@ -1168,8 +1168,8 @@
     "state": "AZ",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-AZ-05",
@@ -1179,7 +1179,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-AZ-06",
@@ -1189,7 +1189,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000606",
@@ -1198,8 +1198,8 @@
     "state": "AZ",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001098",
@@ -1208,8 +1208,8 @@
     "state": "AZ",
     "chamber": "house",
     "district": 8,
-    "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000565",
@@ -1219,7 +1219,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-01",
@@ -1229,7 +1229,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001068",
@@ -1238,8 +1238,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001287",
@@ -1248,8 +1248,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-CA-04",
@@ -1270,7 +1270,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-06",
@@ -1280,7 +1280,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001163",
@@ -1289,8 +1289,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 7,
-    "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-12"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000559",
@@ -1300,7 +1300,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001090",
@@ -1309,8 +1309,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000623",
@@ -1319,8 +1319,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-11",
@@ -1329,8 +1329,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 11,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001231",
@@ -1339,8 +1339,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 12,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000605",
@@ -1350,7 +1350,7 @@
     "chamber": "house",
     "district": 13,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000832",
@@ -1360,7 +1360,7 @@
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001225",
@@ -1369,8 +1369,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 15,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000607",
@@ -1379,8 +1379,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 16,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000389",
@@ -1389,8 +1389,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 17,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000397",
@@ -1399,8 +1399,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 18,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-05"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000613",
@@ -1409,8 +1409,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 19,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000480",
@@ -1420,7 +1420,7 @@
     "chamber": "house",
     "district": 20,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001059",
@@ -1430,7 +1430,7 @@
     "chamber": "house",
     "district": 21,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-22",
@@ -1439,8 +1439,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 22,
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-CA-23",
@@ -1461,7 +1461,7 @@
     "chamber": "house",
     "district": 24,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000599",
@@ -1471,7 +1471,7 @@
     "chamber": "house",
     "district": 25,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-26",
@@ -1480,8 +1480,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 26,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000830",
@@ -1490,8 +1490,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 27,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001080",
@@ -1500,8 +1500,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 28,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000620",
@@ -1510,8 +1510,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 29,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000483",
@@ -1520,8 +1520,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 30,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001123",
@@ -1530,8 +1530,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 31,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000344",
@@ -1540,8 +1540,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 32,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000371",
@@ -1550,8 +1550,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 33,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-34",
@@ -1561,7 +1561,7 @@
     "chamber": "house",
     "district": 34,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000474",
@@ -1570,8 +1570,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 35,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000582",
@@ -1580,8 +1580,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 36,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000400",
@@ -1590,8 +1590,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 37,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-38",
@@ -1601,7 +1601,7 @@
     "chamber": "house",
     "district": 38,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000472",
@@ -1611,7 +1611,7 @@
     "chamber": "house",
     "district": 39,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C000059",
@@ -1620,8 +1620,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 40,
-    "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001156",
@@ -1631,7 +1631,7 @@
     "chamber": "house",
     "district": 41,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000598",
@@ -1640,8 +1640,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 42,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000187",
@@ -1650,8 +1650,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 43,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001300",
@@ -1660,8 +1660,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 44,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000491",
@@ -1671,7 +1671,7 @@
     "chamber": "house",
     "district": 45,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001110",
@@ -1680,8 +1680,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 46,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001241",
@@ -1691,7 +1691,7 @@
     "chamber": "house",
     "district": 47,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CA-48",
@@ -1701,7 +1701,7 @@
     "chamber": "house",
     "district": 48,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000593",
@@ -1710,8 +1710,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 49,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000608",
@@ -1720,8 +1720,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 50,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000305",
@@ -1730,8 +1730,8 @@
     "state": "CA",
     "chamber": "house",
     "district": 51,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "V000130",
@@ -1741,7 +1741,7 @@
     "chamber": "house",
     "district": 52,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CO-01",
@@ -1750,8 +1750,8 @@
     "state": "CO",
     "chamber": "house",
     "district": 1,
-    "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "N000191",
@@ -1761,7 +1761,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001100",
@@ -1770,8 +1770,8 @@
     "state": "CO",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-CO-04",
@@ -1792,7 +1792,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001121",
@@ -1801,8 +1801,8 @@
     "state": "CO",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000620",
@@ -1811,8 +1811,8 @@
     "state": "CO",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CO-08",
@@ -1821,8 +1821,8 @@
     "state": "CO",
     "chamber": "house",
     "district": 8,
-    "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-04"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-CT-01",
@@ -1831,8 +1831,8 @@
     "state": "CT",
     "chamber": "house",
     "district": 1,
-    "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-04"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001069",
@@ -1841,8 +1841,8 @@
     "state": "CT",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000216",
@@ -1851,8 +1851,8 @@
     "state": "CT",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001047",
@@ -1861,8 +1861,8 @@
     "state": "CT",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001081",
@@ -1871,8 +1871,8 @@
     "state": "CT",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "N000147",
@@ -1881,8 +1881,8 @@
     "state": "DC",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001238",
@@ -1891,8 +1891,8 @@
     "state": "DE",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000622",
@@ -1901,8 +1901,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-02",
@@ -1912,7 +1912,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001039",
@@ -1921,8 +1921,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001314",
@@ -1932,7 +1932,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000609",
@@ -1942,7 +1942,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000484",
@@ -1952,7 +1952,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-07",
@@ -1962,7 +1962,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001099",
@@ -1971,8 +1971,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001200",
@@ -1981,8 +1981,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-12"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000476",
@@ -1991,8 +1991,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-11",
@@ -2002,7 +2002,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001257",
@@ -2011,8 +2011,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 12,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000596",
@@ -2021,8 +2021,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 13,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001066",
@@ -2031,8 +2031,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 14,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000597",
@@ -2041,8 +2041,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 15,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-16",
@@ -2052,7 +2052,7 @@
     "chamber": "house",
     "district": 16,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001214",
@@ -2062,7 +2062,7 @@
     "chamber": "house",
     "district": 17,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000472",
@@ -2071,8 +2071,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 18,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-19",
@@ -2082,7 +2082,7 @@
     "chamber": "house",
     "district": 19,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000797",
@@ -2092,7 +2092,7 @@
     "chamber": "house",
     "district": 20,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001199",
@@ -2101,8 +2101,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 21,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-22",
@@ -2112,7 +2112,7 @@
     "chamber": "house",
     "district": 22,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000462",
@@ -2121,8 +2121,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 23,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-FL-24",
@@ -2132,7 +2132,7 @@
     "chamber": "house",
     "district": 24,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001217",
@@ -2141,8 +2141,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 25,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000600",
@@ -2151,8 +2151,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 26,
-    "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000168",
@@ -2162,7 +2162,7 @@
     "chamber": "house",
     "district": 27,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000593",
@@ -2171,8 +2171,8 @@
     "state": "FL",
     "chamber": "house",
     "district": 28,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-GA-01",
@@ -2182,7 +2182,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B000490",
@@ -2192,7 +2192,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000311",
@@ -2202,7 +2202,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000288",
@@ -2211,8 +2211,8 @@
     "state": "GA",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000788",
@@ -2222,7 +2222,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001208",
@@ -2231,8 +2231,8 @@
     "state": "GA",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001218",
@@ -2242,7 +2242,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001189",
@@ -2252,7 +2252,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001116",
@@ -2261,8 +2261,8 @@
     "state": "GA",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-GA-10",
@@ -2272,7 +2272,7 @@
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-GA-11",
@@ -2282,7 +2282,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000372",
@@ -2292,7 +2292,7 @@
     "chamber": "house",
     "district": 12,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-GA-13",
@@ -2301,8 +2301,8 @@
     "state": "GA",
     "chamber": "house",
     "district": 13,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000485",
@@ -2311,8 +2311,8 @@
     "state": "GA",
     "chamber": "house",
     "district": 14,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001219",
@@ -2321,8 +2321,8 @@
     "state": "GU",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001055",
@@ -2331,8 +2331,8 @@
     "state": "HI",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000487",
@@ -2342,7 +2342,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IA-01",
@@ -2351,8 +2351,8 @@
     "state": "IA",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IA-02",
@@ -2362,7 +2362,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IA-03",
@@ -2372,7 +2372,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IA-04",
@@ -2382,7 +2382,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000469",
@@ -2391,8 +2391,8 @@
     "state": "ID",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001148",
@@ -2402,7 +2402,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000309",
@@ -2411,8 +2411,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IL-02",
@@ -2422,7 +2422,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000617",
@@ -2431,8 +2431,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IL-04",
@@ -2442,7 +2442,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "Q000023",
@@ -2451,8 +2451,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001117",
@@ -2461,8 +2461,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IL-07",
@@ -2472,7 +2472,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IL-08",
@@ -2482,7 +2482,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IL-09",
@@ -2492,7 +2492,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001190",
@@ -2502,7 +2502,7 @@
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000454",
@@ -2512,7 +2512,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001295",
@@ -2522,7 +2522,7 @@
     "chamber": "house",
     "district": 12,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001315",
@@ -2531,8 +2531,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 13,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "U000040",
@@ -2542,7 +2542,7 @@
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001211",
@@ -2552,7 +2552,7 @@
     "chamber": "house",
     "district": 15,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000585",
@@ -2561,8 +2561,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 16,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001225",
@@ -2571,8 +2571,8 @@
     "state": "IL",
     "chamber": "house",
     "district": 17,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001214",
@@ -2582,7 +2582,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "Y000067",
@@ -2592,7 +2592,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001188",
@@ -2601,8 +2601,8 @@
     "state": "IN",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001307",
@@ -2612,7 +2612,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-IN-05",
@@ -2622,7 +2622,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001229",
@@ -2632,7 +2632,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001072",
@@ -2641,8 +2641,8 @@
     "state": "IN",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001233",
@@ -2651,8 +2651,8 @@
     "state": "IN",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001093",
@@ -2661,8 +2661,8 @@
     "state": "IN",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M000871",
@@ -2672,7 +2672,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001228",
@@ -2682,7 +2682,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000629",
@@ -2691,8 +2691,8 @@
     "state": "KS",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000298",
@@ -2702,7 +2702,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001108",
@@ -2711,8 +2711,8 @@
     "state": "KY",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000558",
@@ -2721,8 +2721,8 @@
     "state": "KY",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001220",
@@ -2732,7 +2732,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-KY-04",
@@ -2742,7 +2742,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000395",
@@ -2752,7 +2752,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-KY-06",
@@ -2761,8 +2761,8 @@
     "state": "KY",
     "chamber": "house",
     "district": 6,
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001176",
@@ -2772,7 +2772,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001125",
@@ -2781,8 +2781,8 @@
     "state": "LA",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001077",
@@ -2791,8 +2791,8 @@
     "state": "LA",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000299",
@@ -2801,8 +2801,8 @@
     "state": "LA",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-LA-05",
@@ -2834,7 +2834,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M000312",
@@ -2843,8 +2843,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000482",
@@ -2853,8 +2853,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000148",
@@ -2863,8 +2863,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001101",
@@ -2873,8 +2873,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MA-06",
@@ -2883,8 +2883,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000617",
@@ -2893,8 +2893,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000562",
@@ -2903,8 +2903,8 @@
     "state": "MA",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000375",
@@ -2914,7 +2914,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001052",
@@ -2923,8 +2923,8 @@
     "state": "MD",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "O000176",
@@ -2933,8 +2933,8 @@
     "state": "MD",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000301",
@@ -2944,7 +2944,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "I000058",
@@ -2953,8 +2953,8 @@
     "state": "MD",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MD-05",
@@ -2964,7 +2964,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001232",
@@ -2973,8 +2973,8 @@
     "state": "MD",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M000687",
@@ -2984,7 +2984,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000606",
@@ -2994,7 +2994,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000597",
@@ -3003,8 +3003,8 @@
     "state": "ME",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-ME-02",
@@ -3014,7 +3014,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001301",
@@ -3024,7 +3024,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001194",
@@ -3034,7 +3034,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001221",
@@ -3044,7 +3044,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MI-04",
@@ -3054,7 +3054,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000798",
@@ -3064,7 +3064,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000624",
@@ -3073,8 +3073,8 @@
     "state": "MI",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MI-07",
@@ -3083,8 +3083,8 @@
     "state": "MI",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001237",
@@ -3094,7 +3094,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001136",
@@ -3103,8 +3103,8 @@
     "state": "MI",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MI-10",
@@ -3113,8 +3113,8 @@
     "state": "MI",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MI-11",
@@ -3124,7 +3124,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000481",
@@ -3133,8 +3133,8 @@
     "state": "MI",
     "chamber": "house",
     "district": 12,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MI-13",
@@ -3144,7 +3144,7 @@
     "chamber": "house",
     "district": 13,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-MN-01",
@@ -3165,7 +3165,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "strong_risk_reg",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001234",
@@ -3174,8 +3174,8 @@
     "state": "MN",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001143",
@@ -3185,7 +3185,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "O000173",
@@ -3194,8 +3194,8 @@
     "state": "MN",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000294",
@@ -3205,7 +3205,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000470",
@@ -3215,7 +3215,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001212",
@@ -3225,7 +3225,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001324",
@@ -3234,8 +3234,8 @@
     "state": "MO",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MO-02",
@@ -3245,7 +3245,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "O000177",
@@ -3255,7 +3255,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000379",
@@ -3265,7 +3265,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001061",
@@ -3274,8 +3274,8 @@
     "state": "MO",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MO-06",
@@ -3284,8 +3284,8 @@
     "state": "MO",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001316",
@@ -3294,8 +3294,8 @@
     "state": "MO",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001195",
@@ -3305,7 +3305,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000404",
@@ -3315,7 +3315,7 @@
     "chamber": "house",
     "district": 0,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000388",
@@ -3325,7 +3325,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000193",
@@ -3334,8 +3334,8 @@
     "state": "MS",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000591",
@@ -3345,7 +3345,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000235",
@@ -3355,7 +3355,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-MT-01",
@@ -3364,8 +3364,8 @@
     "state": "MT",
     "chamber": "house",
     "district": 1,
-    "stance": "xrisk_concern",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000634",
@@ -3374,8 +3374,8 @@
     "state": "MT",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000230",
@@ -3385,7 +3385,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000305",
@@ -3394,8 +3394,8 @@
     "state": "NC",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-NC-03",
@@ -3415,8 +3415,8 @@
     "state": "NC",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-05"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-NC-05",
@@ -3437,7 +3437,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-NC-07",
@@ -3458,7 +3458,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NC-09",
@@ -3468,7 +3468,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-NC-10",
@@ -3488,8 +3488,8 @@
     "state": "NC",
     "chamber": "house",
     "district": 11,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000370",
@@ -3498,8 +3498,8 @@
     "state": "NC",
     "chamber": "house",
     "district": 12,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NC-13",
@@ -3509,7 +3509,7 @@
     "chamber": "house",
     "district": 13,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NC-14",
@@ -3519,7 +3519,7 @@
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000482",
@@ -3528,8 +3528,8 @@
     "state": "ND",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000474",
@@ -3538,8 +3538,8 @@
     "state": "NE",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NE-02",
@@ -3549,7 +3549,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001172",
@@ -3559,7 +3559,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NH-01",
@@ -3569,7 +3569,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000604",
@@ -3578,8 +3578,8 @@
     "state": "NH",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "N000188",
@@ -3589,7 +3589,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NJ-02",
@@ -3598,8 +3598,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001136",
@@ -3608,8 +3608,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000522",
@@ -3618,8 +3618,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000583",
@@ -3628,8 +3628,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000034",
@@ -3639,7 +3639,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NJ-07",
@@ -3648,8 +3648,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 7,
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001226",
@@ -3658,8 +3658,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000621",
@@ -3669,7 +3669,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001229",
@@ -3678,8 +3678,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001246",
@@ -3688,8 +3688,8 @@
     "state": "NJ",
     "chamber": "house",
     "district": 11,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NJ-12",
@@ -3699,7 +3699,7 @@
     "chamber": "house",
     "district": 12,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001218",
@@ -3708,8 +3708,8 @@
     "state": "NM",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "V000136",
@@ -3718,8 +3718,8 @@
     "state": "NM",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000273",
@@ -3729,7 +3729,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000468",
@@ -3739,7 +3739,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NV-02",
@@ -3748,8 +3748,8 @@
     "state": "NV",
     "chamber": "house",
     "district": 2,
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000590",
@@ -3758,8 +3758,8 @@
     "state": "NV",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001066",
@@ -3768,8 +3768,8 @@
     "state": "NV",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000598",
@@ -3778,8 +3778,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000597",
@@ -3788,8 +3788,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001201",
@@ -3798,8 +3798,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000602",
@@ -3809,7 +3809,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001137",
@@ -3819,7 +3819,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001188",
@@ -3829,7 +3829,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-07",
@@ -3839,7 +3839,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000294",
@@ -3848,8 +3848,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001067",
@@ -3858,8 +3858,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-10",
@@ -3868,8 +3868,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M000317",
@@ -3878,8 +3878,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 11,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-12",
@@ -3888,8 +3888,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 12,
-    "stance": "mundane_risk",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-13",
@@ -3899,7 +3899,7 @@
     "chamber": "house",
     "district": 13,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "O000172",
@@ -3908,8 +3908,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 14,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000486",
@@ -3918,8 +3918,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 15,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000606",
@@ -3928,8 +3928,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 16,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-17",
@@ -3938,8 +3938,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 17,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000579",
@@ -3949,7 +3949,7 @@
     "chamber": "house",
     "district": 18,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000622",
@@ -3959,7 +3959,7 @@
     "chamber": "house",
     "district": 19,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000469",
@@ -3968,8 +3968,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 20,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-NY-21",
@@ -3978,8 +3978,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 21,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001231",
@@ -3989,7 +3989,7 @@
     "chamber": "house",
     "district": 22,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000600",
@@ -3998,8 +3998,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 23,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000478",
@@ -4009,7 +4009,7 @@
     "chamber": "house",
     "district": 24,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001206",
@@ -4018,8 +4018,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 25,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000402",
@@ -4028,8 +4028,8 @@
     "state": "NY",
     "chamber": "house",
     "district": 26,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000601",
@@ -4038,8 +4038,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000490",
@@ -4048,8 +4048,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001281",
@@ -4059,7 +4059,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000289",
@@ -4068,8 +4068,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000566",
@@ -4078,8 +4078,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000619",
@@ -4089,7 +4089,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-OH-07",
@@ -4098,8 +4098,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000626",
@@ -4108,8 +4108,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000009",
@@ -4119,7 +4119,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-OH-10",
@@ -4129,7 +4129,7 @@
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001313",
@@ -4138,8 +4138,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 11,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001306",
@@ -4149,7 +4149,7 @@
     "chamber": "house",
     "district": 12,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001223",
@@ -4158,8 +4158,8 @@
     "state": "OH",
     "chamber": "house",
     "district": 13,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000295",
@@ -4169,7 +4169,7 @@
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-OH-15",
@@ -4179,7 +4179,7 @@
     "chamber": "house",
     "district": 15,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-OK-01",
@@ -4189,7 +4189,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001317",
@@ -4199,7 +4199,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000491",
@@ -4208,8 +4208,8 @@
     "state": "OK",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001053",
@@ -4219,7 +4219,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B000740",
@@ -4229,7 +4229,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001278",
@@ -4238,8 +4238,8 @@
     "state": "OR",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B000668",
@@ -4248,8 +4248,8 @@
     "state": "OR",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000635",
@@ -4258,8 +4258,8 @@
     "state": "OR",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001094",
@@ -4268,8 +4268,8 @@
     "state": "OR",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001326",
@@ -4279,7 +4279,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001226",
@@ -4288,8 +4288,8 @@
     "state": "OR",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-PA-01",
@@ -4299,7 +4299,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001296",
@@ -4309,7 +4309,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-PA-03",
@@ -4319,7 +4319,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000631",
@@ -4328,8 +4328,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001205",
@@ -4339,7 +4339,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001085",
@@ -4348,8 +4348,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-PA-07",
@@ -4359,7 +4359,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-PA-08",
@@ -4369,7 +4369,7 @@
     "chamber": "house",
     "district": 8,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001204",
@@ -4379,7 +4379,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-PA-10",
@@ -4388,8 +4388,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001199",
@@ -4399,7 +4399,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000602",
@@ -4408,8 +4408,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 12,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000302",
@@ -4418,8 +4418,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 13,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000610",
@@ -4429,7 +4429,7 @@
     "chamber": "house",
     "district": 14,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000467",
@@ -4438,8 +4438,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 15,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000376",
@@ -4449,7 +4449,7 @@
     "chamber": "house",
     "district": 16,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000530",
@@ -4458,8 +4458,8 @@
     "state": "PA",
     "chamber": "house",
     "district": 17,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001103",
@@ -4469,7 +4469,7 @@
     "chamber": "house",
     "district": 0,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "A000380",
@@ -4479,7 +4479,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001223",
@@ -4488,8 +4488,8 @@
     "state": "RI",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-SC-01",
@@ -4499,7 +4499,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000795",
@@ -4509,7 +4509,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001325",
@@ -4519,7 +4519,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "T000480",
@@ -4529,7 +4529,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-SC-05",
@@ -4539,7 +4539,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C000537",
@@ -4548,8 +4548,8 @@
     "state": "SC",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000478",
@@ -4559,7 +4559,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-SD-00",
@@ -4568,8 +4568,8 @@
     "state": "SD",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "H001086",
@@ -4578,8 +4578,8 @@
     "state": "TN",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001309",
@@ -4588,8 +4588,8 @@
     "state": "TN",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000459",
@@ -4599,7 +4599,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "uncalled-2026-TN-04",
@@ -4620,7 +4620,7 @@
     "chamber": "house",
     "district": 5,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TN-06",
@@ -4629,8 +4629,8 @@
     "state": "TN",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "V000139",
@@ -4639,8 +4639,8 @@
     "state": "TN",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000392",
@@ -4649,8 +4649,8 @@
     "state": "TN",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TN-09",
@@ -4660,7 +4660,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001224",
@@ -4669,8 +4669,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-02",
@@ -4680,7 +4680,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001224",
@@ -4690,7 +4690,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000246",
@@ -4700,7 +4700,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000589",
@@ -4709,8 +4709,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000071",
@@ -4720,7 +4720,7 @@
     "chamber": "house",
     "district": 6,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000468",
@@ -4729,8 +4729,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-08",
@@ -4739,8 +4739,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-09",
@@ -4750,7 +4750,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-10",
@@ -4760,7 +4760,7 @@
     "chamber": "house",
     "district": 10,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000048",
@@ -4770,7 +4770,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000601",
@@ -4780,7 +4780,7 @@
     "chamber": "house",
     "district": 12,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000304",
@@ -4790,7 +4790,7 @@
     "chamber": "house",
     "district": 13,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000814",
@@ -4799,8 +4799,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 14,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-15",
@@ -4810,7 +4810,7 @@
     "chamber": "house",
     "district": 15,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "E000299",
@@ -4819,8 +4819,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 16,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000250",
@@ -4830,7 +4830,7 @@
     "chamber": "house",
     "district": 17,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001245",
@@ -4839,8 +4839,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 18,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-19",
@@ -4850,7 +4850,7 @@
     "chamber": "house",
     "district": 19,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001091",
@@ -4860,7 +4860,7 @@
     "chamber": "house",
     "district": 20,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-21",
@@ -4870,7 +4870,7 @@
     "chamber": "house",
     "district": 21,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-22",
@@ -4880,7 +4880,7 @@
     "chamber": "house",
     "district": 22,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-23",
@@ -4890,7 +4890,7 @@
     "chamber": "house",
     "district": 23,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "V000134",
@@ -4899,8 +4899,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 24,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000816",
@@ -4909,8 +4909,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 25,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000603",
@@ -4920,7 +4920,7 @@
     "chamber": "house",
     "district": 26,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001115",
@@ -4929,8 +4929,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 27,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001063",
@@ -4939,8 +4939,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 28,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000587",
@@ -4950,7 +4950,7 @@
     "chamber": "house",
     "district": 29,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-30",
@@ -4960,7 +4960,7 @@
     "chamber": "house",
     "district": 30,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001051",
@@ -4970,7 +4970,7 @@
     "chamber": "house",
     "district": 31,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-32",
@@ -4979,8 +4979,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 32,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-33",
@@ -4990,7 +4990,7 @@
     "chamber": "house",
     "district": 33,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000581",
@@ -4999,8 +4999,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 34,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-35",
@@ -5010,7 +5010,7 @@
     "chamber": "house",
     "district": 35,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001291",
@@ -5019,8 +5019,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 36,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001131",
@@ -5029,8 +5029,8 @@
     "state": "TX",
     "chamber": "house",
     "district": 37,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-TX-38",
@@ -5040,7 +5040,7 @@
     "chamber": "house",
     "district": 38,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-UT-01",
@@ -5049,8 +5049,8 @@
     "state": "UT",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001213",
@@ -5059,8 +5059,8 @@
     "state": "UT",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001228",
@@ -5069,8 +5069,8 @@
     "state": "UT",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "K000403",
@@ -5080,7 +5080,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-VA-01",
@@ -5090,7 +5090,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-VA-02",
@@ -5100,7 +5100,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000185",
@@ -5109,8 +5109,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001227",
@@ -5119,8 +5119,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001239",
@@ -5129,8 +5129,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "C001118",
@@ -5139,8 +5139,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "V000138",
@@ -5149,8 +5149,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001292",
@@ -5159,8 +5159,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000568",
@@ -5169,8 +5169,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 9,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001230",
@@ -5179,8 +5179,8 @@
     "state": "VA",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000831",
@@ -5190,7 +5190,7 @@
     "chamber": "house",
     "district": 11,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000610",
@@ -5199,8 +5199,8 @@
     "state": "VI",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001318",
@@ -5209,8 +5209,8 @@
     "state": "VT",
     "chamber": "house",
     "district": 0,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "D000617",
@@ -5219,8 +5219,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 1,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "L000560",
@@ -5229,8 +5229,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000600",
@@ -5239,8 +5239,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 3,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-WA-04",
@@ -5250,7 +5250,7 @@
     "chamber": "house",
     "district": 4,
     "stance": "unknown",
-    "lastReviewed": "2026-11-06"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "B001322",
@@ -5259,8 +5259,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 5,
-    "stance": "opposes_domestic",
-    "lastReviewed": "2026-11-12"
+    "stance": "unknown",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "R000621",
@@ -5269,8 +5269,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "J000298",
@@ -5279,8 +5279,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 7,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "strong_risk_reg",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001216",
@@ -5289,8 +5289,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-11-05"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S000510",
@@ -5300,7 +5300,7 @@
     "chamber": "house",
     "district": 9,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "S001159",
@@ -5309,8 +5309,8 @@
     "state": "WA",
     "chamber": "house",
     "district": 10,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-WI-01",
@@ -5320,7 +5320,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "P000607",
@@ -5329,8 +5329,8 @@
     "state": "WI",
     "chamber": "house",
     "district": 2,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-WI-03",
@@ -5340,7 +5340,7 @@
     "chamber": "house",
     "district": 3,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001160",
@@ -5349,8 +5349,8 @@
     "state": "WI",
     "chamber": "house",
     "district": 4,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "F000471",
@@ -5359,8 +5359,8 @@
     "state": "WI",
     "chamber": "house",
     "district": 5,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "G000576",
@@ -5369,8 +5369,8 @@
     "state": "WI",
     "chamber": "house",
     "district": 6,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "opposes_domestic",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-WI-07",
@@ -5380,7 +5380,7 @@
     "chamber": "house",
     "district": 7,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "W000829",
@@ -5389,8 +5389,8 @@
     "state": "WI",
     "chamber": "house",
     "district": 8,
-    "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "stance": "mundane_risk",
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001205",
@@ -5400,7 +5400,7 @@
     "chamber": "house",
     "district": 1,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "M001235",
@@ -5410,7 +5410,7 @@
     "chamber": "house",
     "district": 2,
     "stance": "unknown",
-    "lastReviewed": "2026-08-26"
+    "lastReviewed": "2026-11-13"
   },
   {
     "bioguideId": "elect-2026-WY-00",
@@ -5420,6 +5420,6 @@
     "chamber": "house",
     "district": 0,
     "stance": "unknown",
-    "lastReviewed": "2026-11-04"
+    "lastReviewed": "2026-11-13"
   }
 ]

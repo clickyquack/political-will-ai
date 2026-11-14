@@ -39,7 +39,7 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 ## Andy Barr (KY)
 
-On file now: ev-163 2025-05-22 opposes_domestic (House roll call on reconciliation bill (H.R. 1)); ev-496 2026-02-03 opposes_domestic (WPSD Local 6 interview).
+On file now: ev-496 2026-02-03 opposes_domestic (WPSD Local 6 interview).
 
 Date corrected from the WPSD page. The article was published February 3, 2026. The quote now on the row is the one in that article: win the race because China is racing ahead, and don't allow a patchwork of state rules. Category: opposes regulation or light-touch only.
 
@@ -201,9 +201,9 @@ Searched Chuck Grassley with artificial intelligence and whistleblowers. His whi
 
 ## Harriet M. Hageman (WY)
 
-On file now: ev-110 2025-09-16 mundane_risk (FAIR Act (H.R. 5315) press release); ev-111 2025-05-22 opposes_domestic (House roll call on reconciliation bill (H.R. 1)).
+On file now: ev-110 2025-09-16 mundane_risk (FAIR Act (H.R. 5315) press release).
 
-Already sourced (mundane_risk, opposes_domestic). This pass did not add a second quote over the one above.
+Already sourced (mundane_risk). This pass did not add a second quote over the one above.
 
 ## Bill Hagerty (TN)
 
@@ -237,9 +237,7 @@ Already sourced (xrisk_concern). This pass did not add a second quote over the o
 
 ## Kevin Hern (OK)
 
-On file now: ev-198 2025-05-22 opposes_domestic (House roll call on reconciliation bill (H.R. 1)).
-
-Already sourced (opposes_domestic). This pass did not add a second quote over the one above.
+Nothing was on file. The only row was a House roll call on H.R. 1; a yes vote alone does not count, so it was removed.
 
 ## John W. Hickenlooper (CO)
 
@@ -333,9 +331,7 @@ The November 27, 2025 post is still an existential-risk stripe on its date. The 
 
 ## Julia Letlow (LA)
 
-On file now: ev-246 2025-05-22 opposes_domestic (House roll call on reconciliation bill (H.R. 1)).
-
-Already sourced (opposes_domestic). This pass did not add a second quote over the one above.
+Nothing was on file. The only row was a House roll call on H.R. 1; a yes vote alone does not count, so it was removed.
 
 ## Ben Ray Luján (NM)
 

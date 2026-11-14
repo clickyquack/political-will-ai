@@ -1,5 +1,40 @@
 [
   {
+    "title": "DC on AI",
+    "url": "https://www.dconai.org",
+    "description": "Thorough breakdown of Congress members' position on AI, including by chamber, by sub-issue, by party, over time, etc.",
+    "priority": true,
+    "authors": [
+      {
+        "name": "Harshul Basava",
+        "url": "https://github.com/harshul-basava"
+      },
+      {
+        "name": "Kaustubh Kislay",
+        "url": "https://github.com/kaustubhkislay"
+      }
+    ]
+  },
+  {
+    "title": "Politicians on AI",
+    "url": "https://cesia.org/en/data/attention/",
+    "description": "Data on international politicians' positions on AI with sourced quotes.",
+    "authors": [
+      {
+        "name": "Lennart Finke",
+        "url": "https://finke.dev/"
+      },
+      {
+        "name": "Markov Grey",
+        "url": "https://markov.pw/en/"
+      },
+      {
+        "name": "CeSIA",
+        "url": "https://cesia.org/en/"
+      }
+    ]
+  },
+  {
     "title": "AI on the Ballot",
     "url": "https://ontheballot.ai/",
     "description": "Tracks positions on AI policy of U.S. Congressional candidates in the 2026 midterm elections with sources.",
@@ -11,13 +46,14 @@
     ]
   },
   {
-    "title": "AI Risk in Congress",
-    "url": "/congress-map/",
-    "description": "Visual map of current Congress members' positions on AI policy with sources, color-coded by position.",
+    "title": "What Washington Says About AGI",
+    "url": "https://www.lesswrong.com/posts/WLdcvAcoFZv9enR37/what-washington-says-about-agi",
+    "date": "2026-01-17",
+    "continuous": false,
     "authors": [
       {
-        "name": "Political Will AI",
-        "url": "/"
+        "name": "Zephaniah Roe",
+        "url": "https://www.lesswrong.com/users/zephaniah-roe"
       }
     ]
   }
