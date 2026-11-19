@@ -1,93 +1,427 @@
 ---
 import {
+  POLITICAL_ACTOR_LABELS,
+  RESPONSE_TYPE_LABELS,
   WARNING_SHOT_KIND_LABELS,
   loadWarningShots,
+  politicalActors,
+  responseTypes,
   warningShotKinds,
 } from "../lib/warning-shots";
 
 const groups = loadWarningShots();
 ---
 
-<div class="shot-timeline">
-  <ul class="shot-legend">
+<div class="shot-layout">
+  <div class="shot-timeline">
+    <p class="shot-note">
+      <span class="shot-inferred" aria-hidden="true">*</span> Marks an implicit or inferred connection.
+    </p>
+    <p class="shot-filter-status" role="status" hidden>
+      <span class="shot-filter-text"></span>
+      <button type="button" class="shot-filter-clear">Show all</button>
+    </p>
+    <ul class="shot-legend">
+      {
+        warningShotKinds.map((kind) => (
+          <li class={`kind-${kind}`}>
+            <span>{WARNING_SHOT_KIND_LABELS[kind]}</span>
+          </li>
+        ))
+      }
+    </ul>
     {
-      warningShotKinds.map((kind) => (
-        <li class={`kind-${kind}`}>
-          <span>{WARNING_SHOT_KIND_LABELS[kind]}</span>
-        </li>
+      groups.map((group) => (
+        <section class="shot-group">
+          <h2>{group.label}</h2>
+          <ol>
+            {group.events.map((event) => (
+              <li
+                id={event.id}
+                class={`kind-${event.kind}`}
+                data-kind={event.kind}
+                data-actor={event.actor ?? ""}
+                data-response-type={event.responseType ?? ""}
+                data-references={event.references.join(",")}
+                data-referenced-by={event.referencedBy.map((link) => link.id).join(",")}
+              >
+                <article>
+                  <p class="shot-meta">
+                    <time datetime={event.date}>{event.dateLabel}</time>
+                    <span class="shot-kind">{WARNING_SHOT_KIND_LABELS[event.kind]}</span>
+                  </p>
+                  <h3>{event.title}</h3>
+                  <p>{event.summary}</p>
+                  {event.sources.length > 0 && (
+                    <p class="shot-sources">
+                      Sources:{" "}
+                      {event.sources.map((source, index) => (
+                        <>
+                          {index > 0 && " · "}
+                          <a href={source.url} target="_blank" rel="noopener noreferrer">
+                            {source.label}
+                            <span class="visually-hidden"> (opens in a new tab)</span>
+                          </a>
+                        </>
+                      ))}
+                    </p>
+                  )}
+                  {(event.referenceLinks.length > 0 || event.referencedBy.length > 0) && (
+                    <div class="shot-links">
+                      {event.referenceLinks.length > 0 && (
+                        <p>
+                          <button type="button" class="shot-filter" data-filter="references" aria-pressed="false">References</button>
+                          <span class="shot-link-list">
+                            {event.referenceLinks.map((link, index) => (
+                              <>
+                                {index > 0 && " · "}
+                                <a href={`#${link.id}`}>{link.title}</a>{link.inferred && <span class="shot-inferred" aria-label="implicit or inferred">*</span>}
+                              </>
+                            ))}
+                          </span>
+                        </p>
+                      )}
+                      {event.referencedBy.length > 0 && (
+                        <p>
+                          <button type="button" class="shot-filter" data-filter="referenced-by" aria-pressed="false">Referenced by</button>
+                          <span class="shot-link-list">
+                            {event.referencedBy.map((link, index) => (
+                              <>
+                                {index > 0 && " · "}
+                                <a href={`#${link.id}`}>{link.title}</a>{link.inferred && <span class="shot-inferred" aria-label="implicit or inferred">*</span>}
+                              </>
+                            ))}
+                          </span>
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </article>
+              </li>
+            ))}
+          </ol>
+        </section>
       ))
     }
-  </ul>
-  {
-    groups.map((group) => (
-      <section class="shot-group">
-        <h2>{group.label}</h2>
-        <ol>
-          {group.events.map((event) => (
-            <li id={event.id} class={`kind-${event.kind}`}>
-              <article>
-                <p class="shot-meta">
-                  <time datetime={event.date}>{event.dateLabel}</time>
-                  <span class="shot-kind">{WARNING_SHOT_KIND_LABELS[event.kind]}</span>
-                </p>
-                <h3>{event.title}</h3>
-                <p>{event.summary}</p>
-                {event.sources.length > 0 && (
-                  <p class="shot-sources">
-                    Sources:{" "}
-                    {event.sources.map((source, index) => (
-                      <>
-                        {index > 0 && " · "}
-                        <a href={source.url} target="_blank" rel="noopener noreferrer">
-                          {source.label}
-                          <span class="visually-hidden"> (opens in a new tab)</span>
-                        </a>
-                      </>
-                    ))}
-                  </p>
-                )}
-                {(event.referenceLinks.length > 0 || event.referencedBy.length > 0) && (
-                  <div class="shot-links">
-                    {event.referenceLinks.length > 0 && (
-                      <p>
-                        <span>References</span>
-                        <span class="shot-link-list">
-                          {event.referenceLinks.map((link, index) => (
-                            <>
-                              {index > 0 && " · "}
-                              <a href={`#${link.id}`}>{link.title}</a>
-                            </>
-                          ))}
-                        </span>
-                      </p>
-                    )}
-                    {event.referencedBy.length > 0 && (
-                      <p>
-                        <span>Referenced by</span>
-                        <span class="shot-link-list">
-                          {event.referencedBy.map((link, index) => (
-                            <>
-                              {index > 0 && " · "}
-                              <a href={`#${link.id}`}>{link.title}</a>
-                            </>
-                          ))}
-                        </span>
-                      </p>
-                    )}
-                  </div>
-                )}
-              </article>
-            </li>
-          ))}
-        </ol>
-      </section>
-    ))
-  }
+  </div>
+
+  <aside class="shot-categories">
+    <button
+      type="button"
+      class="shot-categories-toggle"
+      aria-expanded="true"
+      aria-controls="shot-categories-panel"
+      aria-label="Hide categories"
+    >
+      <span aria-hidden="true">›</span>
+    </button>
+    <div id="shot-categories-panel" class="shot-categories-panel">
+      <p class="shot-count" role="status"></p>
+      <fieldset>
+        <legend>Categories</legend>
+        {
+          warningShotKinds.map((kind) => (
+            <>
+              <label class={`shot-kind-option kind-${kind}`}>
+                <input type="checkbox" data-group="kind" value={kind} checked />
+                <span>{WARNING_SHOT_KIND_LABELS[kind]}</span>
+              </label>
+              {kind === "policy" && (
+                <div class="shot-subs" data-policy-subs>
+                  <details class="shot-sub-details">
+                    <summary>Who</summary>
+                    {
+                      politicalActors.map((actor) => (
+                        <label class="shot-sub-option">
+                          <input type="checkbox" data-group="actor" value={actor} checked />
+                          <span>{POLITICAL_ACTOR_LABELS[actor]}</span>
+                        </label>
+                      ))
+                    }
+                  </details>
+                  <details class="shot-sub-details">
+                    <summary>Type</summary>
+                    {
+                      responseTypes.map((type) => (
+                        <label class="shot-sub-option">
+                          <input type="checkbox" data-group="response-type" value={type} checked />
+                          <span>{RESPONSE_TYPE_LABELS[type]}</span>
+                        </label>
+                      ))
+                    }
+                  </details>
+                </div>
+              )}
+            </>
+          ))
+        }
+      </fieldset>
+      <div class="shot-categories-buttons">
+        <button type="button" class="shot-categories-button shot-categories-select-all">Select all</button>
+        <button type="button" class="shot-categories-button shot-categories-unselect-all">Unselect all</button>
+      </div>
+    </div>
+  </aside>
 </div>
 
 <style>
-  .shot-timeline {
+  .shot-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
     margin-top: 2rem;
+  }
+
+  .shot-timeline {
+    min-width: 0;
+  }
+
+  .shot-categories {
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    display: flex;
+    align-items: flex-start;
+    font-family: var(--sans);
+    font-size: clamp(0.74rem, 1.3vw, 0.92rem);
+  }
+
+  .shot-categories-toggle {
+    flex: 0 0 auto;
+    width: 1.5rem;
+    height: 3.2rem;
+    margin-top: 0.4rem;
+    padding: 0;
+    border: 1.5px solid var(--accent);
+    border-right: 0;
+    border-radius: 999px 0 0 999px;
+    background: transparent;
+    color: var(--accent);
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .shot-categories-toggle:hover {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+
+  .shot-categories-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .shot-categories-button {
+    padding: 0.12rem 0.75rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+
+  .shot-categories-toggle:hover,
+  .shot-categories-button:hover {
+    transform: scale(1.06);
+  }
+
+  .shot-categories-button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .shot-categories-panel {
+    flex: 0 0 auto;
+    width: clamp(9.5rem, 22vw, 14rem);
+    margin-left: 0.4rem;
+    margin-top: 0.6rem;
+    padding: 0.75rem 0.9rem 0.9rem;
+    border: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg) 88%, white);
+  }
+
+  .shot-categories-panel[hidden] {
+    display: none;
+  }
+
+  .shot-count {
+    margin: 0 0 0.6rem;
+    color: var(--muted);
+  }
+
+  .shot-categories fieldset {
+    margin: 0 0 0.8rem;
+    padding: 0;
+    border: 0;
+  }
+
+  .shot-categories legend {
+    margin: 0 0 0.45rem;
+    padding: 0;
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .shot-categories label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0.3rem 0;
+    cursor: pointer;
+  }
+
+  .shot-subs {
+    margin: 0.1rem 0 0.4rem 0.9rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .shot-subs[hidden] {
+    display: none;
+  }
+
+  .shot-sub-details {
+    margin: 0.2rem 0;
+  }
+
+  .shot-sub-details > summary {
+    padding: 0.15rem 0;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .shot-sub-details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .shot-sub-details > summary::before {
+    content: "▸";
+    display: inline-block;
+    width: 0.9em;
+    margin-right: 0.2rem;
+    transition: transform 0.15s ease;
+  }
+
+  .shot-sub-details[open] > summary::before {
+    transform: rotate(90deg);
+  }
+
+  .shot-sub-details > summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .shot-categories .shot-sub-option {
+    padding-left: 0.9rem;
+    color: var(--muted);
+  }
+
+  .shot-categories .shot-kind-option::before {
+    content: "";
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 0.55rem;
+    height: 0.55rem;
+    border: 2px solid var(--kind, var(--accent));
+    border-radius: 50%;
+  }
+
+  .shot-categories input {
+    accent-color: var(--accent);
+  }
+
+  .shot-categories-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .shot-note {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+  }
+
+  .shot-inferred {
+    margin-left: 0.1rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .shot-filter-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    margin: 0 0 1.25rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--accent);
+    background: #e7f0eb;
+    font-family: var(--sans);
+    font-size: 0.92rem;
+  }
+
+  .shot-filter-status[hidden] {
+    display: none;
+  }
+
+  .shot-filter-clear {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--accent);
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .shot-filter-clear:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .shot-filter {
+    display: inline-block;
+    padding: 0.12rem 0.75rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.15s ease;
+  }
+
+  .shot-filter:hover {
+    transform: scale(1.06);
+  }
+
+  .shot-filter[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .shot-filter:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   .shot-legend {
@@ -203,11 +537,6 @@ const groups = loadWarningShots();
     margin: 0.45rem 0 0;
   }
 
-  .shot-links p > span:first-child {
-    color: var(--ink);
-    font-weight: 600;
-  }
-
   .shot-link-list {
     font-weight: 400;
   }
@@ -217,11 +546,144 @@ const groups = loadWarningShots();
   }
 
   .kind-incident { --kind: #8c3a32; }
-  .kind-disclosure { --kind: #9a5b12; }
   .kind-press { --kind: #6b5420; }
-  .kind-context { --kind: #5c564e; }
   .kind-policy { --kind: #1f4a3e; }
   .kind-advocacy { --kind: #24556e; }
   .kind-enforcement { --kind: #3d4d8f; }
   .kind-lab { --kind: #5a3d6b; }
 </style>
+
+<script>
+  type FilterMode = "references" | "referenced-by";
+
+  const layout = document.querySelector<HTMLElement>(".shot-layout");
+  const root = layout?.querySelector<HTMLElement>(".shot-timeline");
+  const panel = layout?.querySelector<HTMLElement>(".shot-categories-panel");
+  const toggle = layout?.querySelector<HTMLButtonElement>(".shot-categories-toggle");
+  const selectAll = layout?.querySelector<HTMLButtonElement>(".shot-categories-select-all");
+  const unselectAll = layout?.querySelector<HTMLButtonElement>(".shot-categories-unselect-all");
+  const count = layout?.querySelector<HTMLElement>(".shot-count");
+
+  if (layout && root && panel && toggle && selectAll && unselectAll && count) {
+    const status = root.querySelector<HTMLElement>(".shot-filter-status")!;
+    const statusText = root.querySelector<HTMLElement>(".shot-filter-text")!;
+    const items = Array.from(root.querySelectorAll<HTMLLIElement>("li[id]"));
+    const groups = Array.from(root.querySelectorAll<HTMLElement>(".shot-group"));
+    const checkboxes = Array.from(panel.querySelectorAll<HTMLInputElement>('input[type="checkbox"]'));
+
+    let active: { id: string; mode: FilterMode } | null = null;
+    let enabledKinds = new Set<string>();
+    let enabledActors = new Set<string>();
+    let enabledTypes = new Set<string>();
+
+    const policyBox = checkboxes.find((box) => box.dataset.group === "kind" && box.value === "policy");
+    const policySubs = panel.querySelector<HTMLElement>("[data-policy-subs]");
+
+    const enabledIn = (group: string) =>
+      new Set(checkboxes.filter((box) => box.dataset.group === group && box.checked).map((box) => box.value));
+    const syncEnabled = () => {
+      enabledKinds = enabledIn("kind");
+      enabledActors = enabledIn("actor");
+      enabledTypes = enabledIn("response-type");
+      if (policySubs && policyBox) policySubs.hidden = !policyBox.checked;
+    };
+
+    const listOf = (value: string | undefined) => (value ?? "").split(",").filter(Boolean);
+    const titleOf = (id: string) => root.querySelector(`li[id="${id}"] h3`)?.textContent ?? id;
+
+    function render() {
+      const related = new Set<string>();
+      if (active) {
+        const li = document.getElementById(active.id)!;
+        related.add(active.id);
+        const list = active.mode === "references" ? li.dataset.references : li.dataset.referencedBy;
+        listOf(list).forEach((id) => related.add(id));
+      }
+
+      items.forEach((li) => {
+        const kind = li.dataset.kind ?? "";
+        const relationHidden = active !== null && !related.has(li.id);
+        let categoryHidden = !enabledKinds.has(kind);
+        if (kind === "policy") {
+          categoryHidden =
+            categoryHidden ||
+            !enabledActors.has(li.dataset.actor ?? "") ||
+            !enabledTypes.has(li.dataset.responseType ?? "");
+        }
+        li.hidden = relationHidden || categoryHidden;
+      });
+      groups.forEach((group) => {
+        group.hidden = !group.querySelector("li:not([hidden])");
+      });
+
+      root!.querySelectorAll<HTMLButtonElement>(".shot-filter").forEach((button) => {
+        const li = button.closest("li");
+        const pressed = active !== null && active.id === li?.id && active.mode === button.dataset.filter;
+        button.setAttribute("aria-pressed", String(pressed));
+      });
+
+      if (active) {
+        const label = active.mode === "references" ? "references" : "entries that reference it";
+        statusText.textContent = `Showing “${titleOf(active.id)}” and its ${label}.`;
+        status.hidden = false;
+      } else {
+        status.hidden = true;
+      }
+
+      const shown = items.filter((li) => !li.hidden).length;
+      count.textContent = `Showing ${shown} of ${items.length} entries`;
+    }
+
+    root.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement;
+      const button = target.closest<HTMLButtonElement>(".shot-filter");
+      if (button) {
+        const li = button.closest("li")!;
+        const mode = button.dataset.filter as FilterMode;
+        const isSame = active !== null && active.id === li.id && active.mode === mode;
+        active = isSame ? null : { id: li.id, mode };
+        render();
+        return;
+      }
+      if (target.closest(".shot-filter-clear")) {
+        active = null;
+        render();
+      }
+    });
+
+    const arrow = toggle.querySelector<HTMLElement>("span")!;
+    toggle.addEventListener("click", () => {
+      panel.hidden = !panel.hidden;
+      const open = !panel.hidden;
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Hide categories" : "Show categories");
+      arrow.textContent = open ? "›" : "‹";
+    });
+
+    checkboxes.forEach((box) => {
+      box.addEventListener("change", () => {
+        syncEnabled();
+        render();
+      });
+    });
+
+    selectAll.addEventListener("click", () => {
+      checkboxes.forEach((box) => {
+        box.checked = true;
+      });
+      syncEnabled();
+      render();
+    });
+
+    unselectAll.addEventListener("click", () => {
+      checkboxes.forEach((box) => {
+        box.checked = false;
+      });
+      syncEnabled();
+      render();
+    });
+
+    syncEnabled();
+    render();
+  }
+</script>

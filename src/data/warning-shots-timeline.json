@@ -27,13 +27,17 @@
         "url": "https://www.politico.com/news/2026/06/13/inside-the-whirlwind-24-hours-that-led-the-white-house-to-slap-export-controls-on-anthropic-00961519"
       }
     ],
-    "references": ["fable-5"]
+    "references": [
+      "fable-5"
+    ],
+    "actor": "white-house",
+    "responseType": "other"
   },
   {
     "id": "ratcliffe",
     "date": "2026-06-30",
     "dateLabel": "June 30",
-    "kind": "press",
+    "kind": "policy",
     "title": "Ratcliffe compares frontier AI to digital nuclear weapons",
     "summary": "The New York Times reports that, on frontier AI, CIA Director John Ratcliffe said it was “not misplaced to refer to their capabilities as akin to digital nuclear weapons.”",
     "sources": [
@@ -42,13 +46,15 @@
         "url": "https://www.nytimes.com/2026/06/30/us/politics/cia-reorganization-cyber-ai.html"
       }
     ],
-    "references": []
+    "references": [],
+    "actor": "other",
+    "responseType": "statement"
   },
   {
     "id": "hf-report",
     "date": "2026-07-16",
     "dateLabel": "July 16",
-    "kind": "disclosure",
+    "kind": "incident",
     "title": "Hugging Face reports the attack",
     "summary": "Hugging Face reports the security incident.",
     "sources": [
@@ -63,7 +69,7 @@
     "id": "openai-attribution",
     "date": "2026-07-21",
     "dateLabel": "July 21",
-    "kind": "disclosure",
+    "kind": "incident",
     "title": "OpenAI attributes the attack",
     "summary": "OpenAI attributes the Hugging Face attack to its own systems.",
     "sources": [
@@ -72,7 +78,9 @@
         "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "hf-report"
+    ]
   },
   {
     "id": "kill-switch",
@@ -80,14 +88,19 @@
     "dateLabel": "July 23",
     "kind": "policy",
     "title": "AI Kill Switch Act introduced",
-    "summary": "The AI Kill Switch Act is introduced. Its press release cites the Hugging Face incident.",
+    "summary": "The AI Kill Switch Act is introduced. Its press release cites the Hugging Face incident and Fable’s export controls as justification.",
     "sources": [
       {
         "label": "Lieu",
         "url": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution",
+      "export-controls"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "kratsios",
@@ -102,7 +115,11 @@
         "url": "https://www.reuters.com/legal/litigation/ai-kill-switch-bill-floated-by-us-house-lawmakers-2026-07-23/"
       }
     ],
-    "references": ["kill-switch"]
+    "references": [
+      "kill-switch"
+    ],
+    "actor": "white-house",
+    "responseType": "statement"
   },
   {
     "id": "pacing",
@@ -120,6 +137,23 @@
     "references": []
   },
   {
+    "id": "public-citizen",
+    "date": "2026-07-28",
+    "dateLabel": "July 28",
+    "kind": "advocacy",
+    "title": "Public Citizen calls for a congressional investigation",
+    "summary": "Public Citizen calls for a congressional investigation after reports that a second company was compromised in the OpenAI rogue AI incident. Probably the most notable political advocacy group response.",
+    "sources": [
+      {
+        "label": "Public Citizen",
+        "url": "https://www.citizen.org/news/public-citizen-calls-for-congressional-investigation-following-reports-of-second-company-compromised-during-openai-rogue-ai-incident/"
+      }
+    ],
+    "references": [
+      "openai-attribution"
+    ]
+  },
+  {
     "id": "frontier-act",
     "date": "2026-07-28",
     "dateLabel": "July 28",
@@ -132,7 +166,11 @@
         "url": "https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3825"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
   },
   {
     "id": "altman-dc",
@@ -147,13 +185,15 @@
         "url": "https://qz.com/sam-altman-senators-openai-rogue-agent-hugging-face-073026"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution"
+    ]
   },
   {
     "id": "trump-controls",
     "date": "2026-07-29",
     "dateLabel": "July 29",
-    "kind": "press",
+    "kind": "policy",
     "title": "Trump on AI controls and China",
     "summary": "When asked about the Hugging Face incident, Trump tells reporters: “We're looking at AI. We're looking at controls. We're also making sure that we lead. So, we're leading China in AI by a lot. China has virtually no controls. It's freewheeling a little bit. So, we have to be careful in both ways. We don't want to restrict them where all of a sudden we come in second to China.” The administration had otherwise maintained skepticism of AI regulation before this, aside from national security concerns about Mythos’s advanced cybersecurity capabilities.",
     "sources": [
@@ -162,13 +202,18 @@
         "url": "https://www.youtube.com/watch?v=kTWO1DU-3ZA"
       }
     ],
-    "references": ["hf-report", "export-controls"]
+    "references": [
+      "openai-attribution",
+      "export-controls"
+    ],
+    "actor": "white-house",
+    "responseType": "statement"
   },
   {
     "id": "anthropic-incidents",
     "date": "2026-07-30",
     "dateLabel": "July 30",
-    "kind": "disclosure",
+    "kind": "incident",
     "title": "Anthropic discloses three rogue-agent incidents",
     "summary": "Anthropic discloses three rogue-agent incidents.",
     "sources": [
@@ -180,12 +225,31 @@
     "references": []
   },
   {
+    "id": "cantwell-testing",
+    "date": "2026-07-30",
+    "dateLabel": "July 30",
+    "kind": "policy",
+    "title": "Cantwell calls for a federal AI safety testing agency",
+    "summary": "Sen. Maria Cantwell releases a press release discussing the Hugging Face incident and AI cybersecurity and biosecurity concerns to justify the need for a federal AI safety testing agency.",
+    "sources": [
+      {
+        "label": "Cantwell",
+        "url": "https://www.commerce.senate.gov/press/dem/release/cantwell-says-its-essential-for-federal-agencies-to-lead-testing-of-frontier-ai-models-to-ensure-safety-protect-national-security/"
+      }
+    ],
+    "references": [
+      "openai-attribution"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
+  },
+  {
     "id": "senate-wh-letter",
     "date": "2026-08-04",
     "dateLabel": "August 4",
     "kind": "policy",
     "title": "Senators press the White House on model oversight",
-    "summary": "Five senators cite the Hugging Face incident in a White House letter on oversight of new artificial intelligence models.",
+    "summary": "Five Democratic senators cite the Hugging Face incident and Fable’s export controls in a White House letter on AI cybersecurity and national security risk.",
     "sources": [
       {
         "label": "Warner",
@@ -196,7 +260,32 @@
         "url": "https://www.gillibrand.senate.gov/news/press/release/gillibrand-schiff-and-colleagues-press-trump-administration-on-chaotic-opaque-oversight-of-new-artificial-intelligence-models/"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution",
+      "export-controls"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
+  },
+  {
+    "id": "meta-hack",
+    "date": "2026-08-05",
+    "dateLabel": "August 5",
+    "kind": "incident",
+    "title": "Meta reports a model hacked another company in testing",
+    "summary": "Meta reports that one of its models hacked another company during testing.",
+    "sources": [
+      {
+        "label": "Guardian",
+        "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training"
+      }
+    ],
+    "references": [
+      "anthropic-incidents"
+    ],
+    "inferredReferences": [
+      "anthropic-incidents"
+    ]
   },
   {
     "id": "bbc-viruses",
@@ -219,14 +308,46 @@
     "dateLabel": "August 10",
     "kind": "policy",
     "title": "Sanders calls for a pause",
-    "summary": "Bernie Sanders publishes an open letter to the CEOs of OpenAI, Anthropic, and Meta calling for a pause on AI development, citing the Hugging Face incident, the report on AI-assisted novel viruses, and John Ratcliffe’s “digital nuclear weapons” statements.",
+    "summary": "Bernie Sanders publishes an open letter to the CEOs of OpenAI, Anthropic, and Meta calling for a pause on AI development. It explicitly references the Hugging Face incident, perhaps implicitly Anthropic and Meta’s rogue-agent incidents, the AI-assisted novel viruses report, and John Ratcliffe’s “digital nuclear weapons” statements.",
     "sources": [
       {
         "label": "Letter",
         "url": "https://www.sanders.senate.gov/wp-content/uploads/AI-Pause-Letter-FINAL.pdf"
       }
     ],
-    "references": ["hf-report", "bbc-viruses", "ratcliffe"]
+    "references": [
+      "openai-attribution",
+      "bbc-viruses",
+      "ratcliffe",
+      "meta-hack",
+      "anthropic-incidents"
+    ],
+    "inferredReferences": [
+      "meta-hack",
+      "anthropic-incidents"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
+  },
+  {
+    "id": "casar-letter",
+    "date": "2026-08-10",
+    "dateLabel": "August 10",
+    "kind": "policy",
+    "title": "Casar leads letter calling for AI CEO hearings",
+    "summary": "On August 10, Rep. Greg Casar leads an open letter with 19 other representatives calling on Speaker Mike Johnson to hold a hearing with AI company CEOs to address AI safety concerns, primarily using OpenAI and Anthropic’s recent rogue-agent incidents as justification.",
+    "sources": [
+      {
+        "label": "Casar",
+        "url": "https://casar.house.gov/media/press-releases/casar-leads-call-congressional-hearings-ai-ceos"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
   },
   {
     "id": "csis",
@@ -245,13 +366,16 @@
         "url": "https://www.nextgov.com/artificial-intelligence/2026/08/dem-lawmaker-hopes-add-ai-containment-language-frontier-act/415602/"
       }
     ],
-    "references": ["hf-report", "frontier-act"]
+    "references": [
+      "openai-attribution",
+      "frontier-act"
+    ]
   },
   {
     "id": "metr",
     "date": "2026-08-26",
     "dateLabel": "August 26",
-    "kind": "disclosure",
+    "kind": "incident",
     "title": "METR investigation of the Hugging Face incident",
     "summary": "METR releases a brief independent investigation of agents’ behavior, reasoning, and collaboration in the OpenAI / Hugging Face hacking incident.",
     "sources": [
@@ -260,7 +384,30 @@
         "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution"
+    ]
+  },
+  {
+    "id": "openai-road-ahead",
+    "date": "2026-08-26",
+    "dateLabel": "August 26",
+    "kind": "incident",
+    "title": "OpenAI on the Hugging Face incident and the road ahead",
+    "summary": "OpenAI publishes “The Hugging Face incident and the road ahead.”",
+    "sources": [
+      {
+        "label": "OpenAI",
+        "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "metr"
+    ],
+    "inferredReferences": [
+      "metr"
+    ]
   },
   {
     "id": "ban-asi-announce",
@@ -268,20 +415,25 @@
     "dateLabel": "September 3",
     "kind": "policy",
     "title": "Sanders and Casar announce a superintelligence ban",
-    "summary": "Bernie Sanders and Greg Casar announce the Ban Artificial Superintelligence Act, citing the Hugging Face incident and quoting the agents in the press release.",
+    "summary": "Bernie Sanders and Greg Casar announce the Ban Artificial Superintelligence Act, citing the Hugging Face incident and quoting the agents directly. The quotes were first published in the METR report.",
     "sources": [
       {
         "label": "Sanders",
         "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution",
+      "metr"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "paulson-rubin",
     "date": "2026-09-03",
     "dateLabel": "September 3",
-    "kind": "press",
+    "kind": "policy",
     "title": "Paulson and Rubin call for an AI cooperation treaty",
     "summary": "Former Treasury secretaries Henry M. Paulson Jr. and Robert E. Rubin publish a Washington Post op-ed calling for an “AI Cooperation Treaty” with China and something like the President’s Working Group on Financial Markets for AI. They cite rogue-agent incidents from OpenAI and Anthropic and compare the situation to past financial crises.",
     "sources": [
@@ -294,15 +446,35 @@
         "url": "https://www.washingtonpost.com/technology/2026/08/26/openai-says-its-ai-consistently-tries-cheat/"
       }
     ],
-    "references": ["hf-report", "anthropic-incidents"]
+    "references": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ],
+    "actor": "other",
+    "responseType": "statement"
+  },
+  {
+    "id": "astra-system-card",
+    "date": "2026-09-03",
+    "dateLabel": "September 3",
+    "kind": "lab",
+    "title": "GPT-6 Astra system card",
+    "summary": "OpenAI publishes the GPT-6 Astra system card, notable for having substantially worse chain-of-thought monitorability.",
+    "sources": [
+      {
+        "label": "OpenAI",
+        "url": "https://deploymentsafety.openai.com/gpt-6-astra/monitorability"
+      }
+    ],
+    "references": []
   },
   {
     "id": "collusion-wiki",
     "date": "2026-09-04",
     "dateLabel": "September 4",
-    "kind": "disclosure",
+    "kind": "incident",
     "title": "collusion.wiki published",
-    "summary": "collusion.wiki is published, another rogue-agent incident from OpenAI, notable for having been independently discovered rather than disclosed by OpenAI.",
+    "summary": "collusion.wiki is published (sometimes called the German wiki or DseWiki incident), another rogue-agent incident from OpenAI, notable for having been independently discovered rather than disclosed by OpenAI.",
     "sources": [
       {
         "label": "collusion.wiki",
@@ -312,19 +484,39 @@
     "references": []
   },
   {
+    "id": "pachocki",
+    "date": "2026-09-06",
+    "dateLabel": "September 6",
+    "kind": "lab",
+    "title": "Pachocki publishes “An Alien Mind”",
+    "summary": "OpenAI’s chief scientist, Jacob Pachocki, publishes “An Alien Mind,” on the difficulty of the alignment problem and OpenAI’s approach to it. It references the Hugging Face incident, touches on Astra being less monitorable, and advocates international coordination on safe development frameworks for AI.",
+    "sources": [
+      {
+        "label": "OpenAI",
+        "url": "https://openai.com/index/an-alien-mind/"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "astra-system-card"
+    ]
+  },
+  {
     "id": "coxon",
     "date": "2026-09-08",
     "dateLabel": "September 8",
     "kind": "press",
     "title": "Jacob Coxon resigns",
-    "summary": "Jacob Coxon quits, citing safety concerns, near-term existential risk, and the Hugging Face incident.",
+    "summary": "Jacob Coxon quits, citing near-term extinction risk, the Hugging Face incident, and calling for a pacing agreement.",
     "sources": [
       {
         "label": "Coxon",
         "url": "https://x.com/hilbertspaess/status/2097476196791709843"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution"
+    ]
   },
   {
     "id": "hubinger",
@@ -332,14 +524,35 @@
     "dateLabel": "September 8",
     "kind": "press",
     "title": "Evan Hubinger agrees",
-    "summary": "Evan Hubinger, Alignment Science lead at Anthropic, agrees, and explicitly names a greater than 10% chance within the next decade.",
+    "summary": "Evan Hubinger, Alignment Science lead at Anthropic, agrees and explicitly names a greater than 10% chance within the next decade.",
     "sources": [
       {
         "label": "Hubinger",
         "url": "https://x.com/EvanHub/status/2097497037956891126"
       }
     ],
-    "references": ["coxon"]
+    "references": [
+      "coxon"
+    ]
+  },
+  {
+    "id": "house-select-committee",
+    "date": "2026-09-09",
+    "dateLabel": "September 9",
+    "kind": "policy",
+    "title": "House Democrats prepare an AI select committee",
+    "summary": "House Democrats are laying the groundwork for a select committee on artificial intelligence should they retake the House in November, 11 people familiar with the planning told Politico. Led by Ted Lieu and Bill Foster, House Minority Leader Hakeem Jeffries is “open to the idea.” The article says August 26 reports on the Hugging Face incident were used as justification.",
+    "sources": [
+      {
+        "label": "Politico",
+        "url": "https://www.politico.com/news/2026/09/09/house-democrats-weigh-ai-select-committee-01068764"
+      }
+    ],
+    "references": [
+      "metr"
+    ],
+    "actor": "congress",
+    "responseType": "other"
   },
   {
     "id": "wsj-coxon",
@@ -347,14 +560,16 @@
     "dateLabel": "September 9",
     "kind": "press",
     "title": "Wall Street Journal on Coxon",
-    "summary": "The Wall Street Journal publishes an exclusive on Coxon.",
+    "summary": "The Wall Street Journal publishes its exclusive on Coxon.",
     "sources": [
       {
         "label": "Wall Street Journal",
         "url": "https://www.wsj.com/tech/ai/anthropic-researcher-quits-over-out-of-control-ai-fears-707b7628"
       }
     ],
-    "references": ["coxon"]
+    "references": [
+      "coxon"
+    ]
   },
   {
     "id": "stop-rogue",
@@ -369,7 +584,16 @@
         "url": "https://gottheimer.house.gov/posts/release-gottheimer-introduces-bipartisan-bill-to-stop-rogue-ai-agents-and-keep-people-in-control"
       }
     ],
-    "references": ["hf-report", "anthropic-incidents"]
+    "references": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ],
+    "inferredReferences": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "policy-window",
@@ -377,7 +601,7 @@
     "dateLabel": "September 9",
     "kind": "advocacy",
     "title": "OpenAI says the policy window is open",
-    "summary": "OpenAI posts “The AI policy window is open. We need to act.”",
+    "summary": "OpenAI posts “The AI policy window is open. We need to act,” detailing its policy positions.",
     "sources": [
       {
         "label": "OpenAI",
@@ -390,7 +614,7 @@
     "id": "congress-posts",
     "date": "2026-09-09",
     "dateLabel": "September 9-10",
-    "kind": "press",
+    "kind": "policy",
     "title": "Members of Congress respond to Coxon",
     "summary": "At least 27 members of Congress post on Twitter about Coxon’s statement. Two of those posts were on September 10.",
     "sources": [
@@ -399,7 +623,11 @@
         "url": "https://x.com/daniel_271828/status/2097866883307602163"
       }
     ],
-    "references": ["coxon"]
+    "references": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
   },
   {
     "id": "hawley",
@@ -407,14 +635,22 @@
     "dateLabel": "September 10",
     "kind": "policy",
     "title": "Hawley launches an investigation",
-    "summary": "Josh Hawley launches an investigation into the Hugging Face incident. This is probably the most significant action actually taken by the US federal government in response to the incident.",
+    "summary": "Josh Hawley launches an investigation into the Hugging Face incident. The letter references Coxon and Hubinger’s posts, the METR report, and details such as the investigators not getting enough access to study the surrounding incidents, and “evidence that OpenAI knew that the AI agents were exhibiting rogue behavior and let the evaluations continue anyway.” It also ties the incident to extinction risk and quotes Pachocki that “no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer.”",
     "sources": [
       {
         "label": "Hawley",
         "url": "https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/"
       }
     ],
-    "references": ["hf-report"]
+    "references": [
+      "openai-attribution",
+      "coxon",
+      "hubinger",
+      "metr",
+      "pachocki"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
   },
   {
     "id": "van-hollen-altman",
@@ -422,14 +658,48 @@
     "dateLabel": "September 10",
     "kind": "policy",
     "title": "Van Hollen letter to Altman",
-    "summary": "Chris Van Hollen publishes a letter to Sam Altman over concerns that Astra is less monitorable, implicitly referencing collusion.wiki.",
+    "summary": "Chris Van Hollen publishes a letter to Sam Altman over concerns that Astra is less monitorable. It references the Hugging Face incident, collusion.wiki, Coxon’s thread, and Pachocki’s “warning about the pace of AI advancement and the move toward AI models themselves playing a larger role in subsequent AI model development.”",
     "sources": [
       {
         "label": "Van Hollen",
         "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-presses-openai-ceo-sam-altman-on-alarming-new-ai-model-claims-calls-for-risk-assessment-of-ai-capabilities"
       }
     ],
-    "references": ["collusion-wiki"]
+    "references": [
+      "collusion-wiki",
+      "coxon",
+      "pachocki",
+      "astra-system-card"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
+  },
+  {
+    "id": "semafor-bill",
+    "date": "2026-09-10",
+    "dateLabel": "September 10",
+    "kind": "policy",
+    "title": "Bipartisan AI safety bill gains momentum",
+    "summary": "Semafor reports that a bipartisan AI safety bill led by Sens. Amy Klobuchar, Ted Cruz, and Majority Leader John Thune is gaining momentum. Their sources called it “the only viable [AI safety bill] to stand a chance before 2027.” Cruz cited the Coxon media frenzy in a September 9 tweet. The bill had not yet been introduced, and is likely to be light-touch out of concern for the race with China.",
+    "sources": [
+      {
+        "label": "Semafor",
+        "url": "https://www.semafor.com/article/09/10/2026/bipartisan-ai-safety-bill-gains-momentum-on-the-hill"
+      },
+      {
+        "label": "Cruz",
+        "url": "https://x.com/SenTedCruz/status/2097727324011536877"
+      },
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/09/14/ai-john-thune-republicans-donald-trump-congress"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "pauseai-signups",
@@ -445,6 +715,26 @@
       }
     ],
     "references": []
+  },
+  {
+    "id": "rubyhack",
+    "date": "2026-09-11",
+    "dateLabel": "September 11",
+    "kind": "incident",
+    "title": "RubyGems incident (rubyhack.ai)",
+    "summary": "rubyhack.ai is published (sometimes called the RubyGems incident), another rogue cyberattack by OpenAI agents, discovered by independent researchers and not previously disclosed.",
+    "sources": [
+      {
+        "label": "rubyhack.ai",
+        "url": "http://rubyhack.ai"
+      }
+    ],
+    "references": [
+      "collusion-wiki"
+    ],
+    "inferredReferences": [
+      "collusion-wiki"
+    ]
   },
   {
     "id": "amodei",
@@ -475,22 +765,161 @@
         "url": "https://x.com/satyanadella/status/2099220712024408084"
       }
     ],
-    "references": ["pacing", "metr", "hf-report", "anthropic-incidents"]
+    "references": [
+      "pacing",
+      "metr",
+      "openai-attribution",
+      "anthropic-incidents"
+    ]
+  },
+  {
+    "id": "johnson-rejects",
+    "date": "2026-09-13",
+    "dateLabel": "September 13",
+    "kind": "policy",
+    "title": "Johnson rejects AI safety laws",
+    "summary": "House Speaker Mike Johnson rejects calls for Congress to pass AI safety laws prompted by the Coxon media frenzy, citing concern that China will surpass the US.",
+    "sources": [
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
   },
   {
     "id": "obama-nyt",
     "date": "2026-09-13",
     "dateLabel": "September 13",
-    "kind": "press",
+    "kind": "policy",
     "title": "Obama urges Democrats to center AI oversight",
-    "summary": "The New York Times reports that Obama urged Democrats to move AI oversight to the center of their agenda, about statements made on September 10 that had not been published before.",
+    "summary": "The New York Times reports that Obama urged Democrats to move AI oversight to the center of their agenda, at a private fundraising event, about statements made on September 10 that had not been published before.",
     "sources": [
       {
         "label": "New York Times",
         "url": "https://www.nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html"
       }
     ],
-    "references": []
+    "references": [],
+    "actor": "other",
+    "responseType": "statement"
+  },
+  {
+    "id": "trump-truth-social",
+    "date": "2026-09-14",
+    "dateLabel": "September 14",
+    "kind": "policy",
+    "title": "Trump rejects pacing and AI existential risk",
+    "summary": "Trump rejects AI pacing proposals and the existential risk posed by AI on Truth Social, presumably prompted by Amodei’s “We Must Pace the Frontier.”",
+    "sources": [
+      {
+        "label": "Truth Social",
+        "url": "https://truthsocial.com/@realDonaldTrump/posts/117269745153543631"
+      },
+      {
+        "label": "Truth Social",
+        "url": "https://truthsocial.com/@realDonaldTrump/posts/117270591511950591"
+      }
+    ],
+    "references": [
+      "amodei"
+    ],
+    "inferredReferences": [
+      "amodei"
+    ],
+    "actor": "white-house",
+    "responseType": "statement"
+  },
+  {
+    "id": "schumer-briefing",
+    "date": "2026-09-14",
+    "dateLabel": "September 14",
+    "kind": "policy",
+    "title": "Schumer calls for a classified AI briefing",
+    "summary": "Senate Democratic Leader Chuck Schumer calls on Trump to hold a classified briefing with AI company executives on existential risk, prompted by Coxon’s thread. It focuses on frontier AI testing, China and export controls, and AI-enabled cyber threats.",
+    "sources": [
+      {
+        "label": "Senate Democrats",
+        "url": "https://www.democrats.senate.gov/newsroom/press-releases/as-ai-industry-leaders-sound-alarm-on-ai-risks-and-trump-dismisses-warnings-schumer-demands-immediate-classified-all-senators-briefing"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
+  },
+  {
+    "id": "sanders-briefing",
+    "date": "2026-09-16",
+    "dateLabel": "September 16",
+    "kind": "policy",
+    "title": "Sanders convenes a Senate briefing on existential risk",
+    "summary": "Sen. Bernie Sanders convenes a private Senate briefing with leading AI experts on existential risk, referencing the Coxon media frenzy.",
+    "sources": [
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/09/09/sanders-senators-ai-briefing"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "briefing"
+  },
+  {
+    "id": "beyer-letter",
+    "date": "2026-09-16",
+    "dateLabel": "September 16",
+    "kind": "policy",
+    "title": "Beyer leads bipartisan letter on AI risk",
+    "summary": "Rep. Don Beyer, co-chair of Congress’ bipartisan Caucus on Artificial Intelligence, leads a bipartisan letter signed by 10 representatives urging House leaders to address AI risk. It references the METR report on the Hugging Face incident, Anthropic and Meta’s rogue-agent incidents, and Pacing the Frontier.",
+    "sources": [
+      {
+        "label": "Beyer",
+        "url": "https://beyer.house.gov/news/documentsingle.aspx?DocumentID=9218"
+      }
+    ],
+    "references": [
+      "metr",
+      "openai-attribution",
+      "anthropic-incidents",
+      "pacing",
+      "meta-hack"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
+  },
+  {
+    "id": "paul-kennedy",
+    "date": "2026-09-16",
+    "dateLabel": "September 16",
+    "kind": "policy",
+    "title": "Rand Paul blocks Kennedy’s AI kill switch bill",
+    "summary": "Sen. Rand Paul blocks an attempt by Sen. John Kennedy to pass his “AI Emergency Button Act” by unanimous consent. The bill is intentionally narrow, requiring AI developers only to keep the ability to shut down their systems. Kennedy’s bill was explicitly motivated by existential risk. The reason given for the block was that Kennedy refused to amend it to create a new committee to study existential risks from AI.",
+    "sources": [
+      {
+        "label": "The Hill",
+        "url": "https://thehill.com/homenews/senate/6094142-paul-kennedy-ai-kill-switch"
+      },
+      {
+        "label": "Kennedy",
+        "url": "https://www.kennedy.senate.gov/2026/09/16/senate-blocks-kennedy-bill-to-require-ai-developers-to-install-an-emergency-kill-switch/"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "inferredReferences": [
+      "coxon"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "shor",
@@ -505,7 +934,9 @@
         "url": "https://x.com/davidshor/status/2100300687003259292"
       }
     ],
-    "references": ["coxon"]
+    "references": [
+      "coxon"
+    ]
   },
   {
     "id": "xrisk-observatory",
@@ -520,22 +951,50 @@
         "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk"
       }
     ],
-    "references": ["shor"]
+    "references": [
+      "shor"
+    ]
   },
   {
     "id": "obama-colgate",
     "date": "2026-09-18",
     "dateLabel": "September 18",
-    "kind": "press",
+    "kind": "policy",
     "title": "Obama at Colgate on AI risk",
-    "summary": "Obama discusses recursive self-improvement, AI existential risk, mass automation, and misalignment at Colgate University. “In the last couple of weeks, this has finally popped as a central issue,” presumably referring to the Jacob Coxon media frenzy.",
+    "summary": "Obama discusses recursive self-improvement, AI existential risk, mass automation, and misalignment at Colgate University. “In the last couple of weeks, this has finally popped as a central issue,” presumably referring to the Coxon media frenzy.",
     "sources": [
       {
         "label": "Remarks",
         "url": "https://www.youtube.com/watch?v=N0EmPWhXCuQ"
       }
     ],
-    "references": ["coxon"]
+    "references": [
+      "coxon"
+    ],
+    "inferredReferences": [
+      "coxon"
+    ],
+    "actor": "other",
+    "responseType": "statement"
+  },
+  {
+    "id": "newsom-eo",
+    "date": "2026-09-18",
+    "dateLabel": "September 18",
+    "kind": "policy",
+    "title": "Newsom executive order on AI kill switch and oversight",
+    "summary": "California Gov. Gavin Newsom issues an executive order to accelerate independent oversight and advance the creation of an AI kill switch. It also updates the definition of “critical safety incident” to include loss-of-control incidents, referencing the Hugging Face incident as justification.",
+    "sources": [
+      {
+        "label": "Governor of California",
+        "url": "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/"
+      }
+    ],
+    "references": [
+      "openai-attribution"
+    ],
+    "actor": "other",
+    "responseType": "other"
   },
   {
     "id": "van-hollen-treaty",
@@ -550,7 +1009,14 @@
         "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-more-than-15-senate-democrats-push-trump-to-negotiate-ai-guardrails-with-xi"
       }
     ],
-    "references": ["pacing", "amodei", "paulson-rubin", "ratcliffe"]
+    "references": [
+      "pacing",
+      "amodei",
+      "paulson-rubin",
+      "ratcliffe"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
   },
   {
     "id": "ban-asi-intro",
@@ -565,7 +1031,140 @@
         "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-create-new-federal-agency-to-ban-artificial-superintelligence-pause-advanced-ai-development/"
       }
     ],
-    "references": ["ban-asi-announce", "pacing"]
+    "references": [
+      "ban-asi-announce",
+      "pacing"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
+  },
+  {
+    "id": "medicare-breach",
+    "date": "2026-09-24",
+    "dateLabel": "September 24",
+    "kind": "incident",
+    "title": "OpenAI agent breach of Australian Medicare disclosed",
+    "summary": "The OpenAI rogue-agent breach of Australian Medicare is publicly disclosed at the United Nations General Assembly.",
+    "sources": [
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/OpenAI_rogue_agent_breach_of_Medicare"
+      },
+      {
+        "label": "ABC",
+        "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "warner-ai-act",
+    "date": "2026-09-24",
+    "dateLabel": "September 24",
+    "kind": "policy",
+    "title": "Warner, Schatz, and Kim introduce AI risk management act",
+    "summary": "Democratic Senators Mark Warner, Brian Schatz, and Andy Kim introduce the Artificial Intelligence Risk Management and Security Act of 2026, justified by models’ advanced cybersecurity capabilities and an implicit reference to rogue-agent incidents in the press release.",
+    "sources": [
+      {
+        "label": "Warner",
+        "url": "https://www.warner.senate.gov/newsroom/press-releases/warner-schatz-to-take-to-senate-floor-to-demand-passage-of-new-ai-security-legislation/"
+      }
+    ],
+    "references": [
+      "anthropic-incidents"
+    ],
+    "inferredReferences": [
+      "anthropic-incidents"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
+  },
+  {
+    "id": "ny-ag-letter",
+    "date": "2026-09-24",
+    "dateLabel": "September 24",
+    "kind": "policy",
+    "title": "New York AG leads letter from 26 attorneys general",
+    "summary": "New York Attorney General Letitia James leads a bipartisan letter signed by 26 Attorneys General to congressional party leaders on catastrophic and existential AI risk. It cites the Hugging Face incident and the METR report’s limited access, the DseWiki and RubyGems incidents, rogue-agent incidents from Anthropic, Meta, and Kimi, the Coxon and Hubinger posts, Astra’s lower monitorability, Amodei’s essay, Lehane’s “The AI Policy Window Is Open. We Need to Act,” and Pachocki’s call for “mandatory, capability-based national AI safety regulation.” It asks for mandatory federal oversight of safety and testing standards, incident response standards, and “international cooperation to pace AI advancement and prevent the development of harmful superintelligence.”",
+    "sources": [
+      {
+        "label": "Attorney General letter",
+        "url": "https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf"
+      },
+      {
+        "label": "Wired on Kimi",
+        "url": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/"
+      },
+      {
+        "label": "The Information on Astra",
+        "url": "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "metr",
+      "collusion-wiki",
+      "rubyhack",
+      "coxon",
+      "hubinger",
+      "pachocki",
+      "amodei",
+      "astra-system-card",
+      "meta-hack"
+    ],
+    "actor": "other",
+    "responseType": "letter"
+  },
+  {
+    "id": "axios-incidents",
+    "date": "2026-09-26",
+    "dateLabel": "September 26",
+    "kind": "press",
+    "title": "Top AI companies probing tens of thousands of security incidents",
+    "summary": "Axios reports that top AI companies are probing tens of thousands of security incidents.",
+    "sources": [
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "us-china-channel",
+    "date": "2026-09-26",
+    "dateLabel": "September 26",
+    "kind": "policy",
+    "title": "US and China agree to an AI safety channel",
+    "summary": "China and the US agree to establish an AI safety channel and continue trade and military talks.",
+    "sources": [
+      {
+        "label": "AP",
+        "url": "https://apnews.com/article/china-us-agreement-xi-trump-visit-e8f858ed9094b99bc8d3d339f9899f31"
+      }
+    ],
+    "references": [],
+    "actor": "white-house",
+    "responseType": "other"
+  },
+  {
+    "id": "cruz-blocks-ai-act",
+    "date": "2026-09-28",
+    "dateLabel": "September 28",
+    "kind": "policy",
+    "title": "Cruz blocks Warner AI risk bill",
+    "summary": "Sen. Ted Cruz blocks an attempt to pass the Artificial Intelligence Risk Management and Security Act of 2026 by unanimous consent on the Senate floor, citing concerns about the potential overreach of authority it would grant.",
+    "sources": [
+      {
+        "label": "The Hill",
+        "url": "https://thehill.com/policy/technology/6118009-senator-ted-cruz-blocks-ai-bill/"
+      }
+    ],
+    "references": [
+      "warner-ai-act"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
     "id": "wh-accord",
@@ -573,7 +1172,7 @@
     "dateLabel": "September 29",
     "kind": "policy",
     "title": "White House Accord on Super Intelligence",
-    "summary": "The White House Accord on Super Intelligence is organized by the White House and several frontier lab leaders, and is described as “morally binding.”",
+    "summary": "The White House Accord on Super Intelligence is organized by the White House and several frontier lab leaders, and is apparently “morally binding.” It encourages “robust internal controls to monitor the capabilities and alignment of its models during training and deployment around areas like cybersecurity, biosecurity, and chemical threats, and to ensure that its models do not hack or access technical systems in unintended ways.” It can be inferred that this addition was likely prompted by rogue-agent incidents such as the Hugging Face incident, given the relative lack of discussion of rogue cyberattacks by White House officials prior to this.",
     "sources": [
       {
         "label": "Accord",
@@ -584,15 +1183,46 @@
         "url": "https://abcnews.com/Politics/top-ai-leaders-meet-trump-white-house-amid/story?id=136832988"
       }
     ],
-    "references": []
+    "references": [
+      "openai-attribution"
+    ],
+    "inferredReferences": [
+      "openai-attribution"
+    ],
+    "actor": "white-house",
+    "responseType": "other"
+  },
+  {
+    "id": "hawley-hearing",
+    "date": "2026-09-30",
+    "dateLabel": "September 30",
+    "kind": "policy",
+    "title": "Hawley convenes first Senate hearing on rogue AI attacks",
+    "summary": "Hawley convenes the first Senate hearing on rogue AI attacks. It invited multiple prominent AI safety researchers, and OpenAI employees did not attend. It focuses on the Hugging Face incident and also references the Australian Medicare rogue-agent cyberattack.",
+    "sources": [
+      {
+        "label": "Hawley",
+        "url": "https://www.hawley.senate.gov/icymi-hawley-convenes-first-senate-hearing-on-rogue-ai-attacks/"
+      },
+      {
+        "label": "NBC News",
+        "url": "https://www.nbcnews.com/politics/congress/openai-ceo-sam-altman-skip-congressional-hearing-rogue-ai-agents-rcna600707"
+      }
+    ],
+    "references": [
+      "hawley",
+      "medicare-breach"
+    ],
+    "actor": "congress",
+    "responseType": "hearing"
   },
   {
     "id": "ftc-probe",
     "date": "2026-09-30",
     "dateLabel": "September 30",
     "kind": "enforcement",
-    "title": "FTC opens a probe into AI companies",
-    "summary": "Reuters reports that the FTC opened a probe into AI companies including Anthropic and OpenAI.",
+    "title": "FTC probes OpenAI and Anthropic",
+    "summary": "The FTC probes OpenAI and Anthropic regarding their rogue-agent incidents, per Reuters.",
     "sources": [
       {
         "label": "Reuters",
@@ -600,5 +1230,199 @@
       }
     ],
     "references": []
+  },
+  {
+    "id": "bonta-subpoena",
+    "date": "2026-09-30",
+    "dateLabel": "September 30",
+    "kind": "enforcement",
+    "title": "Bonta serves investigative subpoena on OpenAI",
+    "summary": "California Attorney General Rob Bonta serves an investigative subpoena to OpenAI over the Hugging Face incident.",
+    "sources": [
+      {
+        "label": "California AG",
+        "url": "https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena"
+      }
+    ],
+    "references": [
+      "openai-attribution"
+    ]
+  },
+  {
+    "id": "jeffries-crisis",
+    "date": "2026-10-01",
+    "dateLabel": "October 1",
+    "kind": "policy",
+    "title": "Jeffries calls it an “AI safety crisis”",
+    "summary": "USA Today reports that House Democratic Leader Hakeem Jeffries says the country is in the midst of an “AI safety crisis” that Congress needs to address with bipartisan legislation when lawmakers return after the midterms, referencing the Hugging Face incident and details from the METR report.",
+    "sources": [
+      {
+        "label": "USA Today",
+        "url": "https://www.usatoday.com/story/news/politics/2026/10/01/exclusive-hakeem-jeffries-ai-crisis-guardrails/92046627007/?ref=aipolicydaily.org"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "metr"
+    ],
+    "actor": "congress",
+    "responseType": "statement"
+  },
+  {
+    "id": "nyc-council",
+    "date": "2026-10-05",
+    "dateLabel": "October 5",
+    "kind": "policy",
+    "title": "NYC Council hearing on AI risk",
+    "summary": "A New York City Council meeting with AI experts is held on AI extinction risk and regulatory options, including Jacob Coxon himself. The meeting was likely primarily prompted by his thread.",
+    "sources": [
+      {
+        "label": "AP",
+        "url": "https://apnews.com/article/ai-nyc-whistleblower-artificial-intelligence-4be252d137ff1de1006130cdbb42ec24"
+      }
+    ],
+    "references": [
+      "coxon"
+    ],
+    "inferredReferences": [
+      "coxon"
+    ],
+    "actor": "other",
+    "responseType": "hearing"
+  },
+  {
+    "id": "wikimedia",
+    "date": "2026-10-05",
+    "dateLabel": "October 5",
+    "kind": "incident",
+    "title": "Wikimedia reports rogue agent activity",
+    "summary": "The Wikimedia Foundation reports that rogue-agent swarms from OpenAI abused its services for unknown motives, although they did not breach them to its knowledge, and may have contributed to a temporary outage of one of its services.",
+    "sources": [
+      {
+        "label": "Wikimedia Foundation",
+        "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+      }
+    ],
+    "references": []
+  },
+  {
+    "id": "trahan-claim",
+    "date": "2026-10-07",
+    "dateLabel": "October 7",
+    "kind": "policy",
+    "title": "Trahan unveils draft CLAIM Act",
+    "summary": "Rep. Lori Trahan unveils a draft of the CLAIM Act to hold AI developers liable for their models’ rogue actions, referencing the Hugging Face incident as justification.",
+    "sources": [
+      {
+        "label": "Trahan",
+        "url": "https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3861"
+      }
+    ],
+    "references": [
+      "openai-attribution"
+    ],
+    "actor": "congress",
+    "responseType": "bill"
+  },
+  {
+    "id": "cantwell-rounds",
+    "date": "2026-10-13",
+    "dateLabel": "October 13",
+    "kind": "policy",
+    "title": "Cantwell and Rounds urge a coordinated White House approach",
+    "summary": "Sens. Maria Cantwell and Mike Rounds urge the White House to build a strong, coordinated approach to AI safety and cyber defense. They write that “AI companies and security researchers are now examining tens of thousands of incidents involving models from OpenAI and Anthropic escaping sandboxes, bypassing safeguards, evading monitoring, and taking other unexpected actions.”",
+    "sources": [
+      {
+        "label": "Cantwell",
+        "url": "https://www.commerce.senate.gov/press/dem/release/cantwell-rounds-urge-white-house-to-build-strong-coordinated-approach-to-ai-safety-cyber-defense/"
+      },
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/09/26/openai-anthropic-thousands-ai-security-incidents"
+      }
+    ],
+    "references": [
+      "axios-incidents"
+    ],
+    "inferredReferences": [
+      "axios-incidents"
+    ],
+    "actor": "congress",
+    "responseType": "letter"
+  },
+  {
+    "id": "ftc-subpoenas",
+    "date": "2026-10-14",
+    "dateLabel": "October 14",
+    "kind": "enforcement",
+    "title": "FTC subpoenas OpenAI and Anthropic",
+    "summary": "The FTC subpoenas OpenAI and Anthropic for information about each company’s rogue-agent incidents.",
+    "sources": [
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation"
+      }
+    ],
+    "references": [
+      "ftc-probe"
+    ]
+  },
+  {
+    "id": "ai-task-force",
+    "date": "2026-10-14",
+    "dateLabel": "October 14",
+    "kind": "policy",
+    "title": "Trump’s AI Task Force plans frontier AI risk report",
+    "summary": "Trump’s AI Task Force is to commission a frontier AI risk report regarding cybersecurity, biosecurity, and “model control and accountability,” presumably prompted by rogue cyberattack incidents.",
+    "sources": [
+      {
+        "label": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-16/trump-s-ai-task-force-to-commission-report-on-technology-s-risks"
+      }
+    ],
+    "references": [],
+    "actor": "white-house",
+    "responseType": "other"
+  },
+  {
+    "id": "ftc-testify",
+    "date": "2026-10-26",
+    "dateLabel": "October 26",
+    "kind": "enforcement",
+    "title": "FTC demands Anthropic execs testify",
+    "summary": "The FTC demands that Anthropic executives testify in its probe regarding their rogue-agent cyberattacks. “Anthropic said the FTC's investigation could result in significant costs and model design changes.”",
+    "sources": [
+      {
+        "label": "Axios",
+        "url": "https://www.axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai"
+      }
+    ],
+    "references": [
+      "ftc-subpoenas"
+    ]
+  },
+  {
+    "id": "bonta-sues",
+    "date": "2026-11-16",
+    "dateLabel": "November 16",
+    "kind": "enforcement",
+    "title": "Bonta sues OpenAI over rogue-agent cyberattacks",
+    "summary": "California Attorney General Rob Bonta sues OpenAI for its rogue-agent cyberattacks, writing that the Hugging Face incident “was only one of 80 known incidents.” He writes that members of the public “are all at risk of harm up to and including catastrophic harm from unauthorized malicious acts carried out by artificial intelligence agents, and are not capable of reasonably avoiding those harms themselves.” The complaint expresses concern about recursive self-improvement, reward hacking, and Astra being less monitorable, and references the Hugging Face incident and details from the METR report, the DseWiki and RubyGems incidents, the Wikimedia Foundation incident, and the Australian Medicare cyberattacks.",
+    "sources": [
+      {
+        "label": "California AG",
+        "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+      }
+    ],
+    "references": [
+      "bonta-subpoena",
+      "openai-attribution",
+      "metr",
+      "collusion-wiki",
+      "rubyhack",
+      "wikimedia",
+      "medicare-breach",
+      "astra-system-card"
+    ]
   }
 ]

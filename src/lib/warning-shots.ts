@@ -4,9 +4,7 @@ import events from "../data/warning-shots-timeline.json";
 /** Add or remove events in src/data/warning-shots-timeline.json. `references` lists other event ids. Editorial source: notes/warning-shots-timeline.md. */
 export const warningShotKinds = [
   "incident",
-  "disclosure",
   "press",
-  "context",
   "policy",
   "advocacy",
   "enforcement",
@@ -17,13 +15,32 @@ export type WarningShotKind = (typeof warningShotKinds)[number];
 
 export const WARNING_SHOT_KIND_LABELS: Record<WarningShotKind, string> = {
   incident: "Incident",
-  disclosure: "Disclosure",
   press: "Press",
-  context: "On the shelf",
   policy: "Political response",
   advocacy: "Advocacy",
   enforcement: "Enforcement",
   lab: "Lab move",
+};
+
+export const politicalActors = ["white-house", "congress", "other"] as const;
+export type PoliticalActor = (typeof politicalActors)[number];
+
+export const POLITICAL_ACTOR_LABELS: Record<PoliticalActor, string> = {
+  "white-house": "White House",
+  congress: "Congress",
+  other: "Other",
+};
+
+export const responseTypes = ["letter", "bill", "statement", "briefing", "hearing", "other"] as const;
+export type ResponseType = (typeof responseTypes)[number];
+
+export const RESPONSE_TYPE_LABELS: Record<ResponseType, string> = {
+  letter: "Letter",
+  bill: "Bill",
+  statement: "Statement",
+  briefing: "Briefing",
+  hearing: "Hearing",
+  other: "Other",
 };
 
 const sourceSchema = z.strictObject({
@@ -41,6 +58,9 @@ const eventSchema = z.strictObject({
   group: z.string().min(1).optional(),
   sources: z.array(sourceSchema).default([]),
   references: z.array(z.string().min(1)).default([]),
+  inferredReferences: z.array(z.string().min(1)).default([]),
+  actor: z.enum(politicalActors).optional(),
+  responseType: z.enum(responseTypes).optional(),
 });
 
 export type WarningShotEvent = z.infer<typeof eventSchema>;
@@ -49,6 +69,7 @@ export type EventLink = {
   id: string;
   title: string;
   dateLabel: string;
+  inferred: boolean;
 };
 
 export type LinkedWarningShot = WarningShotEvent & {
@@ -82,6 +103,15 @@ export function loadWarningShots(input: unknown = events): WarningShotGroup[] {
       if (ref === event.id) throw new Error(`${event.id} references itself`);
       if (!ids.has(ref)) throw new Error(`${event.id} references unknown event "${ref}"`);
     }
+    if (event.kind === "policy" && (!event.actor || !event.responseType)) {
+      throw new Error(`${event.id} is a political response and needs an actor and a response type`);
+    }
+    if (event.kind !== "policy" && (event.actor || event.responseType)) {
+      throw new Error(`${event.id} has an actor or response type but is not a political response`);
+    }
+    for (const ref of event.inferredReferences) {
+      if (!event.references.includes(ref)) throw new Error(`${event.id} marks "${ref}" as inferred but does not reference it`);
+    }
   }
 
   const sourceOrder = new Map(parsed.map((event, index) => [event.id, index]));
@@ -90,18 +120,20 @@ export function loadWarningShots(input: unknown = events): WarningShotGroup[] {
   );
   const timelineOrder = new Map(sorted.map((event, index) => [event.id, index]));
   const byId = new Map(sorted.map((event) => [event.id, event]));
-  const toLink = (id: string): EventLink => {
+  const toLink = (id: string, inferred: boolean): EventLink => {
     const event = byId.get(id)!;
-    return { id, title: event.title, dateLabel: event.dateLabel };
+    return { id, title: event.title, dateLabel: event.dateLabel, inferred };
   };
   const byTimeline = (a: EventLink, b: EventLink) => timelineOrder.get(a.id)! - timelineOrder.get(b.id)!;
 
   const linked: LinkedWarningShot[] = sorted.map((event) => ({
     ...event,
-    referenceLinks: event.references.map(toLink).toSorted(byTimeline),
+    referenceLinks: event.references
+      .map((id) => toLink(id, event.inferredReferences.includes(id)))
+      .toSorted(byTimeline),
     referencedBy: sorted
       .filter((other) => other.references.includes(event.id))
-      .map((other) => toLink(other.id))
+      .map((other) => toLink(other.id, other.inferredReferences.includes(event.id)))
       .toSorted(byTimeline),
   }));
 
