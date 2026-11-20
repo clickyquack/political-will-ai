@@ -870,7 +870,7 @@
       "coxon"
     ],
     "actor": "congress",
-    "responseType": "briefing"
+    "responseType": "other"
   },
   {
     "id": "beyer-letter",
@@ -1220,7 +1220,7 @@
     "id": "ftc-probe",
     "date": "2026-09-30",
     "dateLabel": "September 30",
-    "kind": "enforcement",
+    "kind": "policy",
     "title": "FTC probes OpenAI and Anthropic",
     "summary": "The FTC probes OpenAI and Anthropic regarding their rogue-agent incidents, per Reuters.",
     "sources": [
@@ -1229,13 +1229,15 @@
         "url": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
       }
     ],
-    "references": []
+    "references": [],
+    "actor": "other",
+    "responseType": "other"
   },
   {
     "id": "bonta-subpoena",
     "date": "2026-09-30",
     "dateLabel": "September 30",
-    "kind": "enforcement",
+    "kind": "policy",
     "title": "Bonta serves investigative subpoena on OpenAI",
     "summary": "California Attorney General Rob Bonta serves an investigative subpoena to OpenAI over the Hugging Face incident.",
     "sources": [
@@ -1246,7 +1248,9 @@
     ],
     "references": [
       "openai-attribution"
-    ]
+    ],
+    "actor": "other",
+    "responseType": "other"
   },
   {
     "id": "jeffries-crisis",
@@ -1354,7 +1358,7 @@
     "id": "ftc-subpoenas",
     "date": "2026-10-14",
     "dateLabel": "October 14",
-    "kind": "enforcement",
+    "kind": "policy",
     "title": "FTC subpoenas OpenAI and Anthropic",
     "summary": "The FTC subpoenas OpenAI and Anthropic for information about each company’s rogue-agent incidents.",
     "sources": [
@@ -1365,7 +1369,9 @@
     ],
     "references": [
       "ftc-probe"
-    ]
+    ],
+    "actor": "other",
+    "responseType": "other"
   },
   {
     "id": "ai-task-force",
@@ -1388,7 +1394,7 @@
     "id": "ftc-testify",
     "date": "2026-10-26",
     "dateLabel": "October 26",
-    "kind": "enforcement",
+    "kind": "policy",
     "title": "FTC demands Anthropic execs testify",
     "summary": "The FTC demands that Anthropic executives testify in its probe regarding their rogue-agent cyberattacks. “Anthropic said the FTC's investigation could result in significant costs and model design changes.”",
     "sources": [
@@ -1399,13 +1405,15 @@
     ],
     "references": [
       "ftc-subpoenas"
-    ]
+    ],
+    "actor": "other",
+    "responseType": "other"
   },
   {
     "id": "bonta-sues",
     "date": "2026-11-16",
     "dateLabel": "November 16",
-    "kind": "enforcement",
+    "kind": "policy",
     "title": "Bonta sues OpenAI over rogue-agent cyberattacks",
     "summary": "California Attorney General Rob Bonta sues OpenAI for its rogue-agent cyberattacks, writing that the Hugging Face incident “was only one of 80 known incidents.” He writes that members of the public “are all at risk of harm up to and including catastrophic harm from unauthorized malicious acts carried out by artificial intelligence agents, and are not capable of reasonably avoiding those harms themselves.” The complaint expresses concern about recursive self-improvement, reward hacking, and Astra being less monitorable, and references the Hugging Face incident and details from the METR report, the DseWiki and RubyGems incidents, the Wikimedia Foundation incident, and the Australian Medicare cyberattacks.",
     "sources": [
@@ -1423,6 +1431,8 @@
       "wikimedia",
       "medicare-breach",
       "astra-system-card"
-    ]
+    ],
+    "actor": "other",
+    "responseType": "other"
   }
 ]

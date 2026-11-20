@@ -7,7 +7,6 @@ export const warningShotKinds = [
   "press",
   "policy",
   "advocacy",
-  "enforcement",
   "lab",
 ] as const;
 
@@ -18,7 +17,6 @@ export const WARNING_SHOT_KIND_LABELS: Record<WarningShotKind, string> = {
   press: "Press",
   policy: "Political response",
   advocacy: "Advocacy",
-  enforcement: "Enforcement",
   lab: "Lab move",
 };
 
@@ -31,14 +29,13 @@ export const POLITICAL_ACTOR_LABELS: Record<PoliticalActor, string> = {
   other: "Other",
 };
 
-export const responseTypes = ["letter", "bill", "statement", "briefing", "hearing", "other"] as const;
+export const responseTypes = ["letter", "bill", "statement", "hearing", "other"] as const;
 export type ResponseType = (typeof responseTypes)[number];
 
 export const RESPONSE_TYPE_LABELS: Record<ResponseType, string> = {
   letter: "Letter",
   bill: "Bill",
   statement: "Statement",
-  briefing: "Briefing",
   hearing: "Hearing",
   other: "Other",
 };

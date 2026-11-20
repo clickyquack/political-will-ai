@@ -30,6 +30,11 @@ const groups = loadWarningShots();
         ))
       }
     </ul>
+    <div class="shot-sort" role="group" aria-label="Sort entries">
+      <button type="button" class="shot-sort-button" data-sort="chronological" aria-pressed="true">Chronological</button>
+      <button type="button" class="shot-sort-button" data-sort="ranked" aria-pressed="false">Most referenced</button>
+    </div>
+    <div class="shot-chronological">
     {
       groups.map((group) => (
         <section class="shot-group">
@@ -103,6 +108,11 @@ const groups = loadWarningShots();
         </section>
       ))
     }
+    </div>
+    <section class="shot-group shot-ranked" hidden>
+      <h2>Most referenced</h2>
+      <ol></ol>
+    </section>
   </div>
 
   <aside class="shot-categories">
@@ -424,6 +434,42 @@ const groups = loadWarningShots();
     outline-offset: 2px;
   }
 
+  .shot-sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .shot-sort-button {
+    padding: 0.12rem 0.75rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+
+  .shot-sort-button:hover {
+    transform: scale(1.06);
+  }
+
+  .shot-sort-button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .shot-sort-button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
   .shot-legend {
     display: flex;
     flex-wrap: wrap;
@@ -549,7 +595,6 @@ const groups = loadWarningShots();
   .kind-press { --kind: #6b5420; }
   .kind-policy { --kind: #1f4a3e; }
   .kind-advocacy { --kind: #24556e; }
-  .kind-enforcement { --kind: #3d4d8f; }
   .kind-lab { --kind: #5a3d6b; }
 </style>
 
@@ -568,7 +613,15 @@ const groups = loadWarningShots();
     const status = root.querySelector<HTMLElement>(".shot-filter-status")!;
     const statusText = root.querySelector<HTMLElement>(".shot-filter-text")!;
     const items = Array.from(root.querySelectorAll<HTMLLIElement>("li[id]"));
-    const groups = Array.from(root.querySelectorAll<HTMLElement>(".shot-group"));
+    const groups = Array.from(root.querySelectorAll<HTMLElement>(".shot-chronological .shot-group"));
+    const chronological = root.querySelector<HTMLElement>(".shot-chronological")!;
+    const ranked = root.querySelector<HTMLElement>(".shot-ranked")!;
+    const rankedList = ranked.querySelector<HTMLOListElement>("ol")!;
+    const homes = new Map(items.map((li) => [li, li.parentElement as HTMLOListElement]));
+    const originalIndex = new Map(items.map((li, index) => [li, index]));
+    const sortButtons = Array.from(root.querySelectorAll<HTMLButtonElement>(".shot-sort-button"));
+
+    let sortMode: "chronological" | "ranked" = "chronological";
     const checkboxes = Array.from(panel.querySelectorAll<HTMLInputElement>('input[type="checkbox"]'));
 
     let active: { id: string; mode: FilterMode } | null = null;
@@ -615,6 +668,9 @@ const groups = loadWarningShots();
       groups.forEach((group) => {
         group.hidden = !group.querySelector("li:not([hidden])");
       });
+      if (sortMode === "ranked") {
+        ranked.hidden = !rankedList.querySelector("li:not([hidden])");
+      }
 
       root!.querySelectorAll<HTMLButtonElement>(".shot-filter").forEach((button) => {
         const li = button.closest("li");
@@ -633,6 +689,32 @@ const groups = loadWarningShots();
       const shown = items.filter((li) => !li.hidden).length;
       count.textContent = `Showing ${shown} of ${items.length} entries`;
     }
+
+    function applySort() {
+      if (sortMode === "ranked") {
+        const refCount = (li: HTMLLIElement) => listOf(li.dataset.referencedBy).length;
+        [...items]
+          .sort((a, b) => refCount(b) - refCount(a) || originalIndex.get(a)! - originalIndex.get(b)!)
+          .forEach((li) => rankedList.append(li));
+        chronological.hidden = true;
+        ranked.hidden = false;
+      } else {
+        items.forEach((li) => homes.get(li)!.append(li));
+        chronological.hidden = false;
+        ranked.hidden = true;
+      }
+      sortButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.sort === sortMode));
+      });
+    }
+
+    sortButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        sortMode = button.dataset.sort === "ranked" ? "ranked" : "chronological";
+        applySort();
+        render();
+      });
+    });
 
     root.addEventListener("click", (event) => {
       const target = event.target as HTMLElement;
