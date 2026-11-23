@@ -45,6 +45,7 @@ const groups = loadWarningShots();
                 id={event.id}
                 class={`kind-${event.kind}`}
                 data-kind={event.kind}
+                data-secondary-kind={event.secondaryKind ?? ""}
                 data-actor={event.actor ?? ""}
                 data-response-type={event.responseType ?? ""}
                 data-references={event.references.join(",")}
@@ -54,9 +55,28 @@ const groups = loadWarningShots();
                   <p class="shot-meta">
                     <time datetime={event.date}>{event.dateLabel}</time>
                     <span class="shot-kind">{WARNING_SHOT_KIND_LABELS[event.kind]}</span>
+                    {event.secondaryKind && <span class="shot-kind">{WARNING_SHOT_KIND_LABELS[event.secondaryKind]}</span>}
+                    {event.actor && <span class="shot-sub">{POLITICAL_ACTOR_LABELS[event.actor]}</span>}
+                    {event.responseType && <span class="shot-sub">{RESPONSE_TYPE_LABELS[event.responseType]}</span>}
                   </p>
                   <h3>{event.title}</h3>
-                  <p>{event.summary}</p>
+                  {event.summary && <p>{event.summary}</p>}
+                  {event.images.length > 0 && (
+                    <div class="shot-images">
+                      {event.images.map((image) => (
+                        <figure>
+                          <img src={image.src} alt={image.alt} loading="lazy" />
+                          <figcaption>
+                            Source:{" "}
+                            <a href={image.source.url} target="_blank" rel="noopener noreferrer">
+                              {image.source.label}
+                              <span class="visually-hidden"> (opens in a new tab)</span>
+                            </a>
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  )}
                   {event.sources.length > 0 && (
                     <p class="shot-sources">
                       Sources:{" "}
@@ -133,7 +153,7 @@ const groups = loadWarningShots();
           warningShotKinds.map((kind) => (
             <>
               <label class={`shot-kind-option kind-${kind}`}>
-                <input type="checkbox" data-group="kind" value={kind} checked />
+                <input type="checkbox" data-group="kind" value={kind} />
                 <span>{WARNING_SHOT_KIND_LABELS[kind]}</span>
               </label>
               {kind === "policy" && (
@@ -143,7 +163,7 @@ const groups = loadWarningShots();
                     {
                       politicalActors.map((actor) => (
                         <label class="shot-sub-option">
-                          <input type="checkbox" data-group="actor" value={actor} checked />
+                          <input type="checkbox" data-group="actor" value={actor} />
                           <span>{POLITICAL_ACTOR_LABELS[actor]}</span>
                         </label>
                       ))
@@ -154,7 +174,7 @@ const groups = loadWarningShots();
                     {
                       responseTypes.map((type) => (
                         <label class="shot-sub-option">
-                          <input type="checkbox" data-group="response-type" value={type} checked />
+                          <input type="checkbox" data-group="response-type" value={type} />
                           <span>{RESPONSE_TYPE_LABELS[type]}</span>
                         </label>
                       ))
@@ -167,8 +187,7 @@ const groups = loadWarningShots();
         }
       </fieldset>
       <div class="shot-categories-buttons">
-        <button type="button" class="shot-categories-button shot-categories-select-all">Select all</button>
-        <button type="button" class="shot-categories-button shot-categories-unselect-all">Unselect all</button>
+        <button type="button" class="shot-categories-button shot-categories-reset">Reset</button>
       </div>
     </div>
   </aside>
@@ -555,6 +574,16 @@ const groups = loadWarningShots();
     color: var(--kind, var(--accent));
   }
 
+  .shot-meta > span::before {
+    content: "•";
+    margin-right: 0.35rem;
+    color: var(--muted);
+  }
+
+  .shot-sub {
+    color: var(--muted);
+  }
+
   .shot-group h3 {
     margin: 0.3rem 0 0.45rem;
     font-size: 1.28rem;
@@ -565,6 +594,31 @@ const groups = loadWarningShots();
 
   .shot-group article > p {
     margin: 0;
+  }
+
+  .shot-images {
+    display: grid;
+    gap: 1rem;
+    margin-top: 0.85rem;
+  }
+
+  .shot-images figure {
+    margin: 0;
+  }
+
+  .shot-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+
+  .shot-images figcaption {
+    margin-top: 0.3rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.85rem;
   }
 
   .shot-sources,
@@ -605,11 +659,10 @@ const groups = loadWarningShots();
   const root = layout?.querySelector<HTMLElement>(".shot-timeline");
   const panel = layout?.querySelector<HTMLElement>(".shot-categories-panel");
   const toggle = layout?.querySelector<HTMLButtonElement>(".shot-categories-toggle");
-  const selectAll = layout?.querySelector<HTMLButtonElement>(".shot-categories-select-all");
-  const unselectAll = layout?.querySelector<HTMLButtonElement>(".shot-categories-unselect-all");
+  const reset = layout?.querySelector<HTMLButtonElement>(".shot-categories-reset");
   const count = layout?.querySelector<HTMLElement>(".shot-count");
 
-  if (layout && root && panel && toggle && selectAll && unselectAll && count) {
+  if (layout && root && panel && toggle && reset && count) {
     const status = root.querySelector<HTMLElement>(".shot-filter-status")!;
     const statusText = root.querySelector<HTMLElement>(".shot-filter-text")!;
     const items = Array.from(root.querySelectorAll<HTMLLIElement>("li[id]"));
@@ -653,15 +706,17 @@ const groups = loadWarningShots();
         listOf(list).forEach((id) => related.add(id));
       }
 
+      // Nothing selected in a group means "show all" for that group.
+      const policyOn = policyBox?.checked ?? false;
       items.forEach((li) => {
         const kind = li.dataset.kind ?? "";
+        const secondary = li.dataset.secondaryKind ?? "";
         const relationHidden = active !== null && !related.has(li.id);
-        let categoryHidden = !enabledKinds.has(kind);
-        if (kind === "policy") {
-          categoryHidden =
-            categoryHidden ||
-            !enabledActors.has(li.dataset.actor ?? "") ||
-            !enabledTypes.has(li.dataset.responseType ?? "");
+        let categoryHidden = enabledKinds.size > 0 && !enabledKinds.has(kind) && !enabledKinds.has(secondary);
+        const isPolicy = kind === "policy" || secondary === "policy";
+        if (isPolicy && policyOn) {
+          if (enabledActors.size > 0 && !enabledActors.has(li.dataset.actor ?? "")) categoryHidden = true;
+          if (enabledTypes.size > 0 && !enabledTypes.has(li.dataset.responseType ?? "")) categoryHidden = true;
         }
         li.hidden = relationHidden || categoryHidden;
       });
@@ -749,18 +804,11 @@ const groups = loadWarningShots();
       });
     });
 
-    selectAll.addEventListener("click", () => {
-      checkboxes.forEach((box) => {
-        box.checked = true;
-      });
-      syncEnabled();
-      render();
-    });
-
-    unselectAll.addEventListener("click", () => {
+    reset.addEventListener("click", () => {
       checkboxes.forEach((box) => {
         box.checked = false;
       });
+      active = null;
       syncEnabled();
       render();
     });

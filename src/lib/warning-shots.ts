@@ -29,7 +29,7 @@ export const POLITICAL_ACTOR_LABELS: Record<PoliticalActor, string> = {
   other: "Other",
 };
 
-export const responseTypes = ["letter", "bill", "statement", "hearing", "other"] as const;
+export const responseTypes = ["letter", "bill", "statement", "hearing", "enforcement", "other"] as const;
 export type ResponseType = (typeof responseTypes)[number];
 
 export const RESPONSE_TYPE_LABELS: Record<ResponseType, string> = {
@@ -37,6 +37,7 @@ export const RESPONSE_TYPE_LABELS: Record<ResponseType, string> = {
   bill: "Bill",
   statement: "Statement",
   hearing: "Hearing",
+  enforcement: "Enforcement",
   other: "Other",
 };
 
@@ -45,15 +46,23 @@ const sourceSchema = z.strictObject({
   url: z.string().url(),
 });
 
+const imageSchema = z.strictObject({
+  src: z.string().regex(/^\//, "Use a root-relative path"),
+  alt: z.string().min(1),
+  source: sourceSchema,
+});
+
 const eventSchema = z.strictObject({
   id: z.string().regex(/^[a-z0-9-]+$/, "Use a lowercase id with hyphens"),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Use YYYY-MM-DD"),
   dateLabel: z.string().min(1),
   title: z.string().min(1),
-  summary: z.string().min(1),
+  summary: z.string().default(""),
   kind: z.enum(warningShotKinds),
+  secondaryKind: z.enum(warningShotKinds).optional(),
   group: z.string().min(1).optional(),
   sources: z.array(sourceSchema).default([]),
+  images: z.array(imageSchema).default([]),
   references: z.array(z.string().min(1)).default([]),
   inferredReferences: z.array(z.string().min(1)).default([]),
   actor: z.enum(politicalActors).optional(),
@@ -100,10 +109,14 @@ export function loadWarningShots(input: unknown = events): WarningShotGroup[] {
       if (ref === event.id) throw new Error(`${event.id} references itself`);
       if (!ids.has(ref)) throw new Error(`${event.id} references unknown event "${ref}"`);
     }
-    if (event.kind === "policy" && (!event.actor || !event.responseType)) {
+    if (event.secondaryKind === event.kind) {
+      throw new Error(`${event.id} has the same primary and secondary kind`);
+    }
+    const isPolicy = event.kind === "policy" || event.secondaryKind === "policy";
+    if (isPolicy && (!event.actor || !event.responseType)) {
       throw new Error(`${event.id} is a political response and needs an actor and a response type`);
     }
-    if (event.kind !== "policy" && (event.actor || event.responseType)) {
+    if (!isPolicy && (event.actor || event.responseType)) {
       throw new Error(`${event.id} has an actor or response type but is not a political response`);
     }
     for (const ref of event.inferredReferences) {

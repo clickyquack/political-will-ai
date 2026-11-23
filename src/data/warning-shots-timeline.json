@@ -31,7 +31,7 @@
       "fable-5"
     ],
     "actor": "white-house",
-    "responseType": "other"
+    "responseType": "enforcement"
   },
   {
     "id": "ratcliffe",
@@ -116,10 +116,11 @@
       }
     ],
     "references": [
-      "kill-switch"
+      "openai-attribution"
     ],
     "actor": "white-house",
-    "responseType": "statement"
+    "responseType": "statement",
+    "inferredReferences": []
   },
   {
     "id": "pacing",
@@ -127,14 +128,19 @@
     "dateLabel": "July 28",
     "kind": "advocacy",
     "title": "Pacing the Frontier letter",
-    "summary": "The Pacing the Frontier letter is released.",
+    "summary": "The Pacing the Frontier letter is released, calling on the U.S. government to support an international effort to pace frontier AI progress. It is signed by over 1,300 frontier AI lab employees. Likely prompted by the Hugging Face incident.",
     "sources": [
       {
         "label": "Pacing the Frontier",
         "url": "https://www.pacingthefrontier.com/"
       }
     ],
-    "references": []
+    "references": [
+      "openai-attribution"
+    ],
+    "inferredReferences": [
+      "openai-attribution"
+    ]
   },
   {
     "id": "public-citizen",
@@ -142,7 +148,7 @@
     "dateLabel": "July 28",
     "kind": "advocacy",
     "title": "Public Citizen calls for a congressional investigation",
-    "summary": "Public Citizen calls for a congressional investigation after reports that a second company was compromised in the OpenAI rogue AI incident. Probably the most notable political advocacy group response.",
+    "summary": "Public Citizen calls for a congressional investigation after reports that a second company was compromised in the OpenAI rogue AI incident. It is probably the most notable response from a political advocacy group not primarily focused on AI.",
     "sources": [
       {
         "label": "Public Citizen",
@@ -176,7 +182,7 @@
     "id": "altman-dc",
     "date": "2026-07-29",
     "dateLabel": "July 29",
-    "kind": "advocacy",
+    "kind": "lab",
     "title": "Altman meets with senators",
     "summary": "Sam Altman meets with senators in Washington. The breach was discussed “a little bit.”",
     "sources": [
@@ -249,7 +255,7 @@
     "dateLabel": "August 4",
     "kind": "policy",
     "title": "Senators press the White House on model oversight",
-    "summary": "Five Democratic senators cite the Hugging Face incident and Fable’s export controls in a White House letter on AI cybersecurity and national security risk.",
+    "summary": "Five Democratic senators cite the Hugging Face incident and Fable’s export controls in a letter to the White House calling for better standards to address AI cybersecurity risk.",
     "sources": [
       {
         "label": "Warner",
@@ -280,27 +286,8 @@
         "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training"
       }
     ],
-    "references": [
-      "anthropic-incidents"
-    ],
-    "inferredReferences": [
-      "anthropic-incidents"
-    ]
-  },
-  {
-    "id": "bbc-viruses",
-    "date": "2026-08-06",
-    "dateLabel": "August 6",
-    "kind": "press",
-    "title": "AI used to design new viruses",
-    "summary": "The BBC reports that artificial intelligence was used to design brand new viruses.",
-    "sources": [
-      {
-        "label": "BBC",
-        "url": "https://www.bbc.com/news/articles/c5y3j3ngevmo"
-      }
-    ],
-    "references": []
+    "references": [],
+    "inferredReferences": []
   },
   {
     "id": "sanders-pause",
@@ -313,11 +300,14 @@
       {
         "label": "Letter",
         "url": "https://www.sanders.senate.gov/wp-content/uploads/AI-Pause-Letter-FINAL.pdf"
+      },
+      {
+        "label": "AI-assisted novel viruses report",
+        "url": "https://www.bbc.com/news/articles/c5y3j3ngevmo"
       }
     ],
     "references": [
       "openai-attribution",
-      "bbc-viruses",
       "ratcliffe",
       "meta-hack",
       "anthropic-incidents"
@@ -355,7 +345,7 @@
     "dateLabel": "August 24",
     "kind": "advocacy",
     "title": "CSIS event on agent containment failures",
-    "summary": "A CSIS event on “AI Agent Containment Failures” discusses the Hugging Face incident. Rep. Suhas Subramanyam hopes to add AI containment language to the FRONTIER Act, prompted by the incident.",
+    "summary": "A CSIS event on “AI Agent Containment Failures” discusses the Hugging Face incident. Rep. Suhas Subramanyam hopes to add AI containment language to the FRONTIER Act, prompted by the Hugging Face incident.",
     "sources": [
       {
         "label": "CSIS",
@@ -369,45 +359,32 @@
     "references": [
       "openai-attribution",
       "frontier-act"
-    ]
+    ],
+    "secondaryKind": "policy",
+    "actor": "congress",
+    "responseType": "bill"
   },
   {
-    "id": "metr",
+    "id": "hf-reports",
     "date": "2026-08-26",
     "dateLabel": "August 26",
     "kind": "incident",
-    "title": "METR investigation of the Hugging Face incident",
-    "summary": "METR releases a brief independent investigation of agents’ behavior, reasoning, and collaboration in the OpenAI / Hugging Face hacking incident.",
+    "title": "METR and OpenAI publish reports on the Hugging Face incident",
+    "summary": "METR releases a brief independent investigation of agents’ behavior, reasoning, and collaboration in the OpenAI / Hugging Face hacking incident. OpenAI publishes “The Hugging Face incident and the road ahead.”",
     "sources": [
       {
         "label": "METR",
         "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
-      }
-    ],
-    "references": [
-      "openai-attribution"
-    ]
-  },
-  {
-    "id": "openai-road-ahead",
-    "date": "2026-08-26",
-    "dateLabel": "August 26",
-    "kind": "incident",
-    "title": "OpenAI on the Hugging Face incident and the road ahead",
-    "summary": "OpenAI publishes “The Hugging Face incident and the road ahead.”",
-    "sources": [
+      },
       {
         "label": "OpenAI",
         "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
       }
     ],
     "references": [
-      "openai-attribution",
-      "metr"
+      "openai-attribution"
     ],
-    "inferredReferences": [
-      "metr"
-    ]
+    "inferredReferences": []
   },
   {
     "id": "ban-asi-announce",
@@ -424,10 +401,11 @@
     ],
     "references": [
       "openai-attribution",
-      "metr"
+      "hf-reports"
     ],
     "actor": "congress",
-    "responseType": "bill"
+    "responseType": "bill",
+    "inferredReferences": []
   },
   {
     "id": "paulson-rubin",
@@ -549,10 +527,12 @@
       }
     ],
     "references": [
-      "metr"
+      "hf-reports",
+      "openai-attribution"
     ],
     "actor": "congress",
-    "responseType": "other"
+    "responseType": "other",
+    "inferredReferences": []
   },
   {
     "id": "wsj-coxon",
@@ -585,12 +565,10 @@
       }
     ],
     "references": [
-      "openai-attribution",
-      "anthropic-incidents"
+      "openai-attribution"
     ],
     "inferredReferences": [
-      "openai-attribution",
-      "anthropic-incidents"
+      "openai-attribution"
     ],
     "actor": "congress",
     "responseType": "bill"
@@ -599,24 +577,27 @@
     "id": "policy-window",
     "date": "2026-09-09",
     "dateLabel": "September 9",
-    "kind": "advocacy",
+    "kind": "lab",
     "title": "OpenAI says the policy window is open",
-    "summary": "OpenAI posts “The AI policy window is open. We need to act,” detailing its policy positions.",
+    "summary": "OpenAI posts “The AI policy window is open. We need to act,” detailing its policy positions. It includes endorsements of multiple specific California state bills.",
     "sources": [
       {
         "label": "OpenAI",
         "url": "https://openai.com/index/ai-policy-window/"
       }
     ],
-    "references": []
+    "references": [
+      "pachocki"
+    ],
+    "secondaryKind": "advocacy"
   },
   {
     "id": "congress-posts",
     "date": "2026-09-09",
-    "dateLabel": "September 9-10",
+    "dateLabel": "September 9",
     "kind": "policy",
     "title": "Members of Congress respond to Coxon",
-    "summary": "At least 27 members of Congress post on Twitter about Coxon’s statement. Two of those posts were on September 10.",
+    "summary": "At least 27 members of Congress post on Twitter about Coxon’s statement.",
     "sources": [
       {
         "label": "Thread",
@@ -646,11 +627,12 @@
       "openai-attribution",
       "coxon",
       "hubinger",
-      "metr",
+      "hf-reports",
       "pachocki"
     ],
     "actor": "congress",
-    "responseType": "letter"
+    "responseType": "letter",
+    "inferredReferences": []
   },
   {
     "id": "van-hollen-altman",
@@ -702,21 +684,6 @@
     "responseType": "bill"
   },
   {
-    "id": "pauseai-signups",
-    "date": "2026-09-10",
-    "dateLabel": "September 10",
-    "kind": "press",
-    "title": "PauseAI UK sign-ups",
-    "summary": "Joseph Miller shares a chart of PauseAI UK daily sign-ups.",
-    "sources": [
-      {
-        "label": "LessWrong",
-        "url": "https://www.lesswrong.com/posts/cannX863Qu4FGMjep/jennas-s-shortform?commentId=3GtttPDuHv94F6yzD"
-      }
-    ],
-    "references": []
-  },
-  {
     "id": "rubyhack",
     "date": "2026-09-11",
     "dateLabel": "September 11",
@@ -740,7 +707,7 @@
     "id": "amodei",
     "date": "2026-09-12",
     "dateLabel": "September 12",
-    "kind": "advocacy",
+    "kind": "lab",
     "title": "Amodei: We Must Pace the Frontier",
     "summary": "Anthropic CEO Dario Amodei publishes “We Must Pace the Frontier,” calling for an international agreement to slow or pause frontier AI development. The essay links Pacing the Frontier and opens by explaining recursive self-improvement, the Hugging Face incident via METR’s report, and Anthropic’s own rogue-agent incidents. Several other frontier-lab leaders endorsed it.",
     "sources": [
@@ -767,10 +734,12 @@
     ],
     "references": [
       "pacing",
-      "metr",
+      "hf-reports",
       "openai-attribution",
       "anthropic-incidents"
-    ]
+    ],
+    "inferredReferences": [],
+    "secondaryKind": "advocacy"
   },
   {
     "id": "johnson-rejects",
@@ -793,8 +762,8 @@
   },
   {
     "id": "obama-nyt",
-    "date": "2026-09-13",
-    "dateLabel": "September 13",
+    "date": "2026-09-10",
+    "dateLabel": "September 10",
     "kind": "policy",
     "title": "Obama urges Democrats to center AI oversight",
     "summary": "The New York Times reports that Obama urged Democrats to move AI oversight to the center of their agenda, at a private fundraising event, about statements made on September 10 that had not been published before.",
@@ -804,9 +773,14 @@
         "url": "https://www.nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html"
       }
     ],
-    "references": [],
+    "references": [
+      "coxon"
+    ],
     "actor": "other",
-    "responseType": "statement"
+    "responseType": "statement",
+    "inferredReferences": [
+      "coxon"
+    ]
   },
   {
     "id": "trump-truth-social",
@@ -886,14 +860,15 @@
       }
     ],
     "references": [
-      "metr",
+      "hf-reports",
       "openai-attribution",
       "anthropic-incidents",
       "pacing",
       "meta-hack"
     ],
     "actor": "congress",
-    "responseType": "letter"
+    "responseType": "letter",
+    "inferredReferences": []
   },
   {
     "id": "paul-kennedy",
@@ -922,37 +897,65 @@
     "responseType": "bill"
   },
   {
-    "id": "shor",
+    "id": "metrics-spike",
     "date": "2026-09-16",
-    "dateLabel": "September 16",
+    "dateLabel": "Mid-September",
     "kind": "press",
-    "title": "David Shor on the shift after Coxon",
-    "summary": "David Shor publishes data capturing a political shift among the general public after the Coxon media frenzy.",
-    "sources": [
-      {
-        "label": "Shor",
-        "url": "https://x.com/davidshor/status/2100300687003259292"
-      }
-    ],
+    "title": "Several metrics spike around this time",
+    "summary": "",
+    "sources": [],
     "references": [
       "coxon"
-    ]
-  },
-  {
-    "id": "xrisk-observatory",
-    "date": "2026-09-16",
-    "dateLabel": "September 16",
-    "kind": "press",
-    "title": "Existential Risk Observatory polling",
-    "summary": "The Existential Risk Observatory publishes data showing similar results.",
-    "sources": [
-      {
-        "label": "LessWrong",
-        "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk"
-      }
     ],
-    "references": [
-      "shor"
+    "images": [
+      {
+        "src": "/warning-shots/graph_shor.jpg",
+        "alt": "Line chart of AI salience among US respondents from late 2024 to September 2026, rising sharply after the Coxon post on September 8, 2026.",
+        "source": {
+          "label": "Shor",
+          "url": "https://x.com/davidshor/status/2100300687003259292"
+        }
+      },
+      {
+        "src": "/warning-shots/graph_xlab.png",
+        "alt": "Line chart of US public awareness of existential risk rising from about 7% in 2023 to about 55% in the latest data point.",
+        "source": {
+          "label": "LessWrong",
+          "url": "https://www.lesswrong.com/posts/gkxDHTLFF8zk2ZLzm/55-of-the-us-public-is-now-aware-of-ai-xrisk"
+        }
+      },
+      {
+        "src": "/warning-shots/graph_aipn.png",
+        "alt": "Step chart of current members of Congress who have publicly discussed AGI, superintelligence, AI existential risk, or loss of control, reaching 74 members (25 Republicans, 47 Democrats, 2 Independents).",
+        "source": {
+          "label": "AI Policy Network",
+          "url": "https://theaipn.org/issue/quotes/"
+        }
+      },
+      {
+        "src": "/warning-shots/graph_dcai1.png",
+        "alt": "Line chart of the share of AI statements about x-risk and loss of control by party over 12 months, with Democrats spiking in September 2026.",
+        "source": {
+          "label": "DCAI",
+          "url": "https://www.dconai.org/#topicshare"
+        }
+      },
+      {
+        "src": "/warning-shots/graph_dcai2.png",
+        "alt": "Line chart of the share of AI statements about AI rules by party over 12 months, with both parties rising sharply in September 2026.",
+        "source": {
+          "label": "DCAI",
+          "url": "https://www.dconai.org/#topicshare"
+        }
+      },
+      {
+        "src": "/warning-shots/graph_aisw.png",
+        "alt": "Line chart of the daily percentage of headlines about AI, AI x-risk, and climate from July 1 to September 30, 2026, with AI and x-risk headlines rising around September 9.",
+        "source": {
+          "label": "AI Stop Watch",
+          "url": "https://aistop.watch/p/a-swarm-eh"
+        }
+      }
     ]
   },
   {
@@ -1071,10 +1074,10 @@
       }
     ],
     "references": [
-      "anthropic-incidents"
+      "openai-attribution"
     ],
     "inferredReferences": [
-      "anthropic-incidents"
+      "openai-attribution"
     ],
     "actor": "congress",
     "responseType": "bill"
@@ -1102,7 +1105,7 @@
     ],
     "references": [
       "openai-attribution",
-      "metr",
+      "hf-reports",
       "collusion-wiki",
       "rubyhack",
       "coxon",
@@ -1110,10 +1113,12 @@
       "pachocki",
       "amodei",
       "astra-system-card",
-      "meta-hack"
+      "meta-hack",
+      "policy-window"
     ],
     "actor": "other",
-    "responseType": "letter"
+    "responseType": "letter",
+    "inferredReferences": []
   },
   {
     "id": "axios-incidents",
@@ -1136,16 +1141,50 @@
     "dateLabel": "September 26",
     "kind": "policy",
     "title": "US and China agree to an AI safety channel",
-    "summary": "China and the US agree to establish an AI safety channel and continue trade and military talks.",
+    "summary": "China and the US agree to establish an AI safety channel and continue trade and military talks. One of the express purposes of the agreement is incident reporting.",
     "sources": [
       {
         "label": "AP",
         "url": "https://apnews.com/article/china-us-agreement-xi-trump-visit-e8f858ed9094b99bc8d3d339f9899f31"
       }
     ],
-    "references": [],
+    "references": [
+      "openai-attribution"
+    ],
     "actor": "white-house",
-    "responseType": "other"
+    "responseType": "other",
+    "inferredReferences": [
+      "openai-attribution"
+    ]
+  },
+  {
+    "id": "florida-injunction",
+    "date": "2026-09-28",
+    "dateLabel": "September 28",
+    "kind": "policy",
+    "title": "Florida AG seeks injunction against OpenAI",
+    "summary": "Florida Attorney General James Uthmeier files for a temporary injunction against OpenAI and its CEO, seeking to mandate a pause on further AI development until third-party approved guardrails are in place. The filing cites OpenAI’s leadership acknowledging extinction risk, Coxon and Hubinger’s posts, the Hugging Face incident and the OpenAI and METR reports on it, the RubyGems incident, the Australian Medicare breach, that OpenAI was reportedly investigating tens of thousands of incidents, Pacing the Frontier, Pachocki’s governance advocacy in “An Alien Mind”, Altman’s support for Amodei’s “We Must Pace the Frontier”, and academic studies on consumer harms.",
+    "sources": [
+      {
+        "label": "Florida AG",
+        "url": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-temporary-injunction-against-openai-and-its-ceo"
+      }
+    ],
+    "references": [
+      "openai-attribution",
+      "hf-reports",
+      "coxon",
+      "hubinger",
+      "rubyhack",
+      "medicare-breach",
+      "pacing",
+      "pachocki",
+      "amodei",
+      "axios-incidents"
+    ],
+    "actor": "other",
+    "responseType": "enforcement",
+    "inferredReferences": []
   },
   {
     "id": "cruz-blocks-ai-act",
@@ -1211,10 +1250,13 @@
     ],
     "references": [
       "hawley",
-      "medicare-breach"
+      "medicare-breach",
+      "openai-attribution",
+      "hf-reports"
     ],
     "actor": "congress",
-    "responseType": "hearing"
+    "responseType": "hearing",
+    "inferredReferences": []
   },
   {
     "id": "ftc-probe",
@@ -1222,16 +1264,23 @@
     "dateLabel": "September 30",
     "kind": "policy",
     "title": "FTC probes OpenAI and Anthropic",
-    "summary": "The FTC probes OpenAI and Anthropic regarding their rogue-agent incidents, per Reuters.",
+    "summary": "The FTC probes OpenAI and Anthropic regarding their rogue-agent incidents and consumer harms, per Reuters.",
     "sources": [
       {
         "label": "Reuters",
         "url": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
       }
     ],
-    "references": [],
+    "references": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ],
     "actor": "other",
-    "responseType": "other"
+    "responseType": "enforcement",
+    "inferredReferences": [
+      "openai-attribution",
+      "anthropic-incidents"
+    ]
   },
   {
     "id": "bonta-subpoena",
@@ -1250,7 +1299,7 @@
       "openai-attribution"
     ],
     "actor": "other",
-    "responseType": "other"
+    "responseType": "enforcement"
   },
   {
     "id": "jeffries-crisis",
@@ -1267,10 +1316,11 @@
     ],
     "references": [
       "openai-attribution",
-      "metr"
+      "hf-reports"
     ],
     "actor": "congress",
-    "responseType": "statement"
+    "responseType": "statement",
+    "inferredReferences": []
   },
   {
     "id": "nyc-council",
@@ -1293,21 +1343,6 @@
     ],
     "actor": "other",
     "responseType": "hearing"
-  },
-  {
-    "id": "wikimedia",
-    "date": "2026-10-05",
-    "dateLabel": "October 5",
-    "kind": "incident",
-    "title": "Wikimedia reports rogue agent activity",
-    "summary": "The Wikimedia Foundation reports that rogue-agent swarms from OpenAI abused its services for unknown motives, although they did not breach them to its knowledge, and may have contributed to a temporary outage of one of its services.",
-    "sources": [
-      {
-        "label": "Wikimedia Foundation",
-        "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
-      }
-    ],
-    "references": []
   },
   {
     "id": "trahan-claim",
@@ -1348,9 +1383,7 @@
     "references": [
       "axios-incidents"
     ],
-    "inferredReferences": [
-      "axios-incidents"
-    ],
+    "inferredReferences": [],
     "actor": "congress",
     "responseType": "letter"
   },
@@ -1368,10 +1401,13 @@
       }
     ],
     "references": [
-      "ftc-probe"
+      "ftc-probe",
+      "openai-attribution",
+      "anthropic-incidents"
     ],
     "actor": "other",
-    "responseType": "other"
+    "responseType": "enforcement",
+    "inferredReferences": []
   },
   {
     "id": "ai-task-force",
@@ -1386,9 +1422,14 @@
         "url": "https://www.bloomberg.com/news/articles/2026-10-16/trump-s-ai-task-force-to-commission-report-on-technology-s-risks"
       }
     ],
-    "references": [],
+    "references": [
+      "openai-attribution"
+    ],
     "actor": "white-house",
-    "responseType": "other"
+    "responseType": "other",
+    "inferredReferences": [
+      "openai-attribution"
+    ]
   },
   {
     "id": "ftc-testify",
@@ -1404,10 +1445,12 @@
       }
     ],
     "references": [
-      "ftc-subpoenas"
+      "ftc-subpoenas",
+      "anthropic-incidents"
     ],
     "actor": "other",
-    "responseType": "other"
+    "responseType": "enforcement",
+    "inferredReferences": []
   },
   {
     "id": "bonta-sues",
@@ -1420,19 +1463,23 @@
       {
         "label": "California AG",
         "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+      },
+      {
+        "label": "Wikimedia Foundation report",
+        "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
       }
     ],
     "references": [
       "bonta-subpoena",
       "openai-attribution",
-      "metr",
+      "hf-reports",
       "collusion-wiki",
       "rubyhack",
-      "wikimedia",
       "medicare-breach",
       "astra-system-card"
     ],
     "actor": "other",
-    "responseType": "other"
+    "responseType": "enforcement",
+    "inferredReferences": []
   }
 ]
