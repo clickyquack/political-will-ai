@@ -1,0 +1,86 @@
+---
+import Catalog from "../components/Catalog.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { parseCatalog } from "../lib/catalog";
+import Base from "../layouts/Base.astro";
+import misc from "../data/misc.json";
+import newsletters from "../data/newsletters.json";
+import politicianPositions from "../data/politician-positions.json";
+import proxyMeasures from "../data/proxy-measures.json";
+import readingList from "../data/reading-list.json";
+
+const sections = [
+  { id: "reading-list", label: "Reading list", items: parseCatalog(readingList, { pinPriority: true }), pinPriority: true },
+  { id: "politician-positions", label: "Politician positions", items: parseCatalog(politicianPositions), pinPriority: false },
+  { id: "proxy-measures", label: "Proxy measures", items: parseCatalog(proxyMeasures), pinPriority: false },
+  { id: "newsletters", label: "Newsletters", items: parseCatalog(newsletters, { pinPriority: true }), pinPriority: true },
+  { id: "misc", label: "Misc", items: parseCatalog(misc), pinPriority: false },
+];
+---
+
+<Base title="Resources" wide>
+  <PageHeader title="Resources" />
+  {
+    sections.map((section) => (
+      <details class="resource-section" id={section.id}>
+        <summary>{section.label}</summary>
+        <Catalog items={section.items} pinPriority={section.pinPriority} />
+      </details>
+    ))
+  }
+</Base>
+
+<style>
+  .resource-section {
+    margin: 0 0 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .resource-section summary {
+    padding: 0.9rem 0;
+    cursor: pointer;
+    font-size: 1.35rem;
+    font-weight: 520;
+    letter-spacing: -0.02em;
+    list-style: none;
+  }
+
+  .resource-section summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .resource-section summary::before {
+    content: "▸";
+    display: inline-block;
+    width: 1em;
+    color: var(--accent);
+    transition: transform 0.15s ease;
+  }
+
+  .resource-section[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .resource-section summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .resource-section .catalog {
+    padding-bottom: 1.5rem;
+  }
+</style>
+
+<script>
+  // Open the section named in the URL hash (e.g. /resources#newsletters from the home page).
+  function openFromHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const target = document.getElementById(id);
+    if (target instanceof HTMLDetailsElement) {
+      target.open = true;
+      target.scrollIntoView();
+    }
+  }
+  openFromHash();
+  window.addEventListener("hashchange", openFromHash);
+</script>

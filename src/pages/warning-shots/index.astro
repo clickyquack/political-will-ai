@@ -2,9 +2,7 @@
 import WarningShotTimeline from "../../components/WarningShotTimeline.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import Base from "../../layouts/Base.astro";
-
-const title =
-  "Measuring the Political Impact of the Hugging Face Incident, Coxon Media Frenzy, and Related Events";
+import { warningShotsTitle as title } from "../../site";
 ---
 
 <Base
@@ -13,5 +11,12 @@ const title =
   wide
 >
   <PageHeader title={title} />
+  <p class="byline accompanying-post"><a href="https://quintic.substack.com/p/measuring-the-political-impact-of">Accompanying blog post</a></p>
   <WarningShotTimeline />
+
+<style>
+  .accompanying-post {
+    font-size: 1.425rem;
+  }
+</style>
 </Base>

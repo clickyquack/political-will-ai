@@ -25,21 +25,23 @@ export function isGroup(entry: NavEntry): entry is NavGroup {
 }
 
 export const nav: NavEntry[] = [
-  { id: "about", href: sitePath("/about"), label: "About" },
-  { id: "congress-map", href: sitePath("/congress-map/"), label: "Map" },
-  {
-    id: "resources",
-    label: "Resources",
-    children: [
-      { id: "reading-list", href: sitePath("/reading-list"), label: "Reading list" },
-      { id: "politician-positions", href: sitePath("/politician-positions"), label: "Politician positions" },
-      { id: "industry-lobbying", href: sitePath("/industry-lobbying"), label: "Industry lobbying" },
-      { id: "proxy-measures", href: sitePath("/proxy-measures"), label: "Proxy measures" },
-      { id: "newsletters", href: sitePath("/newsletters"), label: "Newsletters" },
-    ],
-  },
+  { id: "our-work", href: sitePath("/our-work"), label: "Our Work" },
+  { id: "resources", href: sitePath("/resources"), label: "Resources" },
   { id: "blog", href: sitePath("/blog"), label: "Blog" },
+  { id: "about", href: sitePath("/about"), label: "About" },
 ];
+
+/** Sections on the Resources page, in display order. */
+export const resourceSections = [
+  { id: "reading-list", label: "Reading list" },
+  { id: "politician-positions", label: "Politician positions" },
+  { id: "proxy-measures", label: "Proxy measures" },
+  { id: "newsletters", label: "Newsletters" },
+  { id: "misc", label: "Misc" },
+];
+
+export const warningShotsTitle =
+  "Measuring the Political Impact of the Hugging Face Incident, Coxon Media Frenzy, and Related Events";
 
 export function flattenNav(entries: NavEntry[] = nav): NavLink[] {
   return entries.flatMap((entry) => (isGroup(entry) ? entry.children : [entry]));

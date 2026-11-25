@@ -1,0 +1,31 @@
+---
+import PageHeader from "../components/PageHeader.astro";
+import Base from "../layouts/Base.astro";
+import { sitePath } from "../path";
+import { warningShotsTitle } from "../site";
+---
+
+<Base title="Our Work" wide>
+  <PageHeader title="Our Work" />
+  <ul class="work-list">
+    <li>
+      <a class="map-preview" href={sitePath("/warning-shots/")}>
+        <div class="map-preview-frame">
+          <img src={sitePath("/previews/warning-shots.png")} alt="" />
+        </div>
+        <h2>{warningShotsTitle}</h2>
+      </a>
+    </li>
+  </ul>
+</Base>
+
+<style>
+  .work-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+</style>

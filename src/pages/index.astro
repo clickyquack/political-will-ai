@@ -2,14 +2,11 @@
 import urls from "../data/blog.json";
 import { formatDate } from "../format";
 import Base from "../layouts/Base.astro";
-import { senateMapPreview } from "../lib/map-preview";
 import { loadBlogPosts } from "../lib/posts";
 import { sitePath } from "../path";
-import { isGroup, nav, site } from "../site";
+import { resourceSections, site, warningShotsTitle } from "../site";
 
-const resources = nav.find(isGroup);
 const blogPosts = (await loadBlogPosts(urls)).slice(0, 3);
-const mapPreview = senateMapPreview();
 ---
 
 <Base title={site.name} description={site.description} wide>
@@ -21,27 +18,24 @@ const mapPreview = senateMapPreview();
   </p>
 
   <section class="home-section" aria-labelledby="featured-label">
-    <p id="featured-label" class="home-featured">Featured tool</p>
-    <a class="map-preview" href={sitePath("/congress-map/")} aria-labelledby="featured-label map-preview-title">
-      <div class="map-preview-frame" set:html={mapPreview} />
-      <h2 id="map-preview-title">AI risk in Congress</h2>
+    <p id="featured-label" class="home-featured">Featured work</p>
+    <a class="map-preview" href={sitePath("/warning-shots/")} aria-label={warningShotsTitle}>
+      <div class="map-preview-frame">
+        <img src={sitePath("/previews/warning-shots.png")} alt="" />
+      </div>
     </a>
   </section>
 
-  {
-    resources && (
-      <section class="home-section" aria-labelledby="resources-title">
-        <h2 id="resources-title">Our resource collection</h2>
-        <ul class="resource-squares">
-          {resources.children.map((item) => (
-            <li>
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
-      </section>
-    )
-  }
+  <section class="home-section" aria-labelledby="resources-title">
+    <h2 id="resources-title">Our resource collection</h2>
+    <ul class="resource-squares">
+      {resourceSections.filter((item) => item.id !== "misc").map((item) => (
+        <li>
+          <a href={`${sitePath("/resources")}#${item.id}`}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
 
   {
     blogPosts.length > 0 && (
