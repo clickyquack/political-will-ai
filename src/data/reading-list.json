@@ -245,6 +245,7 @@
   {
     "title": "AI Safety Landscape & Strategic Gaps",
     "url": "https://forum.effectivealtruism.org/posts/CbHX5zL2uEvTasuiP/ai-safety-landscape-and-strategic-gaps",
+    "priority": true,
     "description": "Huge overview of strategy for reducing existential risk from AI, brainstorms the biggest gaps to fill and primarily focuses on political advocacy",
     "authors": [
       {
