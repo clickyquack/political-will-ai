@@ -24,6 +24,7 @@ export const catalogSchema = z.array(
     image: z.string().min(1).optional(),
     priority: z.boolean().optional(),
     continuous: z.boolean().optional(),
+    group: z.string().min(1).optional(),
   }),
 );
 

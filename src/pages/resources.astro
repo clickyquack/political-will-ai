@@ -9,12 +9,23 @@ import politicianPositions from "../data/politician-positions.json";
 import proxyMeasures from "../data/proxy-measures.json";
 import readingList from "../data/reading-list.json";
 
+const readingItems = parseCatalog(readingList, { pinPriority: true });
+const readingGroups = [
+  "Why work on political will?",
+  "General political strategy-to-action thinking",
+  "Working with/talking to policymakers",
+  "Grassroots",
+  "Funding/donations",
+  "Comms",
+  "Governance proposals",
+].map((name) => ({ name, items: readingItems.filter((item) => item.group === name) }));
+
 const sections = [
-  { id: "reading-list", label: "Reading list", items: parseCatalog(readingList, { pinPriority: true }), pinPriority: true },
-  { id: "politician-positions", label: "Politician positions", items: parseCatalog(politicianPositions), pinPriority: false },
-  { id: "proxy-measures", label: "Proxy measures", items: parseCatalog(proxyMeasures), pinPriority: false },
+  { id: "reading-list", label: "Reading list", items: readingItems, pinPriority: true },
+  { id: "politician-positions", label: "Politician positions", items: parseCatalog(politicianPositions, { pinPriority: true }), pinPriority: true },
+  { id: "proxy-measures", label: "Proxy measures", items: parseCatalog(proxyMeasures, { pinPriority: true }), pinPriority: true },
   { id: "newsletters", label: "Newsletters", items: parseCatalog(newsletters, { pinPriority: true }), pinPriority: true },
-  { id: "misc", label: "Misc", items: parseCatalog(misc), pinPriority: false },
+  { id: "misc", label: "Misc", items: parseCatalog(misc, { pinPriority: true }), pinPriority: true },
 ];
 ---
 
@@ -24,7 +35,16 @@ const sections = [
     sections.map((section) => (
       <details class="resource-section" id={section.id}>
         <summary>{section.label}</summary>
-        <Catalog items={section.items} pinPriority={section.pinPriority} />
+        {section.id === "reading-list" ? (
+          readingGroups.map((group, i) => (
+            <div class="resource-group">
+              <h3>{group.name}</h3>
+              <Catalog items={group.items} pinPriority={true} search={false} sort={false} header={i === 0} />
+            </div>
+          ))
+        ) : (
+          <Catalog items={section.items} pinPriority={section.pinPriority} search={false} sort={false} />
+        )}
       </details>
     ))
   }
@@ -68,6 +88,12 @@ const sections = [
 
   .resource-section .catalog {
     padding-bottom: 1.5rem;
+  }
+
+  .resource-group h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 </style>
 

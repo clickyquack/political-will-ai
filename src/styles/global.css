@@ -667,6 +667,10 @@ body.is-wide {
   text-underline-offset: 0.16em;
 }
 
+.catalog-toolbar[hidden] {
+  display: none;
+}
+
 .catalog-toolbar {
   display: flex;
   flex-wrap: wrap;

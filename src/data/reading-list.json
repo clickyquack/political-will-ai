@@ -11,7 +11,8 @@
     ],
     "date": "2026-07-11",
     "priority": true,
-    "continuous": false
+    "continuous": false,
+    "group": "Why work on political will?"
   },
   {
     "title": "An Activist View of AI Governance",
@@ -25,7 +26,8 @@
       }
     ],
     "date": "2025-05-22",
-    "continuous": false
+    "continuous": false,
+    "group": "Why work on political will?"
   },
   {
     "title": "The Invisible Side of AI Governance",
@@ -38,7 +40,8 @@
       }
     ],
     "date": "2026-06-20",
-    "continuous": false
+    "continuous": false,
+    "group": "Working with/talking to policymakers"
   },
   {
     "title": "What We Learned from Briefing 140+ Lawmakers on the Threat from AI",
@@ -50,7 +53,8 @@
       }
     ],
     "date": "2026-02-12",
-    "continuous": false
+    "continuous": false,
+    "group": "Working with/talking to policymakers"
   },
   {
     "title": "Global Call for AI Red Lines",
@@ -71,7 +75,8 @@
       }
     ],
     "date": "2025-09-22",
-    "continuous": false
+    "continuous": false,
+    "group": "Working with/talking to policymakers"
   },
   {
     "title": "AI 2040",
@@ -84,7 +89,8 @@
       }
     ],
     "date": "2026-07-09",
-    "continuous": false
+    "continuous": false,
+    "group": "Governance proposals"
   },
   {
     "title": "How Should the US Prepare for Increasingly Automated AI R&D?",
@@ -97,7 +103,8 @@
       }
     ],
     "date": "2026-08-06",
-    "continuous": false
+    "continuous": false,
+    "group": "Governance proposals"
   },
   {
     "title": "Stop Donating to AI Safety Research*",
@@ -110,7 +117,8 @@
       }
     ],
     "date": "2026-04-25",
-    "continuous": false
+    "continuous": false,
+    "group": "Funding/donations"
   },
   {
     "title": "Where I Am Donating in 2025",
@@ -123,7 +131,8 @@
       }
     ],
     "date": "2025-11-22",
-    "continuous": false
+    "continuous": false,
+    "group": "Funding/donations"
   },
   {
     "title": "How to Actually Spend Billions on AI Safety",
@@ -136,7 +145,8 @@
       }
     ],
     "date": "2026-05-12",
-    "continuous": false
+    "continuous": false,
+    "group": "Funding/donations"
   },
   {
     "title": "AI safety needs a moonshot comms initiative",
@@ -148,7 +158,8 @@
       }
     ],
     "date": "2026-09-23",
-    "continuous": false
+    "continuous": false,
+    "group": "Comms"
   },
   {
     "title": "Speaking to Congressional staffers about AI risk",
@@ -164,7 +175,8 @@
       }
     ],
     "date": "2023-12-04",
-    "continuous": false
+    "continuous": false,
+    "group": "Working with/talking to policymakers"
   },
   {
     "title": "Which AI harms & risks will mobilise the public to act?",
@@ -177,7 +189,8 @@
       }
     ],
     "date": "2026-03-10",
-    "continuous": false
+    "continuous": false,
+    "group": "Comms"
   },
   {
     "title": "Writing Your Representatives: A Cost-Effective and Neglected Intervention",
@@ -189,7 +202,8 @@
       }
     ],
     "date": "2025-11-09",
-    "continuous": false
+    "continuous": false,
+    "group": "Grassroots"
   },
   {
     "title": "Epistemic Spot Check: Expected Value of Donating to Alex Bores's Congressional Campaign",
@@ -201,7 +215,8 @@
       }
     ],
     "date": "2025-11-13",
-    "continuous": false
+    "continuous": false,
+    "group": "Funding/donations"
   },
   {
     "title": "Do Protests Work? A Critical Review",
@@ -214,7 +229,8 @@
       }
     ],
     "date": "2025-04-18",
-    "continuous": false
+    "continuous": false,
+    "group": "Grassroots"
   },
   {
     "title": "Do small protests work?",
@@ -227,7 +243,8 @@
       }
     ],
     "date": "2025-11-04",
-    "continuous": false
+    "continuous": false,
+    "group": "Grassroots"
   },
   {
     "title": "Do Disruptive or Violent Protests Work?",
@@ -240,7 +257,8 @@
       }
     ],
     "date": "2025-11-19",
-    "continuous": false
+    "continuous": false,
+    "group": "Grassroots"
   },
   {
     "title": "AI Safety Landscape & Strategic Gaps",
@@ -254,7 +272,8 @@
       }
     ],
     "date": "2025-09-17",
-    "continuous": false
+    "continuous": false,
+    "group": "General political strategy-to-action thinking"
   },
   {
     "title": "How cost-effective are AI safety YouTubers?",
@@ -271,7 +290,8 @@
       }
     ],
     "date": "2025-09-12",
-    "continuous": false
+    "continuous": false,
+    "group": "Comms"
   },
   {
     "title": "Consider donating to Alex Bores, author of the RAISE Act",
@@ -283,7 +303,8 @@
       }
     ],
     "date": "2025-10-20",
-    "continuous": false
+    "continuous": false,
+    "group": "Funding/donations"
   },
   {
     "title": "Voters are surprisingly open to talking about AI risk",
@@ -295,7 +316,8 @@
       }
     ],
     "date": "2026-05-13",
-    "continuous": false
+    "continuous": false,
+    "group": "Grassroots"
   },
   {
     "title": "Preventing extinction from ASI on a $50M yearly budget",
@@ -308,7 +330,8 @@
       }
     ],
     "date": "2026-04-21",
-    "continuous": false
+    "continuous": false,
+    "group": "General political strategy-to-action thinking"
   },
   {
     "title": "Existential AI safety needs an effective social movement. PauseAI is building it",
@@ -321,6 +344,7 @@
       }
     ],
     "date": "2026-06-26",
-    "continuous": false
+    "continuous": false,
+    "group": "General political strategy-to-action thinking"
   }
 ]

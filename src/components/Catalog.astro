@@ -22,9 +22,12 @@ interface Item {
 interface Props {
   items: Item[];
   pinPriority?: boolean;
+  search?: boolean;
+  header?: boolean;
+  sort?: boolean;
 }
 
-const { items, pinPriority = false } = Astro.props;
+const { items, pinPriority = false, search = true, header = true, sort = true } = Astro.props;
 const showPreviews = items.some((item) => item.image);
 const showAuthors = items.some((item) => item.authors.length > 0);
 
@@ -43,44 +46,56 @@ function dateLabel(date?: string) {
 ---
 
 <div class="catalog" data-catalog data-pin-priority={pinPriority ? "true" : undefined}>
-  <div class="catalog-toolbar">
-    <label class="catalog-search-label">
-      Search by title
-      <input type="search" data-catalog-search autocomplete="off" />
-    </label>
-    <button
-      type="button"
-      class="catalog-sort"
-      data-catalog-sort
-      aria-label={pinPriority
-        ? "Priority items first. Sort newest first instead."
-        : "Sorted newest first. Sort oldest first instead."}
-    >
-      <span data-sort-text>{pinPriority ? "Priority" : "Newest first"}</span>
-    </button>
+  <div class="catalog-toolbar" hidden={!search && !sort}>
+    {
+      search && (
+        <label class="catalog-search-label">
+          Search by title
+          <input type="search" data-catalog-search autocomplete="off" />
+        </label>
+      )
+    }
+    {
+      sort && (
+        <button
+          type="button"
+          class="catalog-sort"
+          data-catalog-sort
+          aria-label={pinPriority
+            ? "Priority items first. Sort newest first instead."
+            : "Sorted newest first. Sort oldest first instead."}
+        >
+          <span data-sort-text>{pinPriority ? "Priority" : "Newest first"}</span>
+        </button>
+      )
+    }
   </div>
   <div class="catalog-scroll">
     <table class:list={["catalog-table", { "has-previews": showPreviews }]}>
-      <thead>
-        <tr>
-          {
-            showPreviews && (
-              <th class="preview-col" scope="col">
-                <span class="visually-hidden">Preview</span>
+      {
+        header && (
+          <thead>
+            <tr>
+              {
+                showPreviews && (
+                  <th class="preview-col" scope="col">
+                    <span class="visually-hidden">Preview</span>
+                  </th>
+                )
+              }
+              <th scope="col">Title</th>
+              {showAuthors && (
+                <th class="author-col" scope="col">
+                  Author
+                </th>
+              )}
+              <th class="date-col" scope="col" data-date-heading aria-sort={pinPriority ? "none" : "descending"}>
+                Date
               </th>
-            )
-          }
-          <th scope="col">Title</th>
-          {showAuthors && (
-            <th class="author-col" scope="col">
-              Author
-            </th>
-          )}
-          <th class="date-col" scope="col" data-date-heading aria-sort={pinPriority ? "none" : "descending"}>
-            Date
-          </th>
-        </tr>
-      </thead>
+            </tr>
+          </thead>
+        )
+      }
       <tbody data-catalog-list>
         {
           items.map((item) => (
@@ -210,14 +225,14 @@ function dateLabel(date?: string) {
     const list = root.querySelector<HTMLElement>("[data-catalog-list]");
     const empty = root.querySelector<HTMLElement>("[data-catalog-empty]");
     const heading = root.querySelector<HTMLElement>("[data-date-heading]");
-    if (!search || !button || !list || !empty || !heading) return;
+    if (!list || !empty) return;
 
     const pinPriority = root.dataset.pinPriority === "true";
     let mode: SortMode = pinPriority ? "priority" : "desc";
     const sortText = button.querySelector("[data-sort-text]");
 
     const apply = () => {
-      const query = search.value.trim().toLowerCase();
+      const query = (search?.value ?? "").trim().toLowerCase();
       const rows = [...list.querySelectorAll<HTMLElement>(":scope > tr")];
       rows.sort((a, b) => compareCatalog(rowData(a), rowData(b), mode));
       for (const row of rows) list.append(row);
@@ -230,16 +245,16 @@ function dateLabel(date?: string) {
       }
 
       empty.hidden = visible !== 0;
-      heading.setAttribute(
+      heading?.setAttribute(
         "aria-sort",
         mode === "desc" ? "descending" : mode === "asc" ? "ascending" : "none",
       );
       if (sortText) sortText.textContent = sortLabel(mode);
-      button.setAttribute("aria-label", sortDescription(mode, pinPriority));
+      button?.setAttribute("aria-label", sortDescription(mode, pinPriority));
     };
 
-    search.addEventListener("input", apply);
-    button.addEventListener("click", () => {
+    search?.addEventListener("input", apply);
+    button?.addEventListener("click", () => {
       mode = nextMode(mode, pinPriority);
       apply();
     });
